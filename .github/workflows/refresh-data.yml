@@ -1,0 +1,25 @@
+name: Refresh dashboard data
+
+on:
+  push:
+    paths:
+      - 'data/*.csv'
+      - 'scripts/csv-to-json.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/csv-to-json.mjs
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Atualiza dados do dashboard
+          file_pattern: data/catalogo-agentes-data.json

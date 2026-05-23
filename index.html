@@ -905,7 +905,7 @@
   <header class="topbar">
     <div>
       <h1>Dashboard de Agentes Copilot</h1>
-      <div class="subtitle">Catalogo operacional para demos, treinamentos e selecao de pilotos - 2026-05-23 - build 23/05/2026, 13:41:55</div>
+      <div class="subtitle">Catalogo operacional para demos, treinamentos e selecao de pilotos - 2026-05-23 - build 23/05/2026, 13:46:20</div>
     </div>
     <div class="metrics" aria-label="Indicadores">
       <div class="metric"><strong id="mTotal">0</strong><span>agentes</span></div>
@@ -1052,11 +1052,16 @@
   <div class="toast" id="toast"></div>
 
   <script>
-    const data = JSON.parse(document.getElementById("agent-data").textContent);
-    const rows = data.rows;
-    const topIds = new Set(data.topRows.map(function(r) { return r.id; }));
-    const initialDetailMode = loadDetailMode();
-    let state = {
+    let data, rows, topIds, state;
+    async function bootstrap() {
+      const dataUrl = document.getElementById("agent-data-url").textContent.trim();
+      const response = await fetch(dataUrl, { cache: "no-store" });
+      if (!response.ok) throw new Error("Nao foi possivel carregar " + dataUrl);
+      data = await response.json();
+      rows = data.rows;
+      topIds = new Set(data.topRows.map(function(r) { return r.id; }));
+      const initialDetailMode = loadDetailMode();
+      state = {
       q: "",
       area: "Todos",
       type: "Todos",

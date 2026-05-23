@@ -4,11 +4,11 @@ Gerado em 2026-05-23.
 
 ## Visao geral
 
-- Total de prompts: 216
+- Total de prompts: 378
 - Areas cobertas: 18
-- Prompts agendados nativos: 126
-- Prompts sem add-on / com arquivos: 54
-- Fontes catalogadas: 12
+- Prompts agendados nativos: 216
+- Prompts sem add-on / com arquivos: 90
+- Fontes catalogadas: 24
 
 ## Como usar
 
@@ -43,3 +43,15 @@ Prompts agendados nativos exigem Microsoft 365 Copilot. Sem add-on, o caminho pr
 - [GitHub - awesome-microsoft-copilot-prompts scheduled prompts](https://github.com/kesslernity/awesome-microsoft-copilot-prompts/blob/main/prompts/scheduled-prompts/README.md) - Biblioteca comunitaria com padroes de prompts agendados: briefing matinal, calendario, compromissos, pipeline, projetos, financas e RH.
 - [Reddit - Chief of staff briefing](https://www.reddit.com/r/microsoft_365_copilot/comments/1su626c/ive_been_running_a_chief_of_staff_briefing_in/) - Discussao pratica sobre briefing diario, como agendar e limites de entrega/consumo no historico do Copilot.
 - [Reddit - Prompts que usam M365 de verdade](https://www.reddit.com/r/microsoft_365_copilot/comments/1r4dgai/prompts_that_actually_use_copilots_m365/) - Exemplos que aproveitam emails, calendario, Teams e arquivos em vez de prompts genericos.
+- [Zapier - Daily command center with AI](https://zapier.com/templates/details/daily-command-center-ai-briefing) - Padrao de briefing matinal que combina calendario, metas, conversas que exigem resposta, emails urgentes e blocos de foco.
+- [Zapier - AI daily email digest in Slack](https://zapier.com/apps/gmail/integrations/slack/255573082/get-an-ai-generated-daily-digest-of-your-emails-in-slack) - Automacao que resume emails ao longo do dia, acumula em digest e publica em canal; inspira digest de Outlook/Teams sem abrir caixa de entrada.
+- [Slack - AI recaps](https://slack.com/help/articles/25076892548883-Guide-to-AI-features-in-Slack) - Recaps diarios automatizados para canais acompanhados sem interrupcao; padrao adaptavel a Teams channels.
+- [Notion - Daily Standup Bot](https://www.notion.com/en-gb/custom-agent-templates/daily-standuo-bot-every) - Agente de standup com status On track, At risk e Stale, usando projetos, tarefas, responsaveis e ultima atualizacao.
+- [Needle - Daily Executive Briefing](https://needle.app/workflow-templates/send-daily-executive-briefing) - Workflow diario que coleta email e Slack, produz briefing executivo com riscos, oportunidades, decisoes, top 3 prioridades e changelog.
+- [MoClaw - Scheduled AI tasks patterns](https://moclaw.ai/blog/scheduled-ai-tasks-2026) - Padroes recorrentes: briefing matinal, triagem de inbox, review de projeto, follow-up de leads, bookkeeping mensal e refresh trimestral.
+- [Dify Marketplace - AI News Brief](https://marketplace.dify.ai/template/langgenius/AI%20News%20Brief?creationType=templates&language=en-US&templateId=ecc89f81-d8a9-40af-bfa1-bce7e086c434) - Workflow agendado de busca de noticias, resumo por LLM e postagem em Slack; inspira radar setorial e inteligencia competitiva.
+- [Reddit - Claude Cowork scheduled tasks](https://www.reddit.com/r/ClaudeCowork/comments/1rtvndk/share_your_scheduled_tasks/) - Usuarios compartilham automacoes recorrentes: briefing 6h/18h, inbox zero, analise competitiva semanal e assistente que monitora canal de pedidos.
+- [Reddit - Notion AI weekly work summaries](https://www.reddit.com/r/Notion/comments/1tb787l/guide_how_i_automated_my_weekly_work_summaries/) - Workflow de resumo semanal a partir de logs diarios e notas de reuniao, focando wins, marcos, pendencias e tom profissional.
+- [SurePrompts - Meeting notes patterns](https://sureprompts.com/blog/prompt-patterns-meeting-notes) - Padroes de notas: resumo estruturado, extrator de acoes, decision log, follow-up email e briefing para stakeholders.
+- [Google Workspace Gemini - Project management prompts](https://workspace.google.com/resources/ai/prompts-for-project-management/) - Prompts de gestao de projetos, issue tracker, UAT, status e comunicacao; bons para adaptar a Copilot com arquivos e Planner.
+- [Google Gemini - Daily Brief](https://gemini.google/ua/overview/daily-brief/?hl=uk) - Daily Brief usa Gmail, Calendar e chats anteriores para gerar prioridades matinais; reforca o padrao de briefing pessoal recorrente.

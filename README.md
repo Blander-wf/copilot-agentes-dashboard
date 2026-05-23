@@ -39,6 +39,8 @@ Casos tipicos:
 
 Tambem existe uma biblioteca separada para criar habito diario/semanal com Copilot antes de partir para agentes complexos:
 
+- **Total atual:** 378 prompts recorrentes.
+- **Fontes fora da Microsoft:** 15 fontes, com 180 prompts adaptados de comunidades, Zapier, Slack, Notion, Dify, Needle, Google/Gemini e padroes de reuniao.
 - `prompts-agendados.html`: dashboard estatico com filtros por area, cadencia, licenca, modo de execucao e dados usados.
 - `data/prompts-agendados.csv`: base editavel com os prompts.
 - `data/prompts-agendados-data.json`: base estruturada do dashboard.

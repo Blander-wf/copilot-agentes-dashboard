@@ -46,6 +46,13 @@ Bons exemplos:
 
 Use esta trilha quando a conversa for sobre **habito de uso**: briefing matinal, pendencias de fim do dia, planejamento semanal, resumo de projeto, revisao de arquivos ou analise recorrente de planilhas/CSVs.
 
+Estado atual da trilha:
+
+- 378 prompts recorrentes.
+- 24 fontes catalogadas.
+- 180 prompts adaptados de fontes fora da Microsoft.
+- 90 prompts para usuarios sem add-on / com arquivos.
+
 Regra pratica:
 
 - `Prompt agendado nativo`: exige Microsoft 365 Copilot add-on.

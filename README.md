@@ -13,6 +13,12 @@ Dashboard estatico para publicar no GitHub Pages, com modo local seguro para log
 - **Inferior:** bom para leitura detalhada; a lista fica compacta e o agente selecionado abre em duas colunas.
 - **Foco:** bom para treinamento, apresentacao e copia do prompt/roteiro.
 
+## Trilha sem conector complexo
+
+O catalogo inclui uma categoria chamada **Prompt + arquivos / sem conector**. Ela foi criada para demos rapidas em que o usuario testa com documentos, planilhas, PDFs, CSVs, transcricoes, decks ou pastas do OneDrive/SharePoint, sem depender de Copilot Studio, API, ERP ou write-back em sistemas.
+
+Use o filtro **Tipo > M365 Copilot / Agent Builder + arquivos** para encontrar esses casos.
+
 ## Publicar no GitHub Pages
 
 1. Crie um repositorio no GitHub.

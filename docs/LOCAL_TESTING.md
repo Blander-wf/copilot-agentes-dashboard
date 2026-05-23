@@ -2,6 +2,14 @@
 
 Use este modo quando precisar de login, perfis de usuario e cadastro de novos agentes. O GitHub Pages continua sendo uma publicacao estatica e read-only.
 
+## Quando usar
+
+- Testar login `admin` e `usuario`.
+- Adicionar agentes pelo formulario.
+- Validar novos agentes antes de publicar.
+- Conferir a trilha `Prompt + arquivos / sem conector` usando exemplos anonimizados.
+- Verificar se `data/agentes.csv` e `data/catalogo-agentes-data.json` foram atualizados.
+
 ## 1. Gerar credenciais
 
 ```powershell
@@ -40,6 +48,14 @@ O servidor atualiza:
 - `data/catalogo-agentes-data.json`
 - `data/agentes.csv`
 
+Para agentes simples de prompt + arquivos, use:
+
+- `category`: `Prompt + arquivos / sem conector`
+- `copilotType`: `M365 Copilot / Agent Builder + arquivos`
+- `systems`: OneDrive, SharePoint, Word, Excel, PDF, CSV, transcricoes e arquivos anexados; sem write-back.
+- `complexity`: `Baixa`
+- `priority`: `Alta - demo rapida sem conector`
+
 Depois, publique novamente usando o script da raiz do workspace:
 
 ```powershell
@@ -54,3 +70,22 @@ cd "C:\Users\aleja\Documents\Codex\2026-05-23\estamos-implementando-o-copilot-gp
 ```
 
 Isso recria `auth/users.local.json` e `auth/credentials.local.txt`.
+
+## 6. Checklist local
+
+Antes de publicar:
+
+- entrar como `usuario` e confirmar que o dashboard abre em modo consulta;
+- entrar como `admin` e testar o formulario de novo agente;
+- confirmar que o total de agentes aparece corretamente no topo;
+- filtrar por `Tipo > M365 Copilot / Agent Builder + arquivos`;
+- testar os modos de leitura `Lateral`, `Inferior` e `Foco`;
+- confirmar que nenhum arquivo em `auth/` sera publicado;
+- revisar se os dados novos sao exemplos anonimizados.
+
+## 7. Problemas comuns
+
+- Se o navegador mostrar dados antigos, use `Ctrl+F5`.
+- Se o GitHub Pages demorar a atualizar, aguarde alguns segundos e use `?v=teste` na URL.
+- Se o dashboard mostrar `0 agentes`, confira se `data/catalogo-agentes-data.json` existe e se o HTML usa `agent-data-url`.
+- Se o usuario comum conseguir cadastrar agente, revise `server.mjs` e a role usada no login.

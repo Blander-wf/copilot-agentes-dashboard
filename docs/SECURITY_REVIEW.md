@@ -4,6 +4,8 @@
 
 O GitHub Pages e estatico. Por isso, nao deve ser usado para login real, controle de acesso ou gravacao segura de novos agentes. Qualquer senha ou regra colocada apenas no JavaScript publico pode ser lida e burlada.
 
+Todo conteudo publicado em GitHub Pages deve ser tratado como publico: `index.html`, `data/*.json`, `data/*.csv`, `data/*.xlsx` e os documentos em `docs/`.
+
 Para administracao, este pacote usa `server.mjs`, um servidor local Node que:
 
 - protege `index.html` e `data/*` atras de login;
@@ -25,6 +27,18 @@ Estes arquivos sao locais e ignorados pelo Git:
 
 Nao publique esses arquivos.
 
+## Dados do catalogo
+
+O catalogo deve conter exemplos, fontes publicas e descricoes genericas. Nao inclua:
+
+- nomes reais de clientes, funcionarios ou fornecedores;
+- contratos, propostas, politicas internas ou tickets reais;
+- URLs privadas;
+- emails ou transcricoes reais;
+- dados pessoais, financeiros ou regulados.
+
+Para a trilha `Prompt + arquivos / sem conector`, use arquivos ficticios ou anonimizados nos treinamentos. O dashboard pode sugerir que o usuario teste com arquivos reais no ambiente dele, mas a base publicada nao deve conter esses arquivos nem trechos sensiveis.
+
 ## Senhas
 
 As senhas sao geradas com `crypto.randomBytes` e hash `scrypt`. Para trocar senhas:
@@ -40,6 +54,8 @@ node scripts/setup-local-auth.mjs --force
 - Nao ha recuperacao de senha; rotacione via script.
 - O modo GitHub Pages continua publico/read-only.
 - O token GitHub usado para publicar deve ser rotacionado periodicamente.
+- O controle de acesso local nao substitui Entra ID, SSO ou RBAC corporativo.
+- Agentes que usam arquivos respeitam permissoes do Microsoft 365, mas o catalogo publicado nao aplica essas permissoes.
 
 ## Recomendacao para producao
 
@@ -59,3 +75,6 @@ O papel `admin` deve vir de grupo/claim corporativo, nao de senha compartilhada.
 - Revisar se `data/agentes.csv` nao contem dados sensiveis de clientes.
 - Revisar URLs de fontes antes de publicar.
 - Rodar teste local como `usuario` e como `admin`.
+- Confirmar que `data/catalogo-agentes-data.json` carrega o total esperado de agentes.
+- Confirmar que a trilha simples nao promete automacao/write-back quando o caso usa apenas arquivos.
+- Confirmar que prompts de demo nao incentivam envio de dados sensiveis para fora do tenant.

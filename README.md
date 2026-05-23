@@ -2,6 +2,14 @@
 
 Dashboard estatico para publicar no GitHub Pages, com modo local seguro para login e administracao.
 
+## Visao geral
+
+- **Total atual:** 370 agentes operacionais.
+- **Fontes catalogadas:** 45.
+- **Trilha rapida:** 130 agentes de prompt + arquivos, sem conector complexo.
+- **Publicacao:** GitHub Pages read-only para consulta e treinamento.
+- **Administracao:** servidor local Node com login para cadastrar novos agentes antes de publicar.
+
 ## Modos de uso
 
 - **GitHub Pages:** publico e read-only. Ideal para consulta e apresentacao.
@@ -18,6 +26,14 @@ Dashboard estatico para publicar no GitHub Pages, com modo local seguro para log
 O catalogo inclui uma categoria chamada **Prompt + arquivos / sem conector**. Ela foi criada para demos rapidas em que o usuario testa com documentos, planilhas, PDFs, CSVs, transcricoes, decks ou pastas do OneDrive/SharePoint, sem depender de Copilot Studio, API, ERP ou write-back em sistemas.
 
 Use o filtro **Tipo > M365 Copilot / Agent Builder + arquivos** para encontrar esses casos.
+
+Casos tipicos:
+
+- comparar contratos, propostas, curriculos, politicas ou cronogramas;
+- analisar planilhas/CSVs com variancias, outliers, divergencias e tendencias;
+- transformar transcricoes, atas ou chats exportados em acoes, FAQs e handoffs;
+- criar scorecards, checklists, matrizes de decisao, briefings e roteiros de treinamento;
+- montar agentes simples em OneDrive, SharePoint ou Agent Builder com fontes limitadas.
 
 ## Publicar no GitHub Pages
 
@@ -41,7 +57,16 @@ O arquivo mais simples para editar e `data/agentes.csv`.
 node scripts/csv-to-json.mjs
 ```
 
-5. Faça commit de `data/agentes.csv` e `data/catalogo-agentes-data.json`.
+5. Faca commit de `data/agentes.csv` e `data/catalogo-agentes-data.json`.
+
+Campos mais importantes para novos agentes:
+
+- `category`: use `Prompt + arquivos / sem conector` para demos simples.
+- `copilotType`: use `M365 Copilot / Agent Builder + arquivos` quando nao houver conector/API.
+- `inputs`: descreva quais arquivos o usuario anexaria.
+- `systems`: deixe claro se e apenas OneDrive/SharePoint/arquivos.
+- `demo`: escreva um prompt pronto para copiar.
+- `governance`: inclua permissao, fonte, revisao humana e cuidado com dados sensiveis.
 
 Tambem existem:
 
@@ -75,5 +100,6 @@ http://127.0.0.1:8787/
 
 Documentacao detalhada:
 
+- `docs/CATALOG_MAINTENANCE.md`
 - `docs/LOCAL_TESTING.md`
 - `docs/SECURITY_REVIEW.md`

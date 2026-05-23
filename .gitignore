@@ -1,3 +1,6 @@
 .github-token.local
 *.token
 *.secret
+auth/users.local.json
+auth/credentials.local.txt
+auth/sessions.local.json

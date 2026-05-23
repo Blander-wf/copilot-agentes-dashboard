@@ -23,7 +23,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Latencia, conversao para trial, escalacoes humanas evitadas, paginas por sessao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Microsoft Customer Story - Ask Microsoft",
       "url": "https://www.microsoft.com/en/customers/story/26166-microsoft-microsoft-copilot-studio/",
       "notes": ""
@@ -50,7 +50,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Microsoft Customer Story - Verdantas",
       "url": "https://www.microsoft.com/en/customers/story/26233-verdantas-microsoft-copilot-studio",
       "notes": ""
@@ -77,7 +77,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Customer Story - Verdantas",
       "url": "https://www.microsoft.com/en/customers/story/26233-verdantas-microsoft-copilot-studio",
       "notes": ""
@@ -104,7 +104,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Microsoft Customer Story - CSX",
       "url": "https://www.microsoft.com/en/customers/story/24556-csx-microsoft-copilot-studio",
       "notes": ""
@@ -131,7 +131,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Customer Story - Manchester City Council",
       "url": "https://www.microsoft.com/en/customers/story/26194-manchester-city-council-microsoft-365-copilot",
       "notes": ""
@@ -158,7 +158,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Microsoft Customer Story - Manchester City Council",
       "url": "https://www.microsoft.com/en/customers/story/26194-manchester-city-council-microsoft-365-copilot",
       "notes": ""
@@ -185,7 +185,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Microsoft Customer Story - HEINEKEN",
       "url": "https://www.microsoft.com/en/customers/story/25909-heineken-microsoft-copilot-studio/",
       "notes": ""
@@ -212,7 +212,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Customer Story - HEINEKEN",
       "url": "https://www.microsoft.com/en/customers/story/25909-heineken-microsoft-copilot-studio/",
       "notes": ""
@@ -239,7 +239,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Microsoft Customer Story - Coca-Cola Andina",
       "url": "https://www.microsoft.com/en/customers/story/26256-coca-cola-andina-microsoft-copilot-studio",
       "notes": ""
@@ -266,7 +266,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Customer Story - Unifi",
       "url": "https://www.microsoft.com/en/customers/story/26265-unifi-microsoft-copilot-studio",
       "notes": ""
@@ -293,7 +293,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Customer Story - mobilezone",
       "url": "https://www.microsoft.com/en/customers/story/26389-mobilezone-dynamics-365-customer-service",
       "notes": ""
@@ -320,7 +320,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Customer Story - Graebel",
       "url": "https://www.microsoft.com/en/customers/story/26190-graebel-dynamics-365-finance",
       "notes": ""
@@ -347,7 +347,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Reddit - agentes acionaveis em Copilot Studio",
       "url": "https://www.reddit.com/r/copilotstudio/comments/1skornl/any_makes_build_real_actionable_process_solutions/",
       "notes": ""
@@ -374,7 +374,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Reddit - agentes acionaveis em Copilot Studio",
       "url": "https://www.reddit.com/r/copilotstudio/comments/1skornl/any_makes_build_real_actionable_process_solutions/",
       "notes": ""
@@ -401,7 +401,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Reddit - agentes acionaveis em Copilot Studio",
       "url": "https://www.reddit.com/r/copilotstudio/comments/1skornl/any_makes_build_real_actionable_process_solutions/",
       "notes": ""
@@ -428,7 +428,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Baixa",
-      "trainingScore": "2",
+      "trainingScore": 2,
       "source": "Reddit - agentes acionaveis em Copilot Studio",
       "url": "https://www.reddit.com/r/copilotstudio/comments/1skornl/any_makes_build_real_actionable_process_solutions/",
       "notes": ""
@@ -455,7 +455,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Copilot Blog - Agents plus workflows",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/automate-business-processes-with-agents-plus-workflows-in-microsoft-copilot-studio/",
       "notes": ""
@@ -482,7 +482,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Copilot Blog - Agents plus workflows",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/automate-business-processes-with-agents-plus-workflows-in-microsoft-copilot-studio/",
       "notes": ""
@@ -509,7 +509,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Copilot Blog - Agents plus workflows",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/automate-business-processes-with-agents-plus-workflows-in-microsoft-copilot-studio/",
       "notes": ""
@@ -536,7 +536,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Microsoft Learn - Payables Agent Business Central",
       "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent",
       "notes": ""
@@ -563,7 +563,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Learn - Business Central 2026 wave 1",
       "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/",
       "notes": ""
@@ -590,7 +590,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Microsoft Learn - Dynamics 365 Sales AI agents",
       "url": "https://learn.microsoft.com/en-us/dynamics365/sales/ai-agent-overview",
       "notes": ""
@@ -617,7 +617,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Microsoft Learn - Copilot Tuning Optimization Agent Template",
       "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-tuning-optimization-template",
       "notes": ""
@@ -644,7 +644,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Microsoft Learn - Copilot Tuning Optimization Agent Template",
       "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-tuning-optimization-template",
       "notes": ""
@@ -671,7 +671,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Reddit - Cowork Project Second Brain",
       "url": "https://www.reddit.com/r/microsoft_365_copilot/comments/1tkio2o/i_track_every_active_project_with_copilot_cowork/",
       "notes": ""
@@ -698,7 +698,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Reddit - Dynamics 365 practical Copilot examples",
       "url": "https://www.reddit.com/r/Dynamics365/comments/1rg0e8w/for_those_using_microsoft_dynamics_365_business/",
       "notes": ""
@@ -725,7 +725,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Reddit - Dynamics 365 practical Copilot examples",
       "url": "https://www.reddit.com/r/Dynamics365/comments/1rg0e8w/for_those_using_microsoft_dynamics_365_business/",
       "notes": ""
@@ -752,7 +752,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -779,7 +779,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -806,7 +806,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -833,7 +833,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -860,7 +860,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -887,7 +887,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -914,7 +914,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -941,7 +941,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -968,7 +968,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -995,7 +995,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -1022,7 +1022,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -1049,7 +1049,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -1076,7 +1076,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -1103,7 +1103,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -1130,7 +1130,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -1157,7 +1157,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -1184,7 +1184,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1211,7 +1211,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1238,7 +1238,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Baixa",
-      "trainingScore": "2",
+      "trainingScore": 2,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1265,7 +1265,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1292,7 +1292,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1319,7 +1319,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1346,7 +1346,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1373,7 +1373,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1400,7 +1400,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1427,7 +1427,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1454,7 +1454,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1481,7 +1481,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1508,7 +1508,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1535,7 +1535,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1562,7 +1562,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1589,7 +1589,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1616,7 +1616,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1643,7 +1643,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1670,7 +1670,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1697,7 +1697,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1724,7 +1724,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1751,7 +1751,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1778,7 +1778,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1805,7 +1805,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1832,7 +1832,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1859,7 +1859,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1886,7 +1886,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1913,7 +1913,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Baixa",
-      "trainingScore": "2",
+      "trainingScore": 2,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1940,7 +1940,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1967,7 +1967,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -1994,7 +1994,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Baixa",
-      "trainingScore": "2",
+      "trainingScore": 2,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2021,7 +2021,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Restringir sites, credenciais, ambiente virtual e acoes sensiveis.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2048,7 +2048,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2075,7 +2075,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2102,7 +2102,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2129,7 +2129,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2156,7 +2156,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2183,7 +2183,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2210,7 +2210,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2237,7 +2237,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2264,7 +2264,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2291,7 +2291,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2318,7 +2318,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2345,7 +2345,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2372,7 +2372,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2399,7 +2399,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2426,7 +2426,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2453,7 +2453,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2480,7 +2480,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2507,7 +2507,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2534,7 +2534,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2561,7 +2561,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2588,7 +2588,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2615,7 +2615,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2642,7 +2642,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2669,7 +2669,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2696,7 +2696,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Baixa",
-      "trainingScore": "2",
+      "trainingScore": 2,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2723,7 +2723,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2750,7 +2750,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2777,7 +2777,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2804,7 +2804,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2831,7 +2831,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2858,7 +2858,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2885,7 +2885,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2912,7 +2912,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2939,7 +2939,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2966,7 +2966,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -2993,7 +2993,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3020,7 +3020,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3047,7 +3047,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3074,7 +3074,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3101,7 +3101,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3128,7 +3128,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Baixa",
-      "trainingScore": "2",
+      "trainingScore": 2,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3155,7 +3155,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3182,7 +3182,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3209,7 +3209,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3236,7 +3236,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3263,7 +3263,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3290,7 +3290,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3317,7 +3317,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3344,7 +3344,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3371,7 +3371,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3398,7 +3398,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3425,7 +3425,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3452,7 +3452,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3479,7 +3479,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3506,7 +3506,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3533,7 +3533,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3560,7 +3560,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3587,7 +3587,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3614,7 +3614,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3641,7 +3641,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Baixa",
-      "trainingScore": "2",
+      "trainingScore": 2,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3668,7 +3668,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3695,7 +3695,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3722,7 +3722,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3749,7 +3749,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3776,7 +3776,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3803,7 +3803,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3830,7 +3830,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Baixa",
-      "trainingScore": "2",
+      "trainingScore": 2,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3857,7 +3857,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3884,7 +3884,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3911,7 +3911,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -3938,7 +3938,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-template-customer-insight",
       "notes": ""
@@ -3965,7 +3965,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-template-rfp-assistant",
       "notes": ""
@@ -3992,7 +3992,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://adoption.microsoft.com/en-us/ai-agents/templates-and-examples/",
       "notes": ""
@@ -4019,7 +4019,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://adoption.microsoft.com/en-us/ai-agents/templates-and-examples/",
       "notes": ""
@@ -4046,7 +4046,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://adoption.microsoft.com/en-us/ai-agents/templates-and-examples/",
       "notes": ""
@@ -4073,7 +4073,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://adoption.microsoft.com/en-us/ai-agents/templates-and-examples/",
       "notes": ""
@@ -4100,7 +4100,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://learn.microsoft.com/en-ca/industry/retail/store-operations-template-copilot-studio/overview-store-operations-template-copilot-studio",
       "notes": ""
@@ -4127,7 +4127,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://learn.microsoft.com/en-us/industry/retail/catalog-enrichment-agent/troubleshoot-catalog-enrichment-agent",
       "notes": ""
@@ -4154,7 +4154,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://learn.microsoft.com/en-us/industry/retail/personal-shopping-agent/ingest-data-personal-shopping-agent",
       "notes": ""
@@ -4181,7 +4181,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/explore-agents-pre-built-for-you-in-microsoft-copilot-studio/",
       "notes": ""
@@ -4208,7 +4208,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/microsoft-365/Copilot-Studio-Licensing-Guide.pdf",
       "notes": ""
@@ -4235,7 +4235,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/microsoft-365/Copilot-Studio-Licensing-Guide.pdf",
       "notes": ""
@@ -4262,7 +4262,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/researcher-agent",
       "notes": ""
@@ -4289,7 +4289,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/03/25/introducing-researcher-and-analyst-in-microsoft-365-copilot/",
       "notes": ""
@@ -4316,7 +4316,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Restringir sites, credenciais, ambiente virtual e acoes sensiveis.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://support.microsoft.com/en-gb/topic/get-started-using-researcher-with-computer-use-in-microsoft-365-copilot-frontier-1f274537-6648-46e8-8264-052a49b92af4",
       "notes": ""
@@ -4343,7 +4343,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-workflows-in-microsoft-365-copilot",
       "notes": ""
@@ -4370,7 +4370,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/advanced/cross-agent-orchestrator.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4397,7 +4397,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/advanced/email-triage-assistant.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4424,7 +4424,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/advanced/meeting-intelligence-agent.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4451,7 +4451,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/advanced/sharepoint-knowledge-agent.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4478,7 +4478,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/commercial-legal/back-charge-drafter.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4505,7 +4505,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/commercial-legal/change-order-assistant.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4532,7 +4532,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/commercial-legal/claims-register-manager.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4559,7 +4559,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/commercial-legal/compliance-checklist-builder.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4586,7 +4586,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/commercial-legal/contract-language-simplifier.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4613,7 +4613,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/commercial-legal/document-validation-agent.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4640,7 +4640,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/commercial-legal/incident-communication-drafter.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4667,7 +4667,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/commercial-legal/nda-agreement-summariser.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4694,7 +4694,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/commercial-legal/policy-summariser.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4721,7 +4721,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/commercial-legal/procurement-vendor-assessment-agent.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4748,7 +4748,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/commercial-legal/tender-response-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4775,7 +4775,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/customer-success/customer-onboarding-agent.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4802,7 +4802,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/customer-success/customer-response-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4829,7 +4829,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/customer-success/escalation-handler.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4856,7 +4856,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/esg/carbon-footprint-narrative-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4883,7 +4883,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/esg/esg-commitment-tracker.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4910,7 +4910,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/esg/esg-report-section-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4937,7 +4937,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/esg/materiality-assessment-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4964,7 +4964,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/finance/board-paper-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -4991,7 +4991,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/finance/budget-justification-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5018,7 +5018,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/finance/budget-variance-analyst.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5045,7 +5045,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/finance/financial-report-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5072,7 +5072,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/finance/kpi-commentary-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5099,7 +5099,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/hr-people/employee-onboarding-guide.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5126,7 +5126,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/hr-people/exit-interview-analyser.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5153,7 +5153,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/hr-people/interview-question-builder.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5180,7 +5180,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/hr-people/job-description-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5207,7 +5207,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/hr-people/org-announcement-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5234,7 +5234,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/hr-people/performance-coach.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5261,7 +5261,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/hr-people/probation-review-assistant.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5288,7 +5288,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/hr-people/redundancy-communication-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5315,7 +5315,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/industry/epc-energy/README.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5342,7 +5342,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/it-ops/change-incident-correlator.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5369,7 +5369,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/it-ops/change-request-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5396,7 +5396,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/it-ops/incident-report-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5423,7 +5423,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/it-ops/it-request-scoper.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5450,7 +5450,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/it-ops/it-self-service-agent.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5477,7 +5477,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/it-ops/problem-pattern-detector.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5504,7 +5504,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/it-ops/runbook-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5531,7 +5531,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/it-ops/security-risk-communicator.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5558,7 +5558,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/learning-development/assessment-question-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5585,7 +5585,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/learning-development/course-outline-builder.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5612,7 +5612,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/learning-development/learning-objective-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5639,7 +5639,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/learning-development/training-needs-analyser.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5666,7 +5666,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/productivity/copilot-prompt-coach.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5693,7 +5693,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/project-management/action-register-tracker.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5720,7 +5720,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/project-management/document-reviewer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5747,7 +5747,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/project-management/lessons-learned-manager.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5774,7 +5774,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/project-management/meeting-pre-brief-builder.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5801,7 +5801,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/project-management/presentation-builder.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5828,7 +5828,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/project-management/project-charter-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5855,7 +5855,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/project-management/project-closure-report-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5882,7 +5882,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/project-management/project-status-reporter.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5909,7 +5909,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/project-management/raid-log-manager.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5936,7 +5936,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/project-management/risk-register-manager.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5963,7 +5963,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/project-management/scope-of-work-drafter.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -5990,7 +5990,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/sales/account-plan-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6017,7 +6017,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/sales/competitive-intelligence-brief.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6044,7 +6044,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/sales/customer-case-study-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6071,7 +6071,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/sales/partnership-proposal-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6098,7 +6098,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/sales/pipeline-review-preparer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6125,7 +6125,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/sales/rfp-response-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6152,7 +6152,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/sales/sales-email-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6179,7 +6179,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/sales/win-loss-analyser.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6206,7 +6206,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/strategy-executive/board-report-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6233,7 +6233,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/strategy-executive/executive-decision-brief.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6260,7 +6260,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/strategy-executive/okr-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6287,7 +6287,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/strategy-executive/strategic-plan-structurer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6314,7 +6314,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/writing-communication/ai-text-humanizer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6341,7 +6341,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/writing-communication/brand-voice-enforcer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6368,7 +6368,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/writing-communication/enterprise-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6395,7 +6395,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/writing-communication/executive-briefing-builder.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6422,7 +6422,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/writing-communication/meeting-scribe.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6449,7 +6449,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/writing-communication/professional-translator-en-fr.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6476,7 +6476,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/writing-communication/tone-calibrator.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -6505,7 +6505,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6532,7 +6532,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-workflows-in-microsoft-365-copilot",
       "notes": ""
@@ -6559,7 +6559,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6586,7 +6586,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6613,7 +6613,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6640,7 +6640,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6667,7 +6667,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6694,7 +6694,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6721,7 +6721,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6748,7 +6748,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/researcher-agent",
       "notes": ""
@@ -6775,7 +6775,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Restringir sites, credenciais, ambiente virtual e acoes sensiveis.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://support.microsoft.com/en-gb/topic/get-started-using-researcher-with-computer-use-in-microsoft-365-copilot-frontier-1f274537-6648-46e8-8264-052a49b92af4",
       "notes": ""
@@ -6802,7 +6802,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6829,7 +6829,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -6856,7 +6856,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6883,7 +6883,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6910,7 +6910,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6937,7 +6937,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6964,7 +6964,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -6991,7 +6991,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7018,7 +7018,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -7045,7 +7045,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7072,7 +7072,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -7099,7 +7099,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Copilot Blog - Agents plus workflows",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/automate-business-processes-with-agents-plus-workflows-in-microsoft-copilot-studio/",
       "notes": ""
@@ -7126,7 +7126,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/explore-agents-pre-built-for-you-in-microsoft-copilot-studio/",
       "notes": ""
@@ -7153,7 +7153,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Customer Story - Manchester City Council",
       "url": "https://www.microsoft.com/en/customers/story/26194-manchester-city-council-microsoft-365-copilot",
       "notes": ""
@@ -7180,7 +7180,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Copilot Blog - Agents plus workflows",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/automate-business-processes-with-agents-plus-workflows-in-microsoft-copilot-studio/",
       "notes": ""
@@ -7207,7 +7207,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -7234,7 +7234,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -7261,7 +7261,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "GitHub - Awesome Copilot Studio Agents",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents/blob/main/agents/writing-communication/enterprise-writer.md",
       "notes": "Fonte comunitaria; validar seguranca, licenca de uso, tom e aderencia antes de implantar."
@@ -7288,7 +7288,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -7315,7 +7315,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/03/25/introducing-researcher-and-analyst-in-microsoft-365-copilot/",
       "notes": ""
@@ -7342,7 +7342,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://adoption.microsoft.com/en-us/ai-agents/templates-and-examples/",
       "notes": ""
@@ -7369,7 +7369,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -7396,7 +7396,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -7423,7 +7423,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Adoption/Learn templates",
       "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/microsoft-365/Copilot-Studio-Licensing-Guide.pdf",
       "notes": ""
@@ -7450,7 +7450,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Reddit - Dynamics 365 practical Copilot examples",
       "url": "https://www.reddit.com/r/Dynamics365/comments/1rg0e8w/for_those_using_microsoft_dynamics_365_business/",
       "notes": ""
@@ -7477,7 +7477,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -7504,7 +7504,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -7531,7 +7531,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Microsoft Customer Story - Graebel",
       "url": "https://www.microsoft.com/en/customers/story/26190-graebel-dynamics-365-finance",
       "notes": ""
@@ -7558,7 +7558,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Reddit - agentes acionaveis em Copilot Studio",
       "url": "https://www.reddit.com/r/copilotstudio/comments/1skornl/any_makes_build_real_actionable_process_solutions/",
       "notes": ""
@@ -7587,7 +7587,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta",
-      "trainingScore": "4",
+      "trainingScore": 4,
       "source": "Reddit - Cowork Project Second Brain",
       "url": "https://www.reddit.com/r/microsoft_365_copilot/comments/1tkio2o/i_track_every_active_project_with_copilot_cowork/",
       "notes": ""
@@ -7614,7 +7614,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7641,7 +7641,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7668,7 +7668,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7695,7 +7695,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7722,7 +7722,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7749,7 +7749,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7776,7 +7776,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7803,7 +7803,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7830,7 +7830,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7857,7 +7857,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7884,7 +7884,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7911,7 +7911,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7938,7 +7938,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7965,7 +7965,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -7992,7 +7992,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -8019,7 +8019,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Alta - demo diferenciada",
-      "trainingScore": "5",
+      "trainingScore": 5,
       "source": "Microsoft 365 Blog - Copilot Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
       "notes": ""
@@ -8046,7 +8046,7 @@
       "governance": "Permissoes por usuario, DLP, registro de fontes, avaliacao de qualidade e aprovacao para write-back. Definir quem pode usar Frontier, plugins permitidos e quando aplicar Approve/Remember.",
       "kpi": "Tempo economizado, taxa de retrabalho, SLA, escalacoes evitadas e qualidade da decisao.",
       "priority": "Media",
-      "trainingScore": "3",
+      "trainingScore": 3,
       "source": "Sintese operacional derivada de padroes encontrados na pesquisa",
       "url": "",
       "notes": ""
@@ -8055,230 +8055,230 @@
   "sourceCatalog": [
     {
       "source": "Microsoft Support - Copilot Chat com e sem licenca",
-      "type": "Licenciamento",
       "url": "https://support.microsoft.com/en-us/topic/what-can-i-do-with-microsoft-365-copilot-chat-61033adf-484d-45f5-a8c3-b89876963bd8",
+      "type": "Licenciamento",
       "notes": "Base para separar cenarios sem add-on, com add-on e acesso a agentes avancados."
     },
     {
       "source": "Microsoft 365 Blog - Copilot Cowork",
-      "type": "Cowork",
       "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
+      "type": "Cowork",
       "notes": "Exemplos oficiais de Cowork: agenda, pacote de reuniao, pesquisa de empresa e plano de lancamento."
     },
     {
       "source": "Microsoft Learn - Administrar Copilot Cowork",
-      "type": "Cowork/Governanca",
       "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance",
+      "type": "Cowork/Governanca",
       "notes": "Disponibilidade Frontier, Agent Store, deploy, pin, plugins, Agent 365 e seguranca."
     },
     {
       "source": "Microsoft Learn - What's new in Cowork",
-      "type": "Cowork/Frontier",
       "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/whats-new",
+      "type": "Cowork/Frontier",
       "notes": "Atualizacoes recentes do Cowork no programa Frontier, util para separar demo, preview e disponibilidade."
     },
     {
       "source": "Microsoft Learn - Copilot Cowork overview",
-      "type": "Cowork",
       "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/cowork/",
+      "type": "Cowork",
       "notes": "Visao operacional do Cowork: envia emails, agenda reunioes, cria documentos, posta no Teams e busca dados organizacionais com checkpoints."
     },
     {
       "source": "Microsoft Mechanics - Claude + GPT multi-model Copilot",
-      "type": "Video/TechCommunity",
       "url": "https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/claude--gpt--multi-model-intelligence-in%C2%A0copilot/4509773",
+      "type": "Video/TechCommunity",
       "notes": "Video com Cowork gerando briefing, apresentacao e Excel a partir de Work IQ, com uso de modelos Claude e GPT."
     },
     {
       "source": "Teams Insider - Copilot Cowork explained",
-      "type": "Podcast/Video",
       "url": "https://www.teamsinsider.show/2111467/episodes/19088676-microsoft-365-copilot-cowork-explained-with-bas-brekelmans-software-engineer-at-microsoft",
+      "type": "Podcast/Video",
       "notes": "Discussao tecnica sobre arquitetura e casos de uso de Microsoft 365 Copilot Cowork."
     },
     {
       "source": "HubSite365 - Copilot Cowork 5 use cases",
-      "type": "Video recap",
       "url": "https://www.hubsite365.com/en-ww/crm-pages/copilot-cowork-in-microsoft-365-five-powerful-use-cases-to-automate-your-work.htm",
+      "type": "Video recap",
       "notes": "Resumo de video com fluxos praticos de automacao no Cowork em Microsoft 365."
     },
     {
       "source": "Microsoft Learn - Agent Builder",
-      "type": "Agent Builder",
       "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/copilot-studio-agent-builder-build",
+      "type": "Agent Builder",
       "notes": "Como criar agentes declarativos por linguagem natural, conhecimento, capacidades e templates."
     },
     {
       "source": "Microsoft Adoption - Agent templates and examples",
-      "type": "Templates oficiais",
       "url": "https://adoption.microsoft.com/en-us/ai-agents/templates-and-examples/",
+      "type": "Templates oficiais",
       "notes": "Galeria de templates oficiais e exemplos: Customer Insights, RFP, Job Description, Product Assistant e outros."
     },
     {
       "source": "Microsoft Learn - Copilot Studio reference architectures",
-      "type": "Arquiteturas",
       "url": "https://learn.microsoft.com/en-us/power-platform/architecture/products/copilot-studio",
+      "type": "Arquiteturas",
       "notes": "Ideias de solucao: patient support, property rental portal, contact center, travel concierge, ticket management, bug triage, cardiac triage, anomaly detection."
     },
     {
       "source": "Microsoft Copilot Blog - Agents plus workflows",
-      "type": "Copilot Studio/Workflows",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/automate-business-processes-with-agents-plus-workflows-in-microsoft-copilot-studio/",
+      "type": "Copilot Studio/Workflows",
       "notes": "Padrao 2026 de agentes que decidem e chamam workflows: onboarding RH, refund, procurement e execucao com regras deterministicas."
     },
     {
       "source": "Microsoft Learn - Copilot Tuning Optimization Agent Template",
-      "type": "Frontier/Optimization",
       "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-tuning-optimization-template",
+      "type": "Frontier/Optimization",
       "notes": "Template early access para problemas de otimizacao especificos da organizacao, como minimizar custos de viagem em atribuicoes de vendas."
     },
     {
       "source": "Microsoft Adoption - Scenario Library Finance",
-      "type": "Cenarios funcionais",
       "url": "https://adoption.microsoft.com/en-us/scenario-library/finance/",
+      "type": "Cenarios funcionais",
       "notes": "Financeiro: anomaly spend, invoice exception, collections, balance reconciliation, business case."
     },
     {
       "source": "Microsoft Customer Story - Verdantas",
-      "type": "Customer story",
       "url": "https://www.microsoft.com/en/customers/story/26233-verdantas-microsoft-copilot-studio",
+      "type": "Customer story",
       "notes": "Agentes para proposal development, contract risk e busca tecnica com SQL, SharePoint, Workday, Deltek e ServiceNow."
     },
     {
       "source": "Microsoft Customer Story - CSX",
-      "type": "Customer story",
       "url": "https://www.microsoft.com/en/customers/story/24556-csx-microsoft-copilot-studio",
+      "type": "Customer story",
       "notes": "Assistente ShipCSX com tracking de carga, validacao de usuario, abertura de casos e multi-agent supervision."
     },
     {
       "source": "Microsoft Customer Story - Manchester City Council",
-      "type": "Customer story",
       "url": "https://www.microsoft.com/en/customers/story/26194-manchester-city-council-microsoft-365-copilot",
+      "type": "Customer story",
       "notes": "Contact center com SharePoint/Copilot Studio e classificacao de buracos por IA."
     },
     {
       "source": "Microsoft Customer Story - HEINEKEN",
-      "type": "Customer story",
       "url": "https://www.microsoft.com/en/customers/story/25909-heineken-microsoft-copilot-studio/",
+      "type": "Customer story",
       "notes": "PowerBot, validacao de trade terms em supply chain e agentes externos com handoff."
     },
     {
       "source": "Microsoft Customer Story - Premera Blue Cross",
-      "type": "Customer story",
       "url": "https://www.microsoft.com/en/customers/story/26405-premera-blue-cross-microsoft-365",
+      "type": "Customer story",
       "notes": "Governanca, 900 agentes, contrato de 30-45 min para cerca de 3 min, agentes de clareza e comunicacao."
     },
     {
       "source": "Microsoft Customer Story - Ask Microsoft",
-      "type": "Customer story",
       "url": "https://www.microsoft.com/en/customers/story/26166-microsoft-microsoft-copilot-studio/",
+      "type": "Customer story",
       "notes": "Web agent com subagentes por produto/preco/trial, queda de latencia e reducao de escalacao humana."
     },
     {
       "source": "Microsoft Customer Story - mobilezone",
-      "type": "Customer story",
       "url": "https://www.microsoft.com/en/customers/story/26389-mobilezone-dynamics-365-customer-service",
+      "type": "Customer story",
       "notes": "Agente externo de atendimento e agente interno de service desk com suporte multilingue e Dynamics 365."
     },
     {
       "source": "Microsoft Customer Story - Unifi",
-      "type": "Customer story",
       "url": "https://www.microsoft.com/en/customers/story/26265-unifi-microsoft-copilot-studio",
+      "type": "Customer story",
       "notes": "Sistema multi-stage para processar e analisar contratos complexos, busca legal em M365 Copilot."
     },
     {
       "source": "Microsoft Customer Story - Coca-Cola Andina",
-      "type": "Customer story",
       "url": "https://www.microsoft.com/en/customers/story/26256-coca-cola-andina-microsoft-copilot-studio",
+      "type": "Customer story",
       "notes": "Agente de RH personalizado por funcionario e beneficios."
     },
     {
       "source": "Microsoft Customer Story - Graebel",
-      "type": "Customer story",
       "url": "https://www.microsoft.com/en/customers/story/26190-graebel-dynamics-365-finance",
+      "type": "Customer story",
       "notes": "Finance, invoice processing, knowledge retrieval e tarefas em sistemas legados."
     },
     {
       "source": "Microsoft Retail - Agentic AI capabilities",
-      "type": "Retail templates",
       "url": "https://news.microsoft.com/source/2026/01/08/microsoft-propels-retail-forward-with-agentic-ai-capabilities-that-power-intelligent-automation-for-every-retail-function/",
+      "type": "Retail templates",
       "notes": "Store Operations, Personalized Shopping, Catalog Enrichment e Brand Agents."
     },
     {
       "source": "Microsoft Learn - Payables Agent Business Central",
-      "type": "Dynamics 365/ERP",
       "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent",
+      "type": "Dynamics 365/ERP",
       "notes": "Agente de contas a pagar que monitora mailbox, analisa faturas de fornecedores e prepara drafts para revisao de supervisores."
     },
     {
       "source": "Microsoft Learn - Business Central 2026 wave 1",
-      "type": "Dynamics 365/ERP",
       "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/",
+      "type": "Dynamics 365/ERP",
       "notes": "Wave 1 2026 avanca agentes autonomos no ERP, incluindo Payables Agent e automacoes de processos de compra/venda com supervisao humana."
     },
     {
       "source": "Microsoft Learn - Dynamics 365 Sales AI agents",
-      "type": "Dynamics 365 Sales",
       "url": "https://learn.microsoft.com/en-us/dynamics365/sales/ai-agent-overview",
+      "type": "Dynamics 365 Sales",
       "notes": "Visao dos agentes de vendas, incluindo Sales Research Agent conectado a dados de CRM para perguntas complexas e insights acionaveis."
     },
     {
       "source": "Reddit - agentes acionaveis em Copilot Studio",
-      "type": "Forum",
       "url": "https://www.reddit.com/r/copilotstudio/comments/1skornl/any_makes_build_real_actionable_process_solutions/",
+      "type": "Forum",
       "notes": "Exemplos praticos: invoice OCR, logistics assistant com API, monitor de pasta, large dataset handler."
     },
     {
       "source": "Reddit - 5 agentes Copilot Studio com demos",
-      "type": "Forum/Video",
       "url": "https://www.reddit.com/r/copilotstudio/comments/1tjimol/built_5_copilot_studio_agents_that_solve_real/",
+      "type": "Forum/Video",
       "notes": "Post recente com cinco agentes de problemas reais e demos ao vivo com entrada, processo e saida."
     },
     {
       "source": "Reddit - Invoice flow end-to-end",
-      "type": "Forum",
       "url": "https://www.reddit.com/r/copilotstudio/comments/1t4dge5/built_a_copilot_studio_flow_that_processes/",
+      "type": "Forum",
       "notes": "Fluxo completo de faturas por email: OCR, extracao IA, saida estruturada, roteamento de erro e aprovacoes."
     },
     {
       "source": "Reddit - 5 agentes e regras de design",
-      "type": "Forum",
       "url": "https://www.reddit.com/r/microsoft_365_copilot/comments/1teyxfu/ive_been_building_copilot_studio_agents_for/",
+      "type": "Forum",
       "notes": "Discussao sobre agentes menos obvios, incluindo validacao documental comercial/juridica e desenho operacional."
     },
     {
       "source": "Reddit - 71 agentes Copilot Studio",
-      "type": "Forum",
       "url": "https://www.reddit.com/r/microsoft_365_copilot/comments/1s2mnut/i_built_71_copilot_studio_agents_ready_to_paste/",
+      "type": "Forum",
       "notes": "Lista comunitaria grande de agentes prontos para adaptar e priorizar em treinamentos."
     },
     {
       "source": "Reddit - Cowork Project Second Brain",
-      "type": "Forum/Cowork",
       "url": "https://www.reddit.com/r/microsoft_365_copilot/comments/1tkio2o/i_track_every_active_project_with_copilot_cowork/",
+      "type": "Forum/Cowork",
       "notes": "Relato recente de uso de Cowork para acompanhar projetos ativos com emails, Teams, reunioes e arquivos reais."
     },
     {
       "source": "Reddit - Dynamics 365 practical Copilot examples",
-      "type": "Forum/Dynamics",
       "url": "https://www.reddit.com/r/Dynamics365/comments/1rg0e8w/for_those_using_microsoft_dynamics_365_business/",
+      "type": "Forum/Dynamics",
       "notes": "Discussao pratica sobre Sales Order Agent, Expense Report Agent, Reconciliation Agent e sidecar de documentacao interna em D365/Business Central."
     },
     {
       "source": "UsageBox - Autonomous Invoice Intake Agent",
-      "type": "Implementacao",
       "url": "https://usagebox.com/articles/autonomous-invoice-intake-agent/",
+      "type": "Implementacao",
       "notes": "Exemplo detalhado de agente autonomo de intake de faturas com Copilot Studio, AI Builder e Computer Use."
     },
     {
       "source": "Copilot Developer Camp - Autonomous Agents lab",
-      "type": "Lab",
       "url": "https://microsoft.github.io/copilot-camp/pages/make/copilot-studio/07-autonomous/",
+      "type": "Lab",
       "notes": "Laboratorio de agente autonomo que monitora biblioteca SharePoint, extrai dados de PDFs e cria registros por MCP."
     },
     {
       "source": "GitHub - Awesome Copilot Studio Agents",
-      "type": "Comunidade",
       "url": "https://github.com/kesslernity/awesome-copilot-studio-agents",
+      "type": "Comunidade",
       "notes": "Biblioteca comunitaria de agentes prontos para adaptar por area."
     }
   ],

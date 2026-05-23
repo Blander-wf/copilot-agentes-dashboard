@@ -1,6 +1,11 @@
 # Dashboard de Agentes Copilot
 
-Dashboard estatico para publicar no GitHub Pages.
+Dashboard estatico para publicar no GitHub Pages, com modo local seguro para login e administracao.
+
+## Modos de uso
+
+- **GitHub Pages:** publico e read-only. Ideal para consulta e apresentacao.
+- **Servidor local:** protegido por login, com perfis `admin` e `usuario`. Use para cadastrar novos agentes e testar mudancas antes de publicar.
 
 ## Publicar no GitHub Pages
 
@@ -35,3 +40,28 @@ Tambem existem:
 ## Atualizacao automatica no GitHub
 
 A pasta `.github/workflows` inclui um workflow que regenera `data/catalogo-agentes-data.json` quando os CSVs mudarem. Para ele conseguir commitar o JSON atualizado, deixe o repositorio com permissao de escrita para GitHub Actions em Settings > Actions > General > Workflow permissions.
+
+## Login e administracao local
+
+Gere credenciais:
+
+```bash
+node scripts/setup-local-auth.mjs
+```
+
+Rode o servidor local:
+
+```bash
+node server.mjs
+```
+
+Abra:
+
+```text
+http://127.0.0.1:8787/
+```
+
+Documentacao detalhada:
+
+- `docs/LOCAL_TESTING.md`
+- `docs/SECURITY_REVIEW.md`

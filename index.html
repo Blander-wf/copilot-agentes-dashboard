@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-store, max-age=0">
+  <meta http-equiv="Pragma" content="no-cache">
   <title>Dashboard de Agentes Copilot</title>
   <style>
     :root {
@@ -470,6 +472,47 @@
       background: linear-gradient(135deg, var(--teal), #74e8d5);
       border-color: rgba(41, 211, 189, 0.95);
     }
+    .focus-mode-switch {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      position: fixed;
+      top: 112px;
+      right: 36px;
+      z-index: 95;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: rgba(8, 12, 16, 0.92);
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.42);
+      backdrop-filter: blur(12px);
+    }
+    .detail-focus .focus-mode-switch {
+      display: flex;
+    }
+    .focus-mode-switch span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 760;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0 4px;
+    }
+    .focus-mode-switch button {
+      border: 1px solid var(--line);
+      background: rgba(12, 17, 22, 0.94);
+      color: #d8e5eb;
+      border-radius: 6px;
+      min-height: 31px;
+      padding: 6px 9px;
+      font-size: 12px;
+      font-weight: 760;
+    }
+    .focus-mode-switch button.active {
+      color: #071113;
+      background: linear-gradient(135deg, var(--teal), #74e8d5);
+      border-color: rgba(41, 211, 189, 0.95);
+    }
     .detail-actions {
       display: flex;
       gap: 7px;
@@ -833,6 +876,13 @@
       .flow-arrow { transform: rotate(90deg); min-height: 10px; }
       .signal-grid { grid-template-columns: 1fr; }
       .view-toggle { min-width: 0; width: 100%; }
+      .focus-mode-switch {
+        left: 10px;
+        right: 10px;
+        top: auto;
+        bottom: 12px;
+        justify-content: center;
+      }
       .detail-bottom .detail,
       .detail-focus .detail {
         grid-column: 1 / -1;
@@ -855,7 +905,7 @@
   <header class="topbar">
     <div>
       <h1>Dashboard de Agentes Copilot</h1>
-      <div class="subtitle">Catalogo operacional para demos, treinamentos e selecao de pilotos - 2026-05-23</div>
+      <div class="subtitle">Catalogo operacional para demos, treinamentos e selecao de pilotos - 2026-05-23 - build 23/05/2026, 13:41:55</div>
     </div>
     <div class="metrics" aria-label="Indicadores">
       <div class="metric"><strong id="mTotal">0</strong><span>agentes</span></div>
@@ -993,6 +1043,12 @@
       <div class="panel-body" id="detailBody"></div>
     </aside>
   </main>
+  <div class="focus-mode-switch" id="focusModeSwitch" aria-label="Trocar posicao de leitura">
+    <span>Leitura</span>
+    <button type="button" data-focus-mode="side">Lateral</button>
+    <button type="button" data-focus-mode="bottom">Inferior</button>
+    <button type="button" data-focus-mode="focus">Foco</button>
+  </div>
   <div class="toast" id="toast"></div>
 
   <script>
@@ -1090,6 +1146,11 @@
       document.querySelectorAll("#detailModeButtons button").forEach(function(button) {
         button.addEventListener("click", function() {
           setDetailMode(button.dataset.detailMode);
+        });
+      });
+      document.querySelectorAll("#focusModeSwitch button").forEach(function(button) {
+        button.addEventListener("click", function() {
+          setDetailMode(button.dataset.focusMode);
         });
       });
       document.querySelectorAll(".tabs button").forEach(function(button) {
@@ -1385,7 +1446,7 @@
       localStorage.setItem("copilotAgentDetailMode", state.detailMode);
       applyDetailMode();
       renderDetail(rows.find(function(row) { return row.id === state.selectedId; }));
-      scrollDetailIntoView();
+      scrollDetailIntoView("auto");
     }
 
     function applyDetailMode() {
@@ -1393,6 +1454,9 @@
       document.body.classList.toggle("detail-focus", state.detailMode === "focus");
       document.querySelectorAll("#detailModeButtons button").forEach(function(button) {
         button.classList.toggle("active", button.dataset.detailMode === state.detailMode);
+      });
+      document.querySelectorAll("#focusModeSwitch button").forEach(function(button) {
+        button.classList.toggle("active", button.dataset.focusMode === state.detailMode);
       });
       const hints = {
         side: "Lateral: ideal para triagem rapida enquanto compara a lista.",
@@ -1402,11 +1466,20 @@
       if (el("readingHint")) el("readingHint").textContent = hints[state.detailMode] || hints.side;
     }
 
-    function scrollDetailIntoView() {
+    function scrollDetailIntoView(behavior) {
       if (state.detailMode !== "bottom") return;
       requestAnimationFrame(function() {
-        const panel = document.querySelector(".detail");
-        if (panel) panel.scrollIntoView({ behavior: "smooth", block: "start" });
+        requestAnimationFrame(function() {
+          const move = function() {
+            const panel = document.querySelector(".detail");
+            if (!panel) return;
+            const top = Math.max(0, panel.getBoundingClientRect().top + window.scrollY - 118);
+            if (behavior === "auto") window.scrollTo(0, top);
+            else window.scrollTo({ top: top, behavior: "smooth" });
+          };
+          move();
+          setTimeout(move, 80);
+        });
       });
     }
 

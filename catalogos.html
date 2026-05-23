@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalogos Copilot</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #05090d;
+      --panel: #0c141c;
+      --panel2: #101b24;
+      --text: #effaf8;
+      --muted: #9eb5bd;
+      --line: #213845;
+      --accent: #4bd8c2;
+      --warm: #ffbf63;
+      --blue: #7cb7ff;
+      --red: #ff7d8f;
+      --shadow: 0 24px 70px rgba(0,0,0,.38);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font: 14px/1.5 Inter, Segoe UI, Arial, sans-serif;
+      background:
+        linear-gradient(rgba(255,255,255,.024) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.024) 1px, transparent 1px),
+        radial-gradient(circle at 20% 0%, rgba(75,216,194,.18), transparent 32%),
+        linear-gradient(180deg, #071017, #05090d 64%);
+      background-size: 32px 32px, 32px 32px, auto, auto;
+      letter-spacing: 0;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 22px 40px; }
+    header { display: grid; gap: 18px; grid-template-columns: minmax(320px, 1fr) auto; align-items: start; margin-bottom: 22px; }
+    h1 { margin: 0; font-size: 32px; line-height: 1.1; }
+    .lead { margin: 10px 0 0; color: var(--muted); max-width: 760px; font-size: 16px; }
+    .nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: end; }
+    .nav a, .mini-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 8px 11px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.035);
+      border-radius: 8px;
+      font-weight: 800;
+    }
+    .nav a.active { background: var(--accent); color: #06201d; border-color: transparent; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      background: rgba(12,20,28,.88);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      min-width: 0;
+    }
+    .intro { padding: 22px; }
+    .intro h2, .section h2 { margin: 0 0 10px; font-size: 16px; text-transform: uppercase; letter-spacing: .05em; }
+    .intro-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+    .choice {
+      display: grid;
+      gap: 6px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.035);
+      border-radius: 8px;
+    }
+    .choice b { color: var(--accent); }
+    .choice span { color: var(--muted); font-size: 13px; }
+    .scoreboard { padding: 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .stat { border: 1px solid var(--line); border-radius: 8px; padding: 13px; background: rgba(255,255,255,.035); }
+    .stat b { display: block; color: var(--accent); font-size: 26px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    .catalogs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 14px; }
+    .catalog { padding: 18px; display: grid; gap: 14px; }
+    .catalog h2 { margin: 0; font-size: 22px; }
+    .catalog p { margin: 0; color: var(--muted); }
+    .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+    .chip { border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 5px 8px; font-size: 12px; font-weight: 800; }
+    .chip.hot { background: var(--warm); color: #241601; border-color: transparent; }
+    .chip.cool { background: rgba(75,216,194,.14); color: var(--accent); border-color: rgba(75,216,194,.34); }
+    .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    .button { display: inline-flex; align-items: center; min-height: 40px; border-radius: 8px; padding: 10px 12px; font-weight: 900; border: 1px solid var(--line); }
+    .button.primary { background: var(--accent); color: #06201d; border-color: transparent; }
+    .button.secondary { background: rgba(255,255,255,.04); }
+    .section { padding: 18px; margin-bottom: 14px; }
+    .routes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+    .route { border: 1px solid var(--line); background: rgba(255,255,255,.035); border-radius: 8px; padding: 13px; display: grid; gap: 8px; }
+    .route strong { color: var(--text); }
+    .route span { color: var(--muted); font-size: 13px; }
+    .route a { color: var(--accent); font-weight: 900; }
+    .compare { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 8px; }
+    .compare th, .compare td { border-bottom: 1px solid var(--line); padding: 11px 12px; text-align: left; vertical-align: top; }
+    .compare th { color: var(--accent); font-size: 12px; text-transform: uppercase; background: rgba(75,216,194,.06); }
+    .compare td { color: var(--muted); }
+    .compare td:first-child { color: var(--text); font-weight: 800; }
+    @media (max-width: 980px) {
+      header, .hero, .catalogs, .routes { grid-template-columns: 1fr; }
+      .nav { justify-content: start; }
+      .scoreboard, .intro-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 560px) {
+      .scoreboard, .intro-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 26px; }
+      .wrap { padding: 18px 12px 28px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Catálogos Copilot</h1>
+        <p class="lead">Uma entrada mais simples para treinamento: escolha se o usuario quer encontrar um agente operacional, criar um ritual recorrente ou comecar com exemplos sem add-on.</p>
+      </div>
+      <nav class="nav" aria-label="Catalogos">
+        <a class="active" href="catalogos.html">Inicio guiado</a>
+        <a href="index.html">Agentes</a>
+        <a href="prompts-agendados.html">Prompts recorrentes</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="panel intro">
+        <h2>Por onde comecar?</h2>
+        <div class="intro-grid">
+          <a class="choice" href="prompts-agendados.html">
+            <b>Usuario novo no Copilot</b>
+            <span>Comece com briefing diario, triagem, resumo semanal e prompts com arquivos.</span>
+          </a>
+          <a class="choice" href="index.html">
+            <b>Area quer uma demo</b>
+            <span>Use agentes por area, complexidade, KPI, fonte e tipo de Copilot.</span>
+          </a>
+          <a class="choice" href="prompts-agendados.html">
+            <b>Sem add-on ou piloto simples</b>
+            <span>Use rituais manuais com arquivos, planilhas, PDFs e transcricoes.</span>
+          </a>
+          <a class="choice" href="index.html">
+            <b>Processo com acao real</b>
+            <span>Procure Copilot Studio, Workflows, APIs, Planner, Dataverse e Cowork.</span>
+          </a>
+        </div>
+      </div>
+      <div class="panel scoreboard" aria-label="Resumo dos catalogos">
+        <div class="stat"><b>370</b><span>agentes operacionais</span></div>
+        <div class="stat"><b>378</b><span>prompts recorrentes</span></div>
+        <div class="stat"><b>130</b><span>agentes sem conector</span></div>
+        <div class="stat"><b>90</b><span>prompts sem add-on</span></div>
+        <div class="stat"><b>180</b><span>prompts fora Microsoft</span></div>
+        <div class="stat"><b>216</b><span>prompts agendados nativos</span></div>
+      </div>
+    </section>
+
+    <section class="catalogs">
+      <article class="panel catalog">
+        <div>
+          <h2>Agentes operacionais</h2>
+          <p>Para escolher exemplos de agentes, demos por area, pilotos, Cowork, Copilot Studio e casos com ou sem conectores.</p>
+        </div>
+        <div class="chips">
+          <span class="chip cool">370 exemplos</span>
+          <span class="chip">45 fontes</span>
+          <span class="chip hot">130 sem conector</span>
+          <span class="chip">18 Cowork</span>
+        </div>
+        <div class="actions">
+          <a class="button primary" href="index.html">Abrir agentes</a>
+          <a class="button secondary" href="index.html#top">Buscar por area</a>
+        </div>
+      </article>
+      <article class="panel catalog">
+        <div>
+          <h2>Prompts recorrentes</h2>
+          <p>Para criar habito de uso diario/semanal: briefing matinal, status de projeto, triagem, follow-up e rotinas com arquivos.</p>
+        </div>
+        <div class="chips">
+          <span class="chip cool">378 prompts</span>
+          <span class="chip">24 fontes</span>
+          <span class="chip hot">180 fora Microsoft</span>
+          <span class="chip">216 agendados</span>
+        </div>
+        <div class="actions">
+          <a class="button primary" href="prompts-agendados.html">Abrir prompts</a>
+          <a class="button secondary" href="prompts-agendados.html">Comecar sem add-on</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel section">
+      <h2>Rotas rapidas de treinamento</h2>
+      <div class="routes">
+        <div class="route">
+          <strong>Primeiros 15 minutos</strong>
+          <span>Mostre 1 prompt recorrente sem add-on e 1 briefing diario com M365 Copilot.</span>
+          <a href="prompts-agendados.html">Ver prompts</a>
+        </div>
+        <div class="route">
+          <strong>Workshop por area</strong>
+          <span>Filtre agentes por area, escolha top demos e discuta KPI, entrada, saida e governanca.</span>
+          <a href="index.html">Ver agentes</a>
+        </div>
+        <div class="route">
+          <strong>Usuarios resistentes</strong>
+          <span>Comece com arquivo anexado: comparar documentos, resumir transcricoes e analisar CSV.</span>
+          <a href="prompts-agendados.html">Ver rituais simples</a>
+        </div>
+        <div class="route">
+          <strong>Usuarios avancados</strong>
+          <span>Mostre quando sair de prompt para Workflow, Copilot Studio ou Cowork.</span>
+          <a href="index.html">Ver automacoes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel section">
+      <h2>Quando usar cada catalogo</h2>
+      <table class="compare">
+        <thead>
+          <tr><th>Necessidade do usuario</th><th>Melhor caminho</th><th>Motivo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Quero comecar a usar Copilot todo dia</td><td>Prompts recorrentes</td><td>Menos friccao, valor rapido e habito de uso.</td></tr>
+          <tr><td>Quero um exemplo para uma area especifica</td><td>Agentes operacionais</td><td>Mostra processo, entrada, sistema, acao, saida e KPI.</td></tr>
+          <tr><td>Nao tenho add-on ou conectores prontos</td><td>Prompts recorrentes + agentes sem conector</td><td>Funciona com arquivos, PDFs, planilhas, transcricoes e prompts manuais.</td></tr>
+          <tr><td>Preciso enviar, registrar, criar tarefa ou atualizar sistema</td><td>Agentes operacionais</td><td>Exige Workflow, Copilot Studio, API, Dataverse, Planner ou governanca de execucao.</td></tr>
+          <tr><td>Preciso delegar um pacote de trabalho</td><td>Agentes operacionais + Cowork</td><td>Mais adequado para plano, checkpoints, artefatos e aprovacao humana.</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

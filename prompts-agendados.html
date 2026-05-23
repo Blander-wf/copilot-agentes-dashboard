@@ -48,6 +48,26 @@
     .brand { display: flex; flex-direction: column; min-width: 240px; }
     .brand strong { font-size: 18px; }
     .brand span { color: var(--muted); font-size: 12px; }
+    .catalog-switch { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .catalog-switch a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 7px 10px;
+      border: 1px solid var(--line2);
+      border-radius: 7px;
+      color: var(--text);
+      background: rgba(255,255,255,.035);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .catalog-switch a.active {
+      background: var(--accent);
+      border-color: transparent;
+      color: #06201d;
+    }
+    .catalog-switch a:hover { border-color: var(--accent); }
     .kpis { display: grid; grid-template-columns: repeat(6, minmax(120px, 1fr)); gap: 8px; flex: 1; }
     .kpi { border: 1px solid var(--line); background: rgba(16,26,35,.78); padding: 9px 11px; border-radius: 8px; min-width: 0; }
     .kpi b { display: block; font-size: 18px; color: var(--accent); }
@@ -178,6 +198,11 @@
       <div class="brand">
         <strong>Prompts recorrentes para Copilot</strong>
         <span>Rituais diarios, semanais e mensais para criar habito antes de agentes complexos</span>
+        <nav class="catalog-switch" aria-label="Catalogos">
+          <a href="catalogos.html">Inicio guiado</a>
+          <a href="index.html">Agentes operacionais</a>
+          <a href="prompts-agendados.html" class="active">Prompts recorrentes</a>
+        </nav>
       </div>
       <div class="kpis">
         <div class="kpi"><b id="kTotal">0</b><span>prompts</span></div>

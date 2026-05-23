@@ -57,6 +57,33 @@
       color: var(--muted);
       font-size: 13px;
     }
+    .catalog-switch {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 11px;
+    }
+    .catalog-switch a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      color: var(--ink);
+      background: var(--surface);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 760;
+    }
+    .catalog-switch a.active {
+      color: #05201d;
+      background: #4bd8c2;
+      border-color: #4bd8c2;
+    }
+    .catalog-switch a:hover {
+      border-color: #4bd8c2;
+    }
     .metrics {
       display: grid;
       grid-template-columns: repeat(5, minmax(84px, 1fr));
@@ -905,7 +932,12 @@
   <header class="topbar">
     <div>
       <h1>Dashboard de Agentes Copilot</h1>
-      <div class="subtitle">Catalogo operacional para demos, treinamentos e selecao de pilotos - 2026-05-23 - build 23/05/2026, 14:41:06</div>
+      <div class="subtitle">Catalogo operacional para demos, treinamentos e selecao de pilotos - 2026-05-23 - build 23/05/2026, 15:13:30</div>
+      <nav class="catalog-switch" aria-label="Catalogos">
+        <a href="catalogos.html">Inicio guiado</a>
+        <a href="index.html" class="active">Agentes operacionais</a>
+        <a href="prompts-agendados.html">Prompts recorrentes</a>
+      </nav>
     </div>
     <div class="metrics" aria-label="Indicadores">
       <div class="metric"><strong id="mTotal">0</strong><span>agentes</span></div>

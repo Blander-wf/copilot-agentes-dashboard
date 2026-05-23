@@ -1,0 +1,9 @@
+scenario,recommended,why,warning
+So precisa responder com base em documentos publicos ou poucos arquivos,Agent Builder / declarative agent,"Mais rapido, bom para pilotos e champions.",Nao force processo complexo sem tools/flows.
+"Precisa usar emails, reunioes, Teams e arquivos do usuario",Microsoft 365 Copilot add-on + Agent Builder,Work grounding completo e melhor experiencia no fluxo do trabalho.,Revise permissoes e oversharing antes do rollout.
+"Precisa atualizar sistemas, criar tickets, enviar aprovacoes ou chamar API",Copilot Studio + Power Automate/API,Separa raciocinio generativo de execucao deterministica.,Defina claramente o que o agente decide e o que o fluxo executa.
+Precisa analisar dados tabulares ou planilhas complexas,Analyst + Copilot Studio quando houver acao,"Analyst e melhor para Python, forecasts e visualizacoes.",Nao carregue planilhas enormes no prompt; use filtros/Dataverse.
+Precisa pesquisar web + dados internos e gerar relatorio com fontes,Researcher,Melhor para tarefas multi-etapa com citacoes.,"Peça escopo, fontes preferidas e formato de saida."
+Precisa delegar trabalho multi-etapa que produz arquivos e segue em background,Copilot Cowork,"Plano, checkpoints e execucao em segundo plano.",Frontier/preview; pilote com grupos pequenos e approvals.
+Precisa navegar apps/sites como humano,Researcher/Computer Use ou Copilot Studio Computer Use,Adequado para UIs legadas sem API.,"Ambiente restrito, auditoria e acao sensivel sempre aprovada."
+Precisa processar documentos regulados/contratos críticos,Copilot Studio + AI Builder/Foundry + aprovacao humana,"Permite validacao, evidencias e trilha.",Nunca deixe decisao juridica/clinica final sem humano.

@@ -35,6 +35,17 @@ Casos tipicos:
 - criar scorecards, checklists, matrizes de decisao, briefings e roteiros de treinamento;
 - montar agentes simples em OneDrive, SharePoint ou Agent Builder com fontes limitadas.
 
+## Trilha de prompts recorrentes
+
+Tambem existe uma biblioteca separada para criar habito diario/semanal com Copilot antes de partir para agentes complexos:
+
+- `prompts-agendados.html`: dashboard estatico com filtros por area, cadencia, licenca, modo de execucao e dados usados.
+- `data/prompts-agendados.csv`: base editavel com os prompts.
+- `data/prompts-agendados-data.json`: base estruturada do dashboard.
+- `docs/PROMPTS_AGENDADOS.md`: metodologia, regra de licenciamento e fontes.
+
+A regra principal: **prompts agendados nativos exigem Microsoft 365 Copilot**. Para usuarios sem add-on, use lembretes recorrentes no Outlook/Teams/To Do com o prompt salvo e execute manualmente com arquivos anexados ou abertos.
+
 ## Publicar no GitHub Pages
 
 1. Crie um repositorio no GitHub.

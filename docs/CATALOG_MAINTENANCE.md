@@ -37,6 +37,22 @@ Bons exemplos:
 - `data/catalogo-agentes-operacionais-copilot.xlsx`: workbook completo para consulta.
 - `index.html`: dashboard publico.
 
+## Arquivos da trilha de prompts recorrentes
+
+- `prompts-agendados.html`: dashboard de prompts diarios, semanais, mensais e recorrentes manuais.
+- `data/prompts-agendados.csv`: fonte editavel da biblioteca de prompts.
+- `data/prompts-agendados-data.json`: JSON consumido pelo dashboard de prompts.
+- `docs/PROMPTS_AGENDADOS.md`: metodologia, fontes e regra de licenciamento.
+
+Use esta trilha quando a conversa for sobre **habito de uso**: briefing matinal, pendencias de fim do dia, planejamento semanal, resumo de projeto, revisao de arquivos ou analise recorrente de planilhas/CSVs.
+
+Regra pratica:
+
+- `Prompt agendado nativo`: exige Microsoft 365 Copilot add-on.
+- `Lembrete manual recorrente`: funciona bem para usuarios sem add-on, desde que eles executem o prompt manualmente e anexem/abram os arquivos certos.
+- `Workflows / Power Automate`: use quando a saida precisa ser enviada, registrada ou virar tarefa.
+- `Copilot Cowork / Frontier`: use para pacotes de trabalho multi-etapa com checkpoints.
+
 ## Campos importantes em `data/agentes.csv`
 
 - `category`: familia do caso. Use `Prompt + arquivos / sem conector` para demos simples.
@@ -80,6 +96,13 @@ Se editar o gerador principal na raiz do workspace, rode:
 ```powershell
 cd "C:\Users\aleja\Documents\Codex\2026-05-23\estamos-implementando-o-copilot-gpt5-5"
 & "C:\Users\aleja\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" ".\build_copilot_agent_examples.mjs"
+```
+
+Se editar a biblioteca de prompts recorrentes, rode:
+
+```powershell
+cd "C:\Users\aleja\Documents\Codex\2026-05-23\estamos-implementando-o-copilot-gpt5-5"
+& "C:\Users\aleja\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" ".\build_scheduled_prompt_catalog.mjs"
 ```
 
 ## Validacao rapida

@@ -7,6 +7,12 @@ Dashboard estatico para publicar no GitHub Pages, com modo local seguro para log
 - **GitHub Pages:** publico e read-only. Ideal para consulta e apresentacao.
 - **Servidor local:** protegido por login, com perfis `admin` e `usuario`. Use para cadastrar novos agentes e testar mudancas antes de publicar.
 
+## Modos de leitura do agente
+
+- **Lateral:** bom para triagem rapida enquanto compara varios agentes.
+- **Inferior:** bom para leitura detalhada; a lista fica compacta e o agente selecionado abre em duas colunas.
+- **Foco:** bom para treinamento, apresentacao e copia do prompt/roteiro.
+
 ## Publicar no GitHub Pages
 
 1. Crie um repositorio no GitHub.

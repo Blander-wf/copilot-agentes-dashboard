@@ -81,7 +81,7 @@
     }
     .layout {
       display: grid;
-      grid-template-columns: 310px minmax(460px, 1fr) 400px;
+      grid-template-columns: 310px minmax(560px, 1fr) minmax(430px, 28vw);
       gap: 16px;
       padding: 16px;
       align-items: start;
@@ -97,6 +97,9 @@
       top: 118px;
       max-height: calc(100vh - 136px);
       overflow: auto;
+    }
+    .detail {
+      scroll-margin-top: 118px;
     }
     .panel-head {
       padding: 14px 14px 10px;
@@ -252,10 +255,10 @@
     .agent p {
       margin: 0;
       color: var(--muted);
-      font-size: 12px;
-      line-height: 1.42;
+      font-size: 13px;
+      line-height: 1.46;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
@@ -324,15 +327,15 @@
     .kv b { color: #344054; }
     .copy-box {
       width: 100%;
-      min-height: 90px;
+      min-height: 128px;
       border: 1px solid var(--line);
       border-radius: 6px;
       padding: 9px;
       resize: vertical;
       color: #263447;
       background: #fbfcfe;
-      line-height: 1.45;
-      font-size: 12px;
+      line-height: 1.58;
+      font-size: 13px;
     }
     .action-row {
       display: flex;
@@ -436,6 +439,161 @@
       color: #fff;
       border-color: var(--ink);
     }
+    .view-tools {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .reading-hint {
+      flex-basis: 100%;
+      font-size: 11px;
+    }
+    .view-toggle {
+      display: inline-grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      min-width: 240px;
+    }
+    .view-toggle button {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: #344054;
+      border-radius: 6px;
+      min-height: 34px;
+      padding: 7px 9px;
+      font-size: 12px;
+      font-weight: 760;
+    }
+    .view-toggle button.active {
+      color: #071113;
+      background: linear-gradient(135deg, var(--teal), #74e8d5);
+      border-color: rgba(41, 211, 189, 0.95);
+    }
+    .detail-actions {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .detail-hero {
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.045);
+      margin-bottom: 12px;
+    }
+    .detail-hero h3 {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .detail-hero p {
+      margin: 0;
+      color: #f4f7f9;
+      font-size: 17px;
+      line-height: 1.52;
+      font-weight: 650;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+    }
+    .reader-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .reader-card {
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      padding: 13px;
+      background: rgba(10, 15, 19, 0.66);
+    }
+    .reader-card h3 {
+      margin: 0 0 9px;
+      color: #dce7ee;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .reader-card p, .reader-card li {
+      color: #dce7ee;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .reader-card ul {
+      margin: 0;
+      padding-left: 17px;
+    }
+    .detail-bottom .layout {
+      grid-template-columns: 310px minmax(0, 1fr);
+    }
+    .detail-bottom .layout > section.panel {
+      display: flex;
+      flex-direction: column;
+      max-height: min(52vh, 620px);
+      min-height: 0;
+      overflow: hidden;
+    }
+    .detail-bottom #tab-agents.active {
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      overflow: hidden;
+    }
+    .detail-bottom .agent-list {
+      max-height: min(34vh, 380px);
+      overflow: auto;
+    }
+    .detail-bottom .detail {
+      grid-column: 2 / -1;
+      position: static;
+      max-height: none;
+      overflow: visible;
+      border-color: rgba(41, 211, 189, 0.44);
+    }
+    .detail-bottom .detail .panel-body {
+      display: grid;
+      grid-template-columns: minmax(420px, 1.15fr) minmax(360px, 0.85fr);
+      gap: 14px;
+      align-items: start;
+    }
+    .detail-bottom .detail-hero {
+      grid-column: 1 / -1;
+    }
+    .detail-bottom .reader-grid {
+      display: contents;
+    }
+    .detail-focus .layout {
+      grid-template-columns: 310px minmax(0, 1fr);
+    }
+    .detail-focus .detail {
+      position: fixed;
+      left: 340px;
+      right: 18px;
+      top: 102px;
+      bottom: 18px;
+      z-index: 70;
+      max-height: none;
+      overflow: auto;
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.58);
+    }
+    .detail-focus .detail .panel-body {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .detail-focus .detail-hero p {
+      font-size: 20px;
+    }
+    .detail-focus .reader-grid {
+      grid-template-columns: repeat(2, minmax(320px, 1fr));
+    }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
     .decision {
@@ -481,6 +639,7 @@
       .count-pill { white-space: normal; }
       .results-head { align-items: flex-start; flex-direction: column; }
       .kv { grid-template-columns: 1fr; }
+      .reading-hint { flex-basis: auto; }
     }
     :root {
       color-scheme: dark;
@@ -564,12 +723,12 @@
       border-color: rgba(41, 211, 189, 0.65);
       box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32), 0 0 0 1px rgba(41, 211, 189, 0.12);
     }
-    .segmented button, .toolbar button, .action-row button, .tabs button {
+    .segmented button, .toolbar button, .action-row button, .tabs button, .view-toggle button {
       background: rgba(12, 17, 22, 0.9);
       border-color: var(--line);
       color: #d8e5eb;
     }
-    .segmented button.active, .tabs button.active {
+    .segmented button.active, .tabs button.active, .view-toggle button.active {
       color: #071113;
       background: linear-gradient(135deg, var(--teal), #74e8d5);
       border-color: rgba(41, 211, 189, 0.95);
@@ -673,6 +832,21 @@
       .flow { grid-template-columns: 1fr; }
       .flow-arrow { transform: rotate(90deg); min-height: 10px; }
       .signal-grid { grid-template-columns: 1fr; }
+      .view-toggle { min-width: 0; width: 100%; }
+      .detail-bottom .detail,
+      .detail-focus .detail {
+        grid-column: 1 / -1;
+        position: static;
+        max-height: none;
+        overflow: visible;
+      }
+      .detail-bottom .layout > section.panel {
+        max-height: none;
+      }
+      .detail-bottom .detail .panel-body,
+      .detail-focus .detail .panel-body {
+        display: block;
+      }
     }
   </style>
 </head>
@@ -775,6 +949,15 @@
             <button type="button" id="pickDemo" class="primary">Melhor demo</button>
             <button type="button" id="pickCowork">Cowork</button>
           </div>
+          <div class="view-tools">
+            <span class="subtitle">Leitura</span>
+            <div class="view-toggle" id="detailModeButtons">
+              <button type="button" data-detail-mode="side">Lateral</button>
+              <button type="button" data-detail-mode="bottom">Inferior</button>
+              <button type="button" data-detail-mode="focus">Foco</button>
+            </div>
+            <span class="subtitle reading-hint" id="readingHint"></span>
+          </div>
         </div>
         <div class="agent-list" id="agentList"></div>
       </div>
@@ -813,15 +996,11 @@
   <div class="toast" id="toast"></div>
 
   <script>
-    let data, rows, topIds, state;
-    async function bootstrap() {
-      const dataUrl = document.getElementById("agent-data-url").textContent.trim();
-      const response = await fetch(dataUrl, { cache: "no-store" });
-      if (!response.ok) throw new Error("Nao foi possivel carregar " + dataUrl);
-      data = await response.json();
-      rows = data.rows;
-      topIds = new Set(data.topRows.map(function(r) { return r.id; }));
-      state = {
+    const data = JSON.parse(document.getElementById("agent-data").textContent);
+    const rows = data.rows;
+    const topIds = new Set(data.topRows.map(function(r) { return r.id; }));
+    const initialDetailMode = loadDetailMode();
+    let state = {
       q: "",
       area: "Todos",
       type: "Todos",
@@ -835,6 +1014,8 @@
       onlySourced: false,
       onlyTop: false,
       sort: "score",
+      detailMode: initialDetailMode,
+      previousDetailMode: initialDetailMode === "focus" ? "side" : initialDetailMode,
       selectedId: rows[0] ? rows[0].id : null,
       shortlist: loadShortlist()
     };
@@ -906,6 +1087,11 @@
           render();
         });
       });
+      document.querySelectorAll("#detailModeButtons button").forEach(function(button) {
+        button.addEventListener("click", function() {
+          setDetailMode(button.dataset.detailMode);
+        });
+      });
       document.querySelectorAll(".tabs button").forEach(function(button) {
         button.addEventListener("click", function() {
           document.querySelectorAll(".tabs button").forEach(function(b) { b.classList.remove("active"); });
@@ -918,6 +1104,7 @@
       el("exportCsv").addEventListener("click", function() { downloadCsv(filteredRows(), "agentes-copilot-filtrados.csv"); });
       el("pickDemo").addEventListener("click", function() { selectBest(function(r) { return isHigh(r); }); });
       el("pickCowork").addEventListener("click", function() { selectBest(function(r) { return isCowork(r); }); });
+      applyDetailMode();
       renderDecisions();
       render();
     }
@@ -993,6 +1180,7 @@
         button.addEventListener("click", function() {
           state.selectedId = button.dataset.id;
           render();
+          scrollDetailIntoView();
         });
       });
     }
@@ -1014,37 +1202,42 @@
       el("detailScore").textContent = row.trainingScore;
       const prompt = buildPrompt(row);
       const demo = buildDemoPlan(row);
+      const focusLabel = state.detailMode === "focus" ? "Sair do foco" : "Modo foco";
       el("detailBody").innerHTML =
-        '<div class="section"><h3>Resumo operacional</h3>' +
-          kv("Objetivo", row.objective) +
-          kv("Trigger", row.trigger) +
-          kv("Entradas", row.inputs) +
-          kv("Sistemas", row.systems) +
-          kv("Acoes", row.actions) +
-          kv("Saidas", row.outputs) +
-        '</div>' +
-        '<div class="section"><h3>Mapa visual do agente</h3>' + buildFlow(row) + '</div>' +
-        '<div class="section"><h3>Leitura rapida</h3>' + buildSignalPanel(row) + '</div>' +
-        '<div class="section"><h3>Exemplo para demo</h3><textarea id="promptBox" class="copy-box">' + escapeHtml(prompt) + '</textarea>' +
-          '<div class="action-row"><button type="button" id="copyPrompt" class="primary">Copiar prompt</button><button type="button" id="addShort" class="good">' + (state.shortlist.indexOf(row.id) >= 0 ? "Na shortlist" : "Adicionar") + '</button></div>' +
-        '</div>' +
-        '<div class="section"><h3>Roteiro de treinamento</h3><textarea id="demoBox" class="copy-box">' + escapeHtml(demo) + '</textarea>' +
-          '<div class="action-row"><button type="button" id="copyDemo">Copiar roteiro</button></div>' +
-        '</div>' +
-        '<div class="section"><h3>Governanca e valor</h3>' +
-          kv("Governanca", row.governance) +
-          kv("KPI", row.kpi) +
-          kv("Implementacao", row.implementation) +
-          kv("Complexidade", row.complexity) +
-          kv("Diferencial", row.differentiator) +
-        '</div>' +
-        '<div class="section"><h3>Fonte</h3>' +
-          kv("Origem", row.source || "Sintese propria") +
-          (row.url ? '<a class="source-link" href="' + escapeHtml(row.url) + '" target="_blank" rel="noreferrer">' + escapeHtml(row.url) + '</a>' : '<span class="subtitle">Sem link direto.</span>') +
-        '</div>' +
-        '<div class="section"><h3>Shortlist</h3><div class="shortlist" id="shortlist"></div></div>';
+        '<div class="detail-hero"><h3>Descricao do agente</h3><p>' + escapeHtml(row.objective) + '</p><div class="hero-meta">' +
+          '<span class="tag">' + escapeHtml(row.area) + '</span>' +
+          '<span class="tag ' + tagClass(row) + '">' + escapeHtml(shortType(row.copilotType)) + '</span>' +
+          '<span class="tag ' + (isHigh(row) ? "high" : "") + '">' + escapeHtml(row.priority) + '</span>' +
+          '<span class="tag">' + escapeHtml(row.complexity) + '</span>' +
+        '</div><div class="action-row"><button type="button" id="copyPrompt" class="primary">Copiar prompt</button><button type="button" id="copyDemo">Copiar roteiro</button><button type="button" id="focusDetail">' + focusLabel + '</button><button type="button" id="addShort" class="good">' + (state.shortlist.indexOf(row.id) >= 0 ? "Na shortlist" : "Adicionar") + '</button></div></div>' +
+        '<div class="reader-grid">' +
+          '<div class="reader-card"><h3>Como testar agora</h3>' + buildTestSteps(row) + '</div>' +
+          '<div class="reader-card"><h3>Prompt pronto para copiar</h3><textarea id="promptBox" class="copy-box">' + escapeHtml(prompt) + '</textarea></div>' +
+          '<div class="reader-card"><h3>Mapa visual do agente</h3>' + buildFlow(row) + '</div>' +
+          '<div class="reader-card"><h3>Leitura rapida</h3>' + buildSignalPanel(row) + '</div>' +
+          '<div class="reader-card"><h3>Detalhes operacionais</h3>' +
+            kv("Trigger", row.trigger) +
+            kv("Entradas", row.inputs) +
+            kv("Sistemas", row.systems) +
+            kv("Acoes", row.actions) +
+            kv("Saidas", row.outputs) +
+          '</div>' +
+          '<div class="reader-card"><h3>Governanca e valor</h3>' +
+            kv("Governanca", row.governance) +
+            kv("KPI", row.kpi) +
+            kv("Implementacao", row.implementation) +
+            kv("Diferencial", row.differentiator) +
+          '</div>' +
+          '<div class="reader-card"><h3>Roteiro de treinamento</h3><textarea id="demoBox" class="copy-box">' + escapeHtml(demo) + '</textarea></div>' +
+          '<div class="reader-card"><h3>Fonte e shortlist</h3>' +
+            kv("Origem", row.source || "Sintese propria") +
+            (row.url ? '<a class="source-link" href="' + escapeHtml(row.url) + '" target="_blank" rel="noreferrer">' + escapeHtml(row.url) + '</a>' : '<span class="subtitle">Sem link direto.</span>') +
+            '<div class="shortlist" id="shortlist"></div>' +
+          '</div>' +
+        '</div>';
       el("copyPrompt").addEventListener("click", function() { copyText(el("promptBox").value); });
       el("copyDemo").addEventListener("click", function() { copyText(el("demoBox").value); });
+      el("focusDetail").addEventListener("click", function() { setDetailMode(state.detailMode === "focus" ? state.previousDetailMode : "focus"); });
       el("addShort").addEventListener("click", function() { toggleShortlist(row.id); });
       renderShortlist();
     }
@@ -1076,6 +1269,16 @@
         "6. Pergunta para a turma: onde este agente deve parar e pedir aprovacao humana?",
         "7. KPI para decidir piloto: " + row.kpi
       ].join("\n");
+    }
+
+    function buildTestSteps(row) {
+      return '<ul>' +
+        '<li><strong>1. Abra com o objetivo:</strong> ' + escapeHtml(row.objective) + '</li>' +
+        '<li><strong>2. Use dados anonimizados:</strong> ' + escapeHtml(row.inputs) + '</li>' +
+        '<li><strong>3. Peça a execucao:</strong> ' + escapeHtml(row.demo) + '</li>' +
+        '<li><strong>4. Valide a saida:</strong> ' + escapeHtml(row.outputs) + '</li>' +
+        '<li><strong>5. Meça valor:</strong> ' + escapeHtml(row.kpi) + '</li>' +
+      '</ul>';
     }
 
     function buildFlow(row) {
@@ -1158,10 +1361,53 @@
       }
       state.selectedId = filtered[0].id;
       render();
+      scrollDetailIntoView();
     }
 
     function loadShortlist() {
       try { return JSON.parse(localStorage.getItem("copilotAgentShortlist") || "[]"); } catch { return []; }
+    }
+
+    function loadDetailMode() {
+      const mode = localStorage.getItem("copilotAgentDetailMode") || "side";
+      return ["side", "bottom", "focus"].indexOf(mode) >= 0 ? mode : "side";
+    }
+
+    function setDetailMode(mode) {
+      const nextMode = ["side", "bottom", "focus"].indexOf(mode) >= 0 ? mode : "side";
+      if (nextMode === "focus" && state.detailMode !== "focus") {
+        state.previousDetailMode = state.detailMode;
+      }
+      if (nextMode !== "focus") {
+        state.previousDetailMode = nextMode;
+      }
+      state.detailMode = nextMode;
+      localStorage.setItem("copilotAgentDetailMode", state.detailMode);
+      applyDetailMode();
+      renderDetail(rows.find(function(row) { return row.id === state.selectedId; }));
+      scrollDetailIntoView();
+    }
+
+    function applyDetailMode() {
+      document.body.classList.toggle("detail-bottom", state.detailMode === "bottom");
+      document.body.classList.toggle("detail-focus", state.detailMode === "focus");
+      document.querySelectorAll("#detailModeButtons button").forEach(function(button) {
+        button.classList.toggle("active", button.dataset.detailMode === state.detailMode);
+      });
+      const hints = {
+        side: "Lateral: ideal para triagem rapida enquanto compara a lista.",
+        bottom: "Inferior: leitura confortavel, com a lista compacta acima e detalhes em duas colunas.",
+        focus: "Foco: melhor para apresentar, copiar prompt e explicar a demo."
+      };
+      if (el("readingHint")) el("readingHint").textContent = hints[state.detailMode] || hints.side;
+    }
+
+    function scrollDetailIntoView() {
+      if (state.detailMode !== "bottom") return;
+      requestAnimationFrame(function() {
+        const panel = document.querySelector(".detail");
+        if (panel) panel.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
     }
 
     function saveShortlist() {

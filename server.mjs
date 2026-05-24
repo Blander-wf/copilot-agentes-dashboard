@@ -125,7 +125,9 @@ function isSensitivePath(urlPath) {
 
 async function serveStatic(req, res, session) {
   const url = new URL(req.url, "http://localhost");
-  if (!session && (url.pathname === "/" || url.pathname === "/index.html")) {
+  const adminPath = url.pathname === "/admin" || url.pathname === "/admin.html";
+  const protectedPage = url.pathname === "/agentes.html" || url.pathname === "/prompts-agendados.html";
+  if (!session && (adminPath || protectedPage)) {
     send(res, 200, loginPage(), { "Content-Type": "text/html; charset=utf-8" });
     return;
   }
@@ -133,7 +135,8 @@ async function serveStatic(req, res, session) {
     json(res, 401, { error: "login_required" });
     return;
   }
-  const file = safePath(url.pathname);
+  const requestedPath = adminPath ? "/agentes.html" : url.pathname;
+  const file = safePath(requestedPath);
   if (!file) {
     json(res, 403, { error: "forbidden" });
     return;
@@ -145,7 +148,7 @@ async function serveStatic(req, res, session) {
       return;
     }
     let body = await fs.readFile(file);
-    if (session && (url.pathname === "/" || url.pathname === "/index.html")) {
+    if (session && requestedPath === "/agentes.html") {
       body = Buffer.from(String(body).replace("</body>", `${adminInjection(session)}</body>`), "utf8");
     }
     send(res, 200, body, { "Content-Type": mime[path.extname(file)] || "application/octet-stream" });
@@ -236,7 +239,7 @@ function loginPage(error = "") {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
       });
-      if (response.ok) location.href = "/";
+      if (response.ok) location.href = "/agentes.html";
       else document.getElementById("error").textContent = "Usuario ou senha invalidos.";
     });
   </script>

@@ -12,7 +12,7 @@ Dashboard estatico para publicar no GitHub Pages, com modo local seguro para log
 
 ## Modos de uso
 
-- **Inicio guiado:** `catalogos.html` ajuda usuarios novos a escolher entre agentes, prompts recorrentes e trilhas sem add-on.
+- **Guia de adocao:** `catalogos.html` ajuda usuarios novos, usuarios avancados, makers e responsaveis da empresa a escolherem a trilha certa.
 - **GitHub Pages:** publico e read-only. Ideal para consulta e apresentacao.
 - **Servidor local:** protegido por login, com perfis `admin` e `usuario`. Use para cadastrar novos agentes e testar mudancas antes de publicar.
 

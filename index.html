@@ -3,1603 +3,501 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Cache-Control" content="no-store, max-age=0">
-  <meta http-equiv="Pragma" content="no-cache">
-  <title>Dashboard de Agentes Copilot</title>
+  <title>Guia de adocao de IA</title>
   <style>
     :root {
       color-scheme: light;
-      --bg: #f7f8fb;
+      --bg: #f6f8fb;
       --surface: #ffffff;
-      --surface-2: #eef3f7;
-      --ink: #142033;
-      --muted: #667085;
-      --line: #d9e0e8;
+      --surface-strong: #eef2f7;
+      --text: #111827;
+      --muted: #5f6b7a;
+      --soft: #7b8794;
+      --line: #d9e1ec;
+      --line-strong: #b8c4d3;
       --blue: #2563eb;
       --teal: #0f766e;
-      --amber: #b45309;
-      --red: #be123c;
+      --amber: #a16207;
+      --violet: #7c3aed;
       --green: #15803d;
-      --shadow: 0 12px 28px rgba(20, 32, 51, 0.08);
+      --danger: #b42318;
+      --shadow: 0 18px 45px rgba(17, 24, 39, .08);
     }
     * { box-sizing: border-box; }
-    .topbar > *, .layout > *, .panel, .metrics, .metric, .field, input, select, textarea { min-width: 0; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+      color: var(--text);
       background: var(--bg);
-      color: var(--ink);
+      font: 15px/1.55 Inter, "Segoe UI", Arial, sans-serif;
       letter-spacing: 0;
     }
-    button, input, select, textarea { font: inherit; }
-    button { cursor: pointer; }
+    a { color: inherit; text-decoration: none; }
+    .site-shell { max-width: 1220px; margin: 0 auto; padding: 18px 20px 44px; }
     .topbar {
-      min-height: 86px;
-      padding: 18px 24px;
-      display: grid;
-      grid-template-columns: minmax(280px, 1fr) auto;
-      gap: 18px;
+      display: flex;
       align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 66px;
       border-bottom: 1px solid var(--line);
-      background: var(--surface);
-      position: sticky;
-      top: 0;
-      z-index: 20;
+      margin-bottom: 26px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 230px;
+    }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: #111827;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .brand strong { display: block; font-size: 15px; line-height: 1.1; }
+    .brand small { display: block; margin-top: 2px; color: var(--muted); font-size: 12px; }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 7px 10px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 750;
+    }
+    .nav a:hover { border-color: var(--line); background: var(--surface); color: var(--text); }
+    .nav a.active { border-color: #111827; background: #111827; color: #fff; }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr);
+      gap: 22px;
+      align-items: stretch;
+      margin-bottom: 26px;
+    }
+    .hero-copy {
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 34px 0;
     }
     h1 {
       margin: 0;
-      font-size: 22px;
-      line-height: 1.2;
-      font-weight: 760;
+      max-width: 790px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.08;
+      letter-spacing: 0;
+      padding-bottom: .16em;
     }
-    .subtitle {
-      margin-top: 5px;
+    .lead {
+      margin: 18px 0 0;
+      max-width: 760px;
       color: var(--muted);
-      font-size: 13px;
+      font-size: 18px;
+      line-height: 1.6;
     }
-    .catalog-switch {
+    .hero-actions, .actions {
       display: flex;
+      gap: 10px;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 11px;
+      margin-top: 24px;
     }
-    .catalog-switch a {
+    .button {
       display: inline-flex;
       align-items: center;
-      min-height: 32px;
-      padding: 7px 10px;
-      border: 1px solid var(--line);
-      border-radius: 7px;
-      color: var(--ink);
-      background: var(--surface);
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 760;
-    }
-    .catalog-switch a.active {
-      color: #05201d;
-      background: #4bd8c2;
-      border-color: #4bd8c2;
-    }
-    .catalog-switch a:hover {
-      border-color: #4bd8c2;
-    }
-    .metrics {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(84px, 1fr));
+      justify-content: center;
       gap: 8px;
-      min-width: min(680px, 100%);
-    }
-    .metric {
-      border: 1px solid var(--line);
+      min-height: 42px;
+      padding: 10px 13px;
       border-radius: 8px;
-      padding: 9px 10px;
+      border: 1px solid var(--line-strong);
       background: var(--surface);
+      color: var(--text);
+      font-weight: 850;
+      font-size: 14px;
     }
-    .metric strong {
-      display: block;
-      font-size: 18px;
-      line-height: 1;
-    }
-    .metric span {
-      display: block;
-      margin-top: 5px;
-      color: var(--muted);
-      font-size: 11px;
-      white-space: nowrap;
-    }
-    .layout {
+    .button.primary { border-color: #111827; background: #111827; color: #fff; }
+    .button::after { content: ">"; font-weight: 900; }
+    .button.no-arrow::after { content: ""; }
+    .route-board {
       display: grid;
-      grid-template-columns: minmax(260px, 300px) minmax(420px, 1fr) minmax(360px, 28vw);
-      gap: 16px;
-      padding: 16px;
-      align-items: start;
-    }
-    .panel {
+      gap: 10px;
+      padding: 10px;
       background: var(--surface);
       border: 1px solid var(--line);
       border-radius: 8px;
       box-shadow: var(--shadow);
     }
-    .controls, .detail {
-      position: sticky;
-      top: 118px;
-      max-height: calc(100vh - 136px);
-      overflow: auto;
-    }
-    .detail {
-      scroll-margin-top: 118px;
-    }
-    .panel-head {
-      padding: 14px 14px 10px;
-      border-bottom: 1px solid var(--line);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    .panel-head h2 {
-      margin: 0;
-      font-size: 14px;
-      line-height: 1.2;
-      font-weight: 760;
-    }
-    .panel-body { padding: 14px; }
-    label {
-      display: block;
-      color: #344054;
-      font-size: 12px;
-      font-weight: 680;
-      margin: 0 0 6px;
-    }
-    input[type="search"], select {
-      width: 100%;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      min-height: 36px;
-      padding: 7px 9px;
-      background: #fff;
-      color: var(--ink);
-      outline: none;
-    }
-    input[type="search"]:focus, select:focus {
-      border-color: var(--blue);
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
-    }
-    .field { margin-bottom: 12px; }
-    .grid-2 {
+    .route-card {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-    .toggle-list {
-      display: grid;
-      gap: 7px;
-      margin: 4px 0 12px;
-    }
-    .check {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px;
+      grid-template-columns: 6px minmax(0, 1fr);
+      gap: 14px;
+      padding: 15px;
       border: 1px solid var(--line);
-      border-radius: 6px;
-      color: #344054;
-      font-size: 12px;
-      background: #fbfcfe;
-    }
-    .check input { width: 15px; height: 15px; }
-    .segmented {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 6px;
-    }
-    .segmented button, .toolbar button, .action-row button {
-      border: 1px solid var(--line);
-      background: var(--surface);
-      color: #344054;
-      border-radius: 6px;
-      min-height: 34px;
-      padding: 7px 10px;
-      font-size: 12px;
-      font-weight: 700;
-    }
-    .segmented button.active {
-      border-color: var(--blue);
-      color: #174ea6;
-      background: #edf4ff;
-    }
-    .toolbar {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .toolbar button.primary, .action-row button.primary {
-      background: var(--ink);
-      border-color: var(--ink);
-      color: white;
-    }
-    .toolbar button.good, .action-row button.good {
-      background: var(--teal);
-      border-color: var(--teal);
-      color: white;
-    }
-    .results-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 14px;
-      border-bottom: 1px solid var(--line);
-    }
-    .results-title {
-      font-weight: 760;
-      font-size: 14px;
-    }
-    .count-pill {
-      display: inline-flex;
-      align-items: center;
-      min-height: 28px;
-      padding: 5px 9px;
-      border-radius: 999px;
-      color: #344054;
-      background: var(--surface-2);
-      font-size: 12px;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-    .agent-list {
-      display: grid;
-      gap: 8px;
-      padding: 12px;
-    }
-    .agent {
-      width: 100%;
-      text-align: left;
-      border: 1px solid var(--line);
-      background: var(--surface);
       border-radius: 8px;
-      padding: 11px;
-      display: grid;
-      gap: 9px;
-      transition: border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
-    }
-    .agent:hover, .agent.active {
-      border-color: rgba(37, 99, 235, 0.55);
-      box-shadow: 0 8px 18px rgba(20, 32, 51, 0.09);
-    }
-    .agent.active { transform: translateY(-1px); }
-    .agent-top {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 10px;
-      align-items: start;
-    }
-    .agent h3 {
-      margin: 0;
-      font-size: 15px;
-      line-height: 1.25;
-    }
-    .agent p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.46;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .tags {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-    .tag {
-      border-radius: 999px;
-      padding: 3px 7px;
-      font-size: 11px;
-      font-weight: 740;
-      color: #344054;
-      background: var(--surface-2);
-      max-width: 100%;
-    }
-    .tag.high { color: #8a1231; background: #fff0f4; }
-    .tag.cowork { color: #075e59; background: #e7f7f4; }
-    .tag.studio { color: #174ea6; background: #edf4ff; }
-    .tag.builder { color: #8a4a05; background: #fff5df; }
-    .score {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 42px;
-      min-width: 42px;
-      height: 32px;
-      border-radius: 7px;
-      font-weight: 800;
-      color: #0f3d31;
-      background: #e8f6ed;
-      border: 1px solid #bfe8ce;
-    }
-    .detail-title h2 {
-      margin: 0;
-      font-size: 17px;
-      line-height: 1.2;
-    }
-    .detail-title p {
-      margin: 6px 0 0;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.4;
-    }
-    .section {
-      padding: 13px 0;
-      border-bottom: 1px solid var(--line);
-    }
-    .section:last-child { border-bottom: 0; }
-    .section h3 {
-      margin: 0 0 8px;
-      font-size: 12px;
-      color: #344054;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-    .kv {
-      display: grid;
-      grid-template-columns: 112px 1fr;
-      gap: 7px;
-      font-size: 12px;
-      line-height: 1.45;
-      margin: 7px 0;
-    }
-    .kv b { color: #344054; }
-    .copy-box {
-      width: 100%;
-      min-height: 128px;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      padding: 9px;
-      resize: vertical;
-      color: #263447;
-      background: #fbfcfe;
-      line-height: 1.58;
-      font-size: 13px;
-    }
-    .action-row {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 10px;
-    }
-    .bars {
-      display: grid;
-      gap: 9px;
-    }
-    .bar-row {
-      display: grid;
-      grid-template-columns: minmax(100px, 1fr) 44px;
-      gap: 8px;
-      align-items: center;
-      font-size: 12px;
-    }
-    .bar-track {
-      height: 8px;
-      background: var(--surface-2);
-      border-radius: 999px;
-      overflow: hidden;
-      margin-top: 4px;
-    }
-    .bar-fill {
-      height: 100%;
-      background: var(--teal);
-      border-radius: inherit;
-    }
-    .bar-row:nth-child(3n+1) .bar-fill { background: var(--blue); }
-    .bar-row:nth-child(3n+2) .bar-fill { background: var(--amber); }
-    .bar-label {
-      min-width: 0;
-      color: #344054;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .bar-value {
-      text-align: right;
-      color: var(--muted);
-      font-weight: 740;
-    }
-    .source-link {
-      color: #174ea6;
-      text-decoration: none;
-      font-weight: 700;
-      word-break: break-word;
-    }
-    .source-link:hover { text-decoration: underline; }
-    .shortlist {
-      display: grid;
-      gap: 7px;
-      margin-top: 8px;
-    }
-    .short-item {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 8px;
-      align-items: center;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      padding: 7px;
-      font-size: 12px;
-      background: #fbfcfe;
-    }
-    .short-item button {
-      border: 0;
-      background: transparent;
-      color: var(--red);
-      font-weight: 800;
-      padding: 4px;
-    }
-    .empty {
-      padding: 26px;
-      color: var(--muted);
-      text-align: center;
-      border: 1px dashed var(--line);
-      border-radius: 8px;
-      background: #fbfcfe;
-    }
-    .tabs {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 6px;
-      padding: 10px;
-      border-bottom: 1px solid var(--line);
-    }
-    .tabs button {
-      border: 1px solid var(--line);
-      border-radius: 6px;
       background: #fff;
-      color: #344054;
-      min-height: 32px;
-      font-size: 12px;
-      font-weight: 760;
     }
-    .tabs button.active {
-      background: var(--ink);
-      color: #fff;
-      border-color: var(--ink);
-    }
-    .view-tools {
+    .route-card:hover { border-color: var(--line-strong); }
+    .route-line { border-radius: 999px; background: var(--track-color, var(--blue)); }
+    .route-card h2, .route-card h3 { margin: 0; font-size: 17px; line-height: 1.25; }
+    .route-card p { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+    .meta-row {
       display: flex;
-      align-items: center;
       gap: 8px;
       flex-wrap: wrap;
-    }
-    .reading-hint {
-      flex-basis: 100%;
-      font-size: 11px;
-    }
-    .view-toggle {
-      display: inline-grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 5px;
-      min-width: 240px;
-    }
-    .view-toggle button {
-      border: 1px solid var(--line);
-      background: var(--surface);
-      color: #344054;
-      border-radius: 6px;
-      min-height: 34px;
-      padding: 7px 9px;
-      font-size: 12px;
-      font-weight: 760;
-    }
-    .view-toggle button.active {
-      color: #071113;
-      background: linear-gradient(135deg, var(--teal), #74e8d5);
-      border-color: rgba(41, 211, 189, 0.95);
-    }
-    .focus-mode-switch {
-      display: none;
-      align-items: center;
-      gap: 6px;
-      position: fixed;
-      top: 112px;
-      right: 36px;
-      z-index: 95;
-      padding: 8px;
-      border: 1px solid var(--line);
-      border-radius: 9px;
-      background: rgba(8, 12, 16, 0.92);
-      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.42);
-      backdrop-filter: blur(12px);
-    }
-    .detail-focus .focus-mode-switch {
-      display: flex;
-    }
-    .focus-mode-switch span {
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 760;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      padding: 0 4px;
-    }
-    .focus-mode-switch button {
-      border: 1px solid var(--line);
-      background: rgba(12, 17, 22, 0.94);
-      color: #d8e5eb;
-      border-radius: 6px;
-      min-height: 31px;
-      padding: 6px 9px;
-      font-size: 12px;
-      font-weight: 760;
-    }
-    .focus-mode-switch button.active {
-      color: #071113;
-      background: linear-gradient(135deg, var(--teal), #74e8d5);
-      border-color: rgba(41, 211, 189, 0.95);
-    }
-    .detail-actions {
-      display: flex;
-      gap: 7px;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: flex-end;
-    }
-    .detail-hero {
-      border: 1px solid var(--line);
-      border-radius: 9px;
-      padding: 14px;
-      background: rgba(255, 255, 255, 0.045);
-      margin-bottom: 12px;
-    }
-    .detail-hero h3 {
-      margin: 0 0 8px;
-      color: var(--teal);
-      font-size: 12px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-    .detail-hero p {
-      margin: 0;
-      color: #f4f7f9;
-      font-size: 17px;
-      line-height: 1.52;
-      font-weight: 650;
-    }
-    .hero-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
       margin-top: 12px;
     }
-    .reader-grid {
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 4px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      background: #fff;
+      font-size: 12px;
+      font-weight: 760;
+    }
+    .section {
+      margin-top: 26px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 14px;
+    }
+    .section h2 {
+      margin: 0;
+      font-size: 26px;
+      line-height: 1.15;
+    }
+    .section p { color: var(--muted); }
+    .muted { color: var(--muted); }
+    .track-grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 12px;
     }
-    .reader-card {
-      border: 1px solid var(--line);
-      border-radius: 9px;
-      padding: 13px;
-      background: rgba(10, 15, 19, 0.66);
-    }
-    .reader-card h3 {
-      margin: 0 0 9px;
-      color: #dce7ee;
-      font-size: 13px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-    .reader-card p, .reader-card li {
-      color: #dce7ee;
-      font-size: 13px;
-      line-height: 1.55;
-    }
-    .reader-card ul {
-      margin: 0;
-      padding-left: 17px;
-    }
-    .detail-bottom .layout {
-      grid-template-columns: 310px minmax(0, 1fr);
-    }
-    .detail-bottom .layout > section.panel {
-      display: flex;
-      flex-direction: column;
-      max-height: min(52vh, 620px);
-      min-height: 0;
-      overflow: hidden;
-    }
-    .detail-bottom #tab-agents.active {
-      display: flex;
-      flex-direction: column;
-      min-height: 0;
-      overflow: hidden;
-    }
-    .detail-bottom .agent-list {
-      max-height: min(34vh, 380px);
-      overflow: auto;
-    }
-    .detail-bottom .detail {
-      grid-column: 2 / -1;
-      position: static;
-      max-height: none;
-      overflow: visible;
-      border-color: rgba(41, 211, 189, 0.44);
-    }
-    .detail-bottom .detail .panel-body {
+    .info-grid {
       display: grid;
-      grid-template-columns: minmax(420px, 1.15fr) minmax(360px, 0.85fr);
-      gap: 14px;
-      align-items: start;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
     }
-    .detail-bottom .detail-hero {
-      grid-column: 1 / -1;
-    }
-    .detail-bottom .reader-grid {
-      display: contents;
-    }
-    .detail-focus .layout {
-      grid-template-columns: 310px minmax(0, 1fr);
-    }
-    .detail-focus .detail {
-      position: fixed;
-      left: 340px;
-      right: 18px;
-      top: 102px;
-      bottom: 18px;
-      z-index: 70;
-      max-height: none;
-      overflow: auto;
-      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.58);
-    }
-    .detail-focus .detail .panel-body {
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    .detail-focus .detail-hero p {
-      font-size: 20px;
-    }
-    .detail-focus .reader-grid {
-      grid-template-columns: repeat(2, minmax(320px, 1fr));
-    }
-    .tab-panel { display: none; }
-    .tab-panel.active { display: block; }
-    .decision {
+    .info-card, .stage-card, .metric-card, .resource-card {
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 10px;
-      margin-bottom: 9px;
-      background: #fbfcfe;
-      font-size: 12px;
-      line-height: 1.45;
+      background: var(--surface);
+      padding: 16px;
+      min-width: 0;
     }
-    .decision b { display: block; margin-bottom: 4px; }
-    .decision span { color: var(--muted); }
-    .toast {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      padding: 10px 12px;
-      border-radius: 8px;
-      background: #142033;
-      color: white;
-      box-shadow: var(--shadow);
-      font-size: 13px;
-      opacity: 0;
-      transform: translateY(8px);
-      pointer-events: none;
-      transition: opacity 150ms ease, transform 150ms ease;
-      z-index: 50;
-    }
-    .toast.show { opacity: 1; transform: translateY(0); }
-    @media (max-width: 1180px) {
-      .layout { grid-template-columns: 280px minmax(420px, 1fr); }
-      .detail { grid-column: 1 / -1; position: static; max-height: none; }
-    }
-    @media (max-width: 820px) {
-      .topbar { grid-template-columns: 1fr; padding: 14px; }
-      .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); min-width: 0; width: 100%; }
-      .metric span { white-space: normal; }
-      .layout { grid-template-columns: 1fr; padding: 10px; }
-      .controls { position: static; max-height: none; }
-      .grid-2 { grid-template-columns: 1fr; }
-      .panel-head { flex-wrap: wrap; }
-      .count-pill { white-space: normal; }
-      .results-head { align-items: flex-start; flex-direction: column; }
-      .kv { grid-template-columns: 1fr; }
-      .reading-hint { flex-basis: auto; }
-    }
-    :root {
-      color-scheme: dark;
-      --bg: #0c0f12;
-      --surface: rgba(18, 24, 30, 0.92);
-      --surface-2: rgba(35, 45, 52, 0.9);
-      --ink: #f4f7f9;
-      --muted: #9fb0bd;
-      --line: rgba(130, 151, 166, 0.22);
-      --blue: #5aa8ff;
-      --teal: #29d3bd;
-      --amber: #f6b84b;
-      --red: #ff6b8a;
-      --green: #7ce3a0;
-      --violet: #b79cff;
-      --panel-grad: linear-gradient(145deg, rgba(21, 28, 34, 0.98), rgba(13, 18, 22, 0.96));
-      --shadow: 0 24px 54px rgba(0, 0, 0, 0.35);
-    }
-    body {
-      background:
-        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-        linear-gradient(135deg, rgba(41, 211, 189, 0.1), transparent 32%, rgba(246, 184, 75, 0.08) 68%, transparent),
-        #0c0f12;
-      background-size: 28px 28px, 28px 28px, auto, auto;
-    }
-    .topbar {
-      background: rgba(10, 14, 18, 0.88);
-      border-bottom-color: var(--line);
-      backdrop-filter: blur(14px);
-    }
-    .subtitle, .detail-title p, .agent p { color: var(--muted); }
-    .panel {
-      background: var(--panel-grad);
-      border-color: var(--line);
-      box-shadow: var(--shadow);
-    }
-    .metric {
-      background: linear-gradient(135deg, rgba(23, 33, 39, 0.96), rgba(14, 19, 23, 0.96));
-      border-color: var(--line);
-      position: relative;
-      overflow: hidden;
-    }
-    .metric::before {
-      content: "";
-      position: absolute;
-      inset: 0 0 auto 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--teal), var(--amber), var(--blue));
-      opacity: 0.86;
-    }
-    label, .panel-head h2, .results-title, .section h3, .kv b, .bar-label, .decision b { color: #dce7ee; }
-    input[type="search"], select, .copy-box {
-      background: rgba(8, 12, 16, 0.78);
-      border-color: var(--line);
-      color: var(--ink);
-    }
-    input[type="search"]::placeholder { color: #768894; }
-    input[type="search"]:focus, select:focus, .copy-box:focus {
-      border-color: var(--teal);
-      box-shadow: 0 0 0 3px rgba(41, 211, 189, 0.16);
-    }
-    .check, .agent, .short-item, .decision, .empty {
-      background: rgba(10, 15, 19, 0.72);
-      border-color: var(--line);
-      color: #dce7ee;
-    }
-    .agent {
-      position: relative;
-      overflow: hidden;
-    }
-    .agent::before {
-      content: "";
-      position: absolute;
-      inset: 0 auto 0 0;
-      width: 3px;
-      background: linear-gradient(180deg, var(--teal), var(--blue));
-      opacity: 0.8;
-    }
-    .agent:hover, .agent.active {
-      border-color: rgba(41, 211, 189, 0.65);
-      box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32), 0 0 0 1px rgba(41, 211, 189, 0.12);
-    }
-    .segmented button, .toolbar button, .action-row button, .tabs button, .view-toggle button {
-      background: rgba(12, 17, 22, 0.9);
-      border-color: var(--line);
-      color: #d8e5eb;
-    }
-    .segmented button.active, .tabs button.active, .view-toggle button.active {
-      color: #071113;
-      background: linear-gradient(135deg, var(--teal), #74e8d5);
-      border-color: rgba(41, 211, 189, 0.95);
-    }
-    .toolbar button.primary, .action-row button.primary {
-      color: #071113;
-      background: linear-gradient(135deg, var(--amber), #ffd88a);
-      border-color: rgba(246, 184, 75, 0.9);
-    }
-    .toolbar button.good, .action-row button.good {
-      color: #071113;
-      background: linear-gradient(135deg, var(--teal), #78f0dd);
-      border-color: rgba(41, 211, 189, 0.9);
-    }
-    .count-pill, .tag {
-      color: #dce7ee;
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .tag.high { color: #ffd5dd; background: rgba(255, 107, 138, 0.14); }
-    .tag.cowork { color: #b8fff3; background: rgba(41, 211, 189, 0.14); }
-    .tag.studio { color: #cfe5ff; background: rgba(90, 168, 255, 0.14); }
-    .tag.builder { color: #ffe1a8; background: rgba(246, 184, 75, 0.15); }
-    .score {
-      color: #071113;
-      background: linear-gradient(135deg, var(--green), var(--teal));
-      border-color: rgba(124, 227, 160, 0.85);
-    }
-    .section { border-bottom-color: var(--line); }
-    .bar-track, .signal-line {
-      background: rgba(255, 255, 255, 0.08);
-    }
-    .bar-fill {
-      background: linear-gradient(90deg, var(--teal), var(--blue));
-    }
-    .bar-row:nth-child(3n+1) .bar-fill { background: linear-gradient(90deg, var(--blue), var(--violet)); }
-    .bar-row:nth-child(3n+2) .bar-fill { background: linear-gradient(90deg, var(--amber), var(--red)); }
-    .source-link { color: #8ad7ff; }
-    .flow {
+    .info-card h3, .stage-card h3, .resource-card h3 { margin: 0; font-size: 16px; line-height: 1.25; }
+    .info-card p, .stage-card p, .resource-card p { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+    .metric-grid {
       display: grid;
-      grid-template-columns: 1fr 22px 1fr;
-      gap: 8px;
-      align-items: stretch;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
     }
-    .flow-node {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 9px;
-      min-height: 84px;
-      background: rgba(255, 255, 255, 0.045);
+    .metric-card strong { display: block; font-size: 28px; line-height: 1; }
+    .metric-card span { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; font-weight: 800; text-transform: uppercase; }
+    .journey {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      counter-reset: journey;
     }
-    .flow-node b {
-      display: block;
-      color: var(--teal);
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin-bottom: 5px;
-    }
-    .flow-node span {
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      color: #dce7ee;
+    .stage-card { position: relative; padding-top: 42px; }
+    .stage-card::before {
+      counter-increment: journey;
+      content: counter(journey);
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      display: grid;
+      place-items: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: #111827;
+      color: #fff;
       font-size: 12px;
-      line-height: 1.38;
-    }
-    .flow-arrow {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--amber);
       font-weight: 900;
     }
-    .signal-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 9px;
-    }
-    .signal {
+    .compare {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 9px;
-      background: rgba(255, 255, 255, 0.045);
+      background: var(--surface);
     }
-    .signal-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 8px;
+    .compare th, .compare td {
+      border-bottom: 1px solid var(--line);
+      padding: 13px 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .compare th {
+      background: var(--surface-strong);
+      color: var(--text);
       font-size: 12px;
-      color: #dce7ee;
-      margin-bottom: 7px;
+      text-transform: uppercase;
     }
-    .signal-fill {
-      height: 8px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--teal), var(--amber));
+    .compare td { color: var(--muted); }
+    .compare td:first-child { color: var(--text); font-weight: 850; }
+    .page-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 24px;
+      align-items: start;
+      margin-bottom: 22px;
     }
-    @media (max-width: 820px) {
-      .flow { grid-template-columns: 1fr; }
-      .flow-arrow { transform: rotate(90deg); min-height: 10px; }
-      .signal-grid { grid-template-columns: 1fr; }
-      .view-toggle { min-width: 0; width: 100%; }
-      .focus-mode-switch {
-        left: 10px;
-        right: 10px;
-        top: auto;
-        bottom: 12px;
-        justify-content: center;
-      }
-      .detail-bottom .detail,
-      .detail-focus .detail {
-        grid-column: 1 / -1;
-        position: static;
-        max-height: none;
-        overflow: visible;
-      }
-      .detail-bottom .layout > section.panel {
-        max-height: none;
-      }
-      .detail-bottom .detail .panel-body,
-      .detail-focus .detail .panel-body {
-        display: block;
-      }
+    .page-title {
+      padding: 30px 0 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .page-title h1 { font-size: clamp(34px, 5vw, 58px); }
+    .quick-panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+    .quick-panel h2 { margin: 0; font-size: 16px; }
+    .quick-panel p { margin: 8px 0 0; color: var(--muted); }
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .step-label {
+      display: inline-flex;
+      margin-bottom: 10px;
+      color: var(--track-color, var(--blue));
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .checklist {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .checklist li {
+      display: grid;
+      grid-template-columns: 22px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      color: var(--muted);
+    }
+    .checklist li::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      border-radius: 6px;
+      border: 2px solid var(--track-color, var(--blue));
+      background: #fff;
+    }
+    .decision-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      align-items: stretch;
+    }
+    .catalog-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #111827;
+      color: #fff;
+      padding: 18px;
+    }
+    .catalog-card p { color: #cbd5e1; }
+    .catalog-card .tag { background: rgba(255,255,255,.08); color: #e5e7eb; border-color: rgba(255,255,255,.18); }
+    .catalog-card .button { background: #fff; color: #111827; border-color: #fff; }
+    @media (max-width: 1050px) {
+      .topbar { align-items: flex-start; flex-direction: column; padding-bottom: 14px; }
+      .nav { justify-content: flex-start; }
+      .hero, .page-hero, .decision-strip { grid-template-columns: 1fr; }
+      .track-grid, .journey, .timeline, .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .info-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .site-shell { padding: 14px 12px 32px; }
+      .hero-copy { min-height: 0; padding: 12px 0 4px; }
+      .route-card { grid-template-columns: 1fr; }
+      .route-line { height: 6px; }
+      .track-grid, .journey, .timeline, .metric-grid, .resource-grid { grid-template-columns: 1fr; }
+      .section-head { align-items: flex-start; flex-direction: column; }
+      .compare { display: block; overflow-x: auto; }
+      .brand small { display: none; }
     }
   </style>
 </head>
 <body>
-  <script id="agent-data-url" type="application/json">data/catalogo-agentes-data.json</script>
-  <header class="topbar">
-    <div>
-      <h1>Dashboard de Agentes Copilot</h1>
-      <div class="subtitle">Catalogo operacional para demos, treinamentos e selecao de pilotos - 2026-05-23 - build 23/05/2026, 15:13:30</div>
-      <nav class="catalog-switch" aria-label="Catalogos">
-        <a href="catalogos.html">Inicio guiado</a>
-        <a href="index.html" class="active">Agentes operacionais</a>
-        <a href="prompts-agendados.html">Prompts recorrentes</a>
-      </nav>
-    </div>
-    <div class="metrics" aria-label="Indicadores">
-      <div class="metric"><strong id="mTotal">0</strong><span>agentes</span></div>
-      <div class="metric"><strong id="mShown">0</strong><span>filtrados</span></div>
-      <div class="metric"><strong id="mHigh">0</strong><span>alta prioridade</span></div>
-      <div class="metric"><strong id="mCowork">0</strong><span>Cowork</span></div>
-      <div class="metric"><strong id="mShort">0</strong><span>shortlist</span></div>
-    </div>
-  </header>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="catalogos.html" aria-label="Guia de adocao de IA">
+        <span class="brand-mark">AI</span>
+        <span>
+          <strong>Guia de adocao de IA</strong>
+          <small>Copilot, GPT, agentes e trilhas de treinamento</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Navegacao principal"><a href="catalogos.html" class="active">Guia de adocao</a><a href="guia-usuario-iniciante.html">Usuario novo</a><a href="guia-prompting-avancado.html">Prompting avancado</a><a href="guia-frontier-studio.html">Studio e Frontier</a><a href="guia-adocao-empresa.html">Responsavel</a><a href="agentes.html">Agentes</a><a href="prompts-agendados.html">Prompts</a></nav>
+    </header>
+    
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Escolha a trilha certa para adotar IA no trabalho.</h1>
+          <p class="lead">Este guia organiza Copilot, GPT, prompts, agentes e automacoes por momento de maturidade. A pessoa entra pelo seu perfil, aprende o proximo passo e usa os catalogos como biblioteca de apoio.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#trilhas">Escolher trilha</a>
+            <a class="button" href="guia-adocao-empresa.html">Ver modelo de adocao</a>
+          </div>
+        </div>
+        <div class="route-board" id="trilhas" aria-label="Trilhas de adocao">
+          <a class="route-card" href="guia-usuario-iniciante.html" style="--track-color:#2563eb">
+    <span class="route-line" aria-hidden="true"></span>
+    <span>
+      <h2>Usuario em treinamento</h2>
+      <p>Usuario final que recebeu licenca da empresa e precisa criar habito com IA.</p>
+      <span class="meta-row">
+        <span class="tag">Base</span>
+        <span class="tag">7 a 14 dias</span>
+      </span>
+    </span>
+  </a><a class="route-card" href="guia-prompting-avancado.html" style="--track-color:#0f766e">
+    <span class="route-line" aria-hidden="true"></span>
+    <span>
+      <h2>Prompting avancado</h2>
+      <p>Usuario que ja usa IA, mas quer melhorar prompting e explorar Copilot, GPT e agentes.</p>
+      <span class="meta-row">
+        <span class="tag">Intermediario</span>
+        <span class="tag">14 a 30 dias</span>
+      </span>
+    </span>
+  </a><a class="route-card" href="guia-frontier-studio.html" style="--track-color:#a16207">
+    <span class="route-line" aria-hidden="true"></span>
+    <span>
+      <h2>Studio e Frontier</h2>
+      <p>Usuario empolgado, maker ou champion com acesso a recursos avancados.</p>
+      <span class="meta-row">
+        <span class="tag">Avancado</span>
+        <span class="tag">30 a 60 dias</span>
+      </span>
+    </span>
+  </a><a class="route-card" href="guia-adocao-empresa.html" style="--track-color:#7c3aed">
+    <span class="route-line" aria-hidden="true"></span>
+    <span>
+      <h2>Responsavel pela adocao</h2>
+      <p>Lider, RH, TI, transformacao digital ou area de enablement que precisa organizar a trilha.</p>
+      <span class="meta-row">
+        <span class="tag">Programa</span>
+        <span class="tag">30 a 90 dias</span>
+      </span>
+    </span>
+  </a>
+        </div>
+      </section>
 
-  <main class="layout">
-    <aside class="panel controls">
-      <div class="panel-head">
-        <h2>Filtros</h2>
-        <span class="count-pill" id="filterCount">0</span>
-      </div>
-      <div class="panel-body">
-        <div class="field">
-          <label for="q">Busca</label>
-          <input id="q" type="search" placeholder="agente, area, sistema, KPI">
-        </div>
-        <div class="grid-2">
-          <div class="field">
-            <label for="area">Area</label>
-            <select id="area"></select>
-          </div>
-          <div class="field">
-            <label for="type">Tipo</label>
-            <select id="type"></select>
-          </div>
-        </div>
-        <div class="grid-2">
-          <div class="field">
-            <label for="license">Licenca</label>
-            <select id="license"></select>
-          </div>
-          <div class="field">
-            <label for="priority">Prioridade</label>
-            <select id="priority"></select>
-          </div>
-        </div>
-        <div class="grid-2">
-          <div class="field">
-            <label for="complexity">Complexidade</label>
-            <select id="complexity"></select>
-          </div>
-          <div class="field">
-            <label for="category">Categoria</label>
-            <select id="category"></select>
-          </div>
-        </div>
-        <div class="field">
-          <label for="source">Fonte</label>
-          <select id="source"></select>
-        </div>
-        <div class="toggle-list">
-          <label class="check"><input id="onlyHigh" type="checkbox"> Alta prioridade</label>
-          <label class="check"><input id="onlyCowork" type="checkbox"> Somente Cowork</label>
-          <label class="check"><input id="onlySourced" type="checkbox"> Com fonte direta</label>
-          <label class="check"><input id="onlyTop" type="checkbox"> Top 40 demos</label>
-        </div>
-        <div class="field">
-          <label>Ordenar</label>
-          <div class="segmented" id="sortButtons">
-            <button type="button" data-sort="score" class="active">Score</button>
-            <button type="button" data-sort="area">Area</button>
-            <button type="button" data-sort="agent">Agente</button>
-            <button type="button" data-sort="complexity">Complex.</button>
-          </div>
-        </div>
-        <div class="toolbar">
-          <button type="button" id="clearFilters">Limpar</button>
-          <button type="button" id="exportCsv" class="good">CSV filtrado</button>
-        </div>
-      </div>
-    </aside>
-
-    <section class="panel">
-      <div class="tabs">
-        <button type="button" data-tab="agents" class="active">Agentes</button>
-        <button type="button" data-tab="analytics">Mapa</button>
-        <button type="button" data-tab="decisions">Escolha</button>
-      </div>
-      <div id="tab-agents" class="tab-panel active">
-        <div class="results-head">
+      <section class="section">
+        <div class="section-head">
           <div>
-            <div class="results-title">Sugestoes filtradas</div>
-            <div class="subtitle" id="resultHint"></div>
+            <h2>Mapa da jornada</h2>
+            <p class="muted">A adocao fica mais clara quando cada etapa tem uma promessa diferente.</p>
           </div>
-          <div class="toolbar">
-            <button type="button" id="pickDemo" class="primary">Melhor demo</button>
-            <button type="button" id="pickCowork">Cowork</button>
+        </div>
+        <div class="journey">
+          <article class="stage-card"><h3>Ativar</h3><p>Usuario recebe licenca, entende onde usar IA e executa tarefas pequenas com seguranca.</p></article><article class="stage-card"><h3>Criar habito</h3><p>Prompts recorrentes entram na rotina: briefing, resumo, follow-up, status e preparacao.</p></article><article class="stage-card"><h3>Aprimorar</h3><p>Usuarios ativos melhoram prompting, comparam ferramentas e criam padroes reutilizaveis.</p></article><article class="stage-card"><h3>Automatizar</h3><p>Casos repetidos viram agente, workflow, Copilot Studio ou piloto Frontier.</p></article><article class="stage-card"><h3>Escalar</h3><p>Empresa mede valor, governa agentes e transforma bons exemplos em trilhas por area.</p></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <h2>Biblioteca de apoio</h2>
+            <p class="muted">Os catalogos continuam existindo, mas agora entram como apoio da trilha, nao como ponto de partida solto.</p>
           </div>
-          <div class="view-tools">
-            <span class="subtitle">Leitura</span>
-            <div class="view-toggle" id="detailModeButtons">
-              <button type="button" data-detail-mode="side">Lateral</button>
-              <button type="button" data-detail-mode="bottom">Inferior</button>
-              <button type="button" data-detail-mode="focus">Foco</button>
+        </div>
+        <div class="decision-strip">
+          <article class="catalog-card">
+            <h3>Prompts recorrentes</h3>
+            <p>Use para criar habito de uso diario e semanal antes de pedir agentes complexos.</p>
+            <div class="meta-row">
+              <span class="tag">378 prompts</span>
+              <span class="tag">90 sem add-on</span>
+              <span class="tag">216 agendados</span>
             </div>
-            <span class="subtitle reading-hint" id="readingHint"></span>
-          </div>
+            <div class="actions">
+              <a class="button" href="prompts-agendados.html">Abrir prompts</a>
+            </div>
+          </article>
+          <article class="catalog-card">
+            <h3>Agentes operacionais</h3>
+            <p>Use para demos por area, selecao de pilotos, Copilot Studio, workflows e agentes com arquivos.</p>
+            <div class="meta-row">
+              <span class="tag">370 agentes</span>
+              <span class="tag">130 sem conector</span>
+              <span class="tag">219 avancados</span>
+            </div>
+            <div class="actions">
+              <a class="button" href="agentes.html">Abrir agentes</a>
+            </div>
+          </article>
         </div>
-        <div class="agent-list" id="agentList"></div>
-      </div>
-      <div id="tab-analytics" class="tab-panel">
-        <div class="panel-body">
-          <div class="section">
-            <h3>Areas mais fortes</h3>
-            <div class="bars" id="areaBars"></div>
-          </div>
-          <div class="section">
-            <h3>Tipos de agente</h3>
-            <div class="bars" id="typeBars"></div>
-          </div>
-          <div class="section">
-            <h3>Licencas e caminhos</h3>
-            <div class="bars" id="licenseBars"></div>
-          </div>
-        </div>
-      </div>
-      <div id="tab-decisions" class="tab-panel">
-        <div class="panel-body" id="decisionList"></div>
-      </div>
-    </section>
+      </section>
 
-    <aside class="panel detail">
-      <div class="panel-head detail-title">
-        <div>
-          <h2 id="detailName">Selecione um agente</h2>
-          <p id="detailMeta">Os detalhes aparecem aqui.</p>
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <h2>Como decidir o caminho</h2>
+            <p class="muted">A pergunta nao e qual ferramenta e mais poderosa. A pergunta e qual proximo passo ajuda este usuario agora.</p>
+          </div>
         </div>
-        <span class="score" id="detailScore">--</span>
-      </div>
-      <div class="panel-body" id="detailBody"></div>
-    </aside>
-  </main>
-  <div class="focus-mode-switch" id="focusModeSwitch" aria-label="Trocar posicao de leitura">
-    <span>Leitura</span>
-    <button type="button" data-focus-mode="side">Lateral</button>
-    <button type="button" data-focus-mode="bottom">Inferior</button>
-    <button type="button" data-focus-mode="focus">Foco</button>
+        <table class="compare">
+          <thead>
+            <tr><th>Perfil</th><th>Comece por</th><th>Proxima evolucao</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Recebeu licenca e esta em treinamento</td><td>Prompts com arquivos e rituais recorrentes</td><td>Prompts salvos e exemplos compartilhados com o time.</td></tr>
+            <tr><td>Ja usa IA e quer melhorar</td><td>Prompting avancado e comparacao entre Copilot, GPT e agentes</td><td>Agente simples com base de conhecimento controlada.</td></tr>
+            <tr><td>Quer Copilot Studio ou Frontier</td><td>Casos com processo, acao e governanca</td><td>Piloto com dono, KPI, fontes e aprovacao humana.</td></tr>
+            <tr><td>Responsavel pela empresa</td><td>Trilhas por maturidade e ondas de adocao</td><td>Modelo operacional para champions, governanca e escala.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  
   </div>
-  <div class="toast" id="toast"></div>
-
-  <script>
-    let data, rows, topIds, state;
-    async function bootstrap() {
-      const dataUrl = document.getElementById("agent-data-url").textContent.trim();
-      const response = await fetch(dataUrl, { cache: "no-store" });
-      if (!response.ok) throw new Error("Nao foi possivel carregar " + dataUrl);
-      data = await response.json();
-      rows = data.rows;
-      topIds = new Set(data.topRows.map(function(r) { return r.id; }));
-      const initialDetailMode = loadDetailMode();
-      state = {
-      q: "",
-      area: "Todos",
-      type: "Todos",
-      license: "Todos",
-      priority: "Todos",
-      complexity: "Todos",
-      category: "Todos",
-      source: "Todos",
-      onlyHigh: false,
-      onlyCowork: false,
-      onlySourced: false,
-      onlyTop: false,
-      sort: "score",
-      detailMode: initialDetailMode,
-      previousDetailMode: initialDetailMode === "focus" ? "side" : initialDetailMode,
-      selectedId: rows[0] ? rows[0].id : null,
-      shortlist: loadShortlist()
-    };
-
-    const el = function(id) { return document.getElementById(id); };
-    const normalized = function(value) { return String(value || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); };
-    const uniq = function(field) {
-      return ["Todos"].concat(Array.from(new Set(rows.map(function(r) { return r[field] || ""; }).filter(Boolean))).sort());
-    };
-    const contains = function(row, query) {
-      if (!query) return true;
-      const hay = normalized([row.id, row.area, row.agent, row.copilotType, row.license, row.objective, row.inputs, row.systems, row.actions, row.outputs, row.demo, row.kpi, row.source, row.notes].join(" "));
-      return hay.indexOf(normalized(query)) !== -1;
-    };
-    const isHigh = function(row) { return String(row.priority || "").indexOf("Alta") === 0; };
-    const isCowork = function(row) { return /cowork/i.test(row.copilotType + " " + row.category + " " + row.agent); };
-    const isSource = function(row) { return Boolean(row.url); };
-    const opt = function(value) { return "<option>" + escapeHtml(value) + "</option>"; };
-    const tagClass = function(row) {
-      if (isCowork(row)) return "cowork";
-      if (/Studio/i.test(row.copilotType)) return "studio";
-      if (/Builder/i.test(row.copilotType)) return "builder";
-      return "";
-    };
-
-    function escapeHtml(value) {
-      return String(value == null ? "" : value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    }
-
-    function setupSelect(id, values) {
-      const select = el(id);
-      select.innerHTML = values.map(opt).join("");
-      select.value = state[id] || "Todos";
-      select.addEventListener("change", function() {
-        state[id] = select.value;
-        render();
-      });
-    }
-
-    function init() {
-      setupSelect("area", uniq("area"));
-      setupSelect("type", uniq("copilotType"));
-      setupSelect("license", uniq("license"));
-      setupSelect("priority", uniq("priority"));
-      setupSelect("complexity", uniq("complexity"));
-      setupSelect("category", uniq("category"));
-      setupSelect("source", uniq("source"));
-
-      el("q").addEventListener("input", function(event) {
-        state.q = event.target.value;
-        render();
-      });
-      ["onlyHigh", "onlyCowork", "onlySourced", "onlyTop"].forEach(function(id) {
-        el(id).addEventListener("change", function(event) {
-          state[id] = event.target.checked;
-          render();
-        });
-      });
-      document.querySelectorAll("#sortButtons button").forEach(function(button) {
-        button.addEventListener("click", function() {
-          state.sort = button.dataset.sort;
-          document.querySelectorAll("#sortButtons button").forEach(function(b) { b.classList.remove("active"); });
-          button.classList.add("active");
-          render();
-        });
-      });
-      document.querySelectorAll("#detailModeButtons button").forEach(function(button) {
-        button.addEventListener("click", function() {
-          setDetailMode(button.dataset.detailMode);
-        });
-      });
-      document.querySelectorAll("#focusModeSwitch button").forEach(function(button) {
-        button.addEventListener("click", function() {
-          setDetailMode(button.dataset.focusMode);
-        });
-      });
-      document.querySelectorAll(".tabs button").forEach(function(button) {
-        button.addEventListener("click", function() {
-          document.querySelectorAll(".tabs button").forEach(function(b) { b.classList.remove("active"); });
-          document.querySelectorAll(".tab-panel").forEach(function(p) { p.classList.remove("active"); });
-          button.classList.add("active");
-          el("tab-" + button.dataset.tab).classList.add("active");
-        });
-      });
-      el("clearFilters").addEventListener("click", clearFilters);
-      el("exportCsv").addEventListener("click", function() { downloadCsv(filteredRows(), "agentes-copilot-filtrados.csv"); });
-      el("pickDemo").addEventListener("click", function() { selectBest(function(r) { return isHigh(r); }); });
-      el("pickCowork").addEventListener("click", function() { selectBest(function(r) { return isCowork(r); }); });
-      applyDetailMode();
-      renderDecisions();
-      render();
-    }
-
-    function filteredRows() {
-      let result = rows.filter(function(row) {
-        if (!contains(row, state.q)) return false;
-        if (state.area !== "Todos" && row.area !== state.area) return false;
-        if (state.type !== "Todos" && row.copilotType !== state.type) return false;
-        if (state.license !== "Todos" && row.license !== state.license) return false;
-        if (state.priority !== "Todos" && row.priority !== state.priority) return false;
-        if (state.complexity !== "Todos" && row.complexity !== state.complexity) return false;
-        if (state.category !== "Todos" && row.category !== state.category) return false;
-        if (state.source !== "Todos" && row.source !== state.source) return false;
-        if (state.onlyHigh && !isHigh(row)) return false;
-        if (state.onlyCowork && !isCowork(row)) return false;
-        if (state.onlySourced && !isSource(row)) return false;
-        if (state.onlyTop && !topIds.has(row.id)) return false;
-        return true;
-      });
-      result.sort(sorter);
-      return result;
-    }
-
-    function sorter(a, b) {
-      if (state.sort === "area") return a.area.localeCompare(b.area) || b.trainingScore - a.trainingScore;
-      if (state.sort === "agent") return a.agent.localeCompare(b.agent);
-      if (state.sort === "complexity") return a.complexity.localeCompare(b.complexity) || b.trainingScore - a.trainingScore;
-      return b.trainingScore - a.trainingScore || a.area.localeCompare(b.area);
-    }
-
-    function render() {
-      const filtered = filteredRows();
-      if (!filtered.some(function(row) { return row.id === state.selectedId; })) {
-        state.selectedId = filtered[0] ? filtered[0].id : rows[0] ? rows[0].id : null;
-      }
-      el("mTotal").textContent = rows.length;
-      el("mShown").textContent = filtered.length;
-      el("mHigh").textContent = filtered.filter(isHigh).length;
-      el("mCowork").textContent = filtered.filter(isCowork).length;
-      el("mShort").textContent = state.shortlist.length;
-      el("filterCount").textContent = filtered.length + " resultados";
-      el("resultHint").textContent = makeHint(filtered);
-      renderList(filtered);
-      renderDetail(rows.find(function(row) { return row.id === state.selectedId; }));
-      renderBars(filtered);
-      renderShortlist();
-    }
-
-    function makeHint(filtered) {
-      if (!filtered.length) return "Nenhum resultado no recorte atual.";
-      const areas = Array.from(new Set(filtered.map(function(r) { return r.area; }))).slice(0, 3).join(", ");
-      return areas + (filtered.length > 1 ? " - " + filtered.length + " opcoes" : " - 1 opcao");
-    }
-
-    function renderList(filtered) {
-      const list = el("agentList");
-      if (!filtered.length) {
-        list.innerHTML = '<div class="empty">Nenhum agente encontrado para este recorte.</div>';
-        return;
-      }
-      list.innerHTML = filtered.map(function(row) {
-        return '<button type="button" class="agent ' + (row.id === state.selectedId ? "active" : "") + '" data-id="' + escapeHtml(row.id) + '">' +
-          '<div class="agent-top"><div><h3>' + escapeHtml(row.agent) + '</h3><p>' + escapeHtml(row.objective) + '</p></div><span class="score">' + escapeHtml(row.trainingScore) + '</span></div>' +
-          '<div class="tags">' +
-            '<span class="tag">' + escapeHtml(row.area) + '</span>' +
-            '<span class="tag ' + tagClass(row) + '">' + escapeHtml(shortType(row.copilotType)) + '</span>' +
-            '<span class="tag ' + (isHigh(row) ? "high" : "") + '">' + escapeHtml(row.priority) + '</span>' +
-          '</div>' +
-        '</button>';
-      }).join("");
-      list.querySelectorAll(".agent").forEach(function(button) {
-        button.addEventListener("click", function() {
-          state.selectedId = button.dataset.id;
-          render();
-          scrollDetailIntoView();
-        });
-      });
-    }
-
-    function shortType(value) {
-      return String(value || "").replace("Copilot Studio", "Studio").replace("Microsoft 365 Copilot", "M365 Copilot").replace("Copilot Cowork", "Cowork");
-    }
-
-    function renderDetail(row) {
-      if (!row) {
-        el("detailName").textContent = "Sem agente selecionado";
-        el("detailMeta").textContent = "";
-        el("detailScore").textContent = "--";
-        el("detailBody").innerHTML = "";
-        return;
-      }
-      el("detailName").textContent = row.agent;
-      el("detailMeta").textContent = row.id + " - " + row.area + " - " + row.copilotType;
-      el("detailScore").textContent = row.trainingScore;
-      const prompt = buildPrompt(row);
-      const demo = buildDemoPlan(row);
-      const focusLabel = state.detailMode === "focus" ? "Sair do foco" : "Modo foco";
-      el("detailBody").innerHTML =
-        '<div class="detail-hero"><h3>Descricao do agente</h3><p>' + escapeHtml(row.objective) + '</p><div class="hero-meta">' +
-          '<span class="tag">' + escapeHtml(row.area) + '</span>' +
-          '<span class="tag ' + tagClass(row) + '">' + escapeHtml(shortType(row.copilotType)) + '</span>' +
-          '<span class="tag ' + (isHigh(row) ? "high" : "") + '">' + escapeHtml(row.priority) + '</span>' +
-          '<span class="tag">' + escapeHtml(row.complexity) + '</span>' +
-        '</div><div class="action-row"><button type="button" id="copyPrompt" class="primary">Copiar prompt</button><button type="button" id="copyDemo">Copiar roteiro</button><button type="button" id="focusDetail">' + focusLabel + '</button><button type="button" id="addShort" class="good">' + (state.shortlist.indexOf(row.id) >= 0 ? "Na shortlist" : "Adicionar") + '</button></div></div>' +
-        '<div class="reader-grid">' +
-          '<div class="reader-card"><h3>Como testar agora</h3>' + buildTestSteps(row) + '</div>' +
-          '<div class="reader-card"><h3>Prompt pronto para copiar</h3><textarea id="promptBox" class="copy-box">' + escapeHtml(prompt) + '</textarea></div>' +
-          '<div class="reader-card"><h3>Mapa visual do agente</h3>' + buildFlow(row) + '</div>' +
-          '<div class="reader-card"><h3>Leitura rapida</h3>' + buildSignalPanel(row) + '</div>' +
-          '<div class="reader-card"><h3>Detalhes operacionais</h3>' +
-            kv("Trigger", row.trigger) +
-            kv("Entradas", row.inputs) +
-            kv("Sistemas", row.systems) +
-            kv("Acoes", row.actions) +
-            kv("Saidas", row.outputs) +
-          '</div>' +
-          '<div class="reader-card"><h3>Governanca e valor</h3>' +
-            kv("Governanca", row.governance) +
-            kv("KPI", row.kpi) +
-            kv("Implementacao", row.implementation) +
-            kv("Diferencial", row.differentiator) +
-          '</div>' +
-          '<div class="reader-card"><h3>Roteiro de treinamento</h3><textarea id="demoBox" class="copy-box">' + escapeHtml(demo) + '</textarea></div>' +
-          '<div class="reader-card"><h3>Fonte e shortlist</h3>' +
-            kv("Origem", row.source || "Sintese propria") +
-            (row.url ? '<a class="source-link" href="' + escapeHtml(row.url) + '" target="_blank" rel="noreferrer">' + escapeHtml(row.url) + '</a>' : '<span class="subtitle">Sem link direto.</span>') +
-            '<div class="shortlist" id="shortlist"></div>' +
-          '</div>' +
-        '</div>';
-      el("copyPrompt").addEventListener("click", function() { copyText(el("promptBox").value); });
-      el("copyDemo").addEventListener("click", function() { copyText(el("demoBox").value); });
-      el("focusDetail").addEventListener("click", function() { setDetailMode(state.detailMode === "focus" ? state.previousDetailMode : "focus"); });
-      el("addShort").addEventListener("click", function() { toggleShortlist(row.id); });
-      renderShortlist();
-    }
-
-    function kv(label, value) {
-      return '<div class="kv"><b>' + escapeHtml(label) + '</b><span>' + escapeHtml(value) + '</span></div>';
-    }
-
-    function buildPrompt(row) {
-      return [
-        "Voce e um agente operacional de " + row.area + ".",
-        "Objetivo: " + row.objective,
-        "Contexto de teste: use os arquivos, emails ou registros de exemplo anexados.",
-        "Execute: " + row.actions,
-        "Entregue: " + row.outputs,
-        "Inclua riscos, decisoes que precisam de aprovacao humana e o KPI de sucesso: " + row.kpi,
-        "Pergunta inicial: " + row.demo
-      ].join("\n");
-    }
-
-    function buildDemoPlan(row) {
-      return [
-        "Demo - " + row.agent,
-        "1. Cenario: " + row.objective,
-        "2. Entrada: " + row.inputs,
-        "3. Acao do agente: " + row.actions,
-        "4. Saida esperada: " + row.outputs,
-        "5. Momento de governanca: " + row.governance,
-        "6. Pergunta para a turma: onde este agente deve parar e pedir aprovacao humana?",
-        "7. KPI para decidir piloto: " + row.kpi
-      ].join("\n");
-    }
-
-    function buildTestSteps(row) {
-      return '<ul>' +
-        '<li><strong>1. Abra com o objetivo:</strong> ' + escapeHtml(row.objective) + '</li>' +
-        '<li><strong>2. Use dados anonimizados:</strong> ' + escapeHtml(row.inputs) + '</li>' +
-        '<li><strong>3. Peça a execucao:</strong> ' + escapeHtml(row.demo) + '</li>' +
-        '<li><strong>4. Valide a saida:</strong> ' + escapeHtml(row.outputs) + '</li>' +
-        '<li><strong>5. Meça valor:</strong> ' + escapeHtml(row.kpi) + '</li>' +
-      '</ul>';
-    }
-
-    function buildFlow(row) {
-      return '<div class="flow">' +
-        flowNode("Entrada", row.inputs) +
-        '<div class="flow-arrow">></div>' +
-        flowNode("Agente", row.actions) +
-        flowNode("Sistemas", row.systems) +
-        '<div class="flow-arrow">></div>' +
-        flowNode("Saida", row.outputs) +
-      '</div>';
-    }
-
-    function flowNode(label, value) {
-      return '<div class="flow-node"><b>' + escapeHtml(label) + '</b><span>' + escapeHtml(value) + '</span></div>';
-    }
-
-    function buildSignalPanel(row) {
-      const signals = agentSignals(row);
-      return '<div class="signal-grid">' + signals.map(function(signal) {
-        return '<div class="signal"><div class="signal-top"><span>' + escapeHtml(signal.label) + '</span><b>' + signal.value + '%</b></div><div class="signal-line"><div class="signal-fill" style="width:' + signal.value + '%"></div></div></div>';
-      }).join("") + '</div>';
-    }
-
-    function agentSignals(row) {
-      const text = normalized([row.copilotType, row.actions, row.systems, row.outputs, row.governance, row.differentiator].join(" "));
-      const autonomy = /cowork|autonom|workflow|scheduled|background|monitora|cria|atualiza|processa|executa/.test(text) ? 86 : /agent builder|declarative/.test(text) ? 42 : 68;
-      const integration = /api|erp|dynamics|sap|salesforce|servicenow|jira|dataverse|power automate|http|connector|foundry/.test(text) ? 88 : /sharepoint|teams|outlook|excel/.test(text) ? 64 : 46;
-      const governance = /aprova|approval|supervis|humana|audit|dlp|govern|compliance|risk|permiss/.test(text) ? 90 : 58;
-      const demo = row.trainingScore >= 5 ? 92 : row.trainingScore >= 4 ? 76 : 55;
-      return [
-        { label: "Autonomia", value: autonomy },
-        { label: "Integracao", value: integration },
-        { label: "Governanca", value: governance },
-        { label: "Forca de demo", value: demo }
-      ];
-    }
-
-    function renderBars(filtered) {
-      groupedBars("areaBars", filtered, "area", 10);
-      groupedBars("typeBars", filtered, "copilotType", 10);
-      groupedBars("licenseBars", filtered, "license", 8);
-    }
-
-    function groupedBars(id, items, field, limit) {
-      const counts = {};
-      items.forEach(function(row) { counts[row[field]] = (counts[row[field]] || 0) + 1; });
-      const pairs = Object.keys(counts).map(function(key) { return [key, counts[key]]; }).sort(function(a, b) { return b[1] - a[1]; }).slice(0, limit);
-      const max = pairs[0] ? pairs[0][1] : 1;
-      el(id).innerHTML = pairs.length ? pairs.map(function(pair) {
-        return '<div class="bar-row"><div class="bar-label" title="' + escapeHtml(pair[0]) + '">' + escapeHtml(pair[0]) + '<div class="bar-track"><div class="bar-fill" style="width:' + Math.max(4, Math.round(pair[1] / max * 100)) + '%"></div></div></div><div class="bar-value">' + pair[1] + '</div></div>';
-      }).join("") : '<div class="empty">Sem dados neste recorte.</div>';
-    }
-
-    function renderDecisions() {
-      el("decisionList").innerHTML = data.decisionRows.map(function(row) {
-        return '<div class="decision"><b>' + escapeHtml(row.scenario) + '</b><div>' + escapeHtml(row.recommended) + '</div><span>' + escapeHtml(row.why) + ' ' + escapeHtml(row.warning) + '</span></div>';
-      }).join("");
-    }
-
-    function clearFilters() {
-      state.q = "";
-      ["area", "type", "license", "priority", "complexity", "category", "source"].forEach(function(id) {
-        state[id] = "Todos";
-        el(id).value = "Todos";
-      });
-      ["onlyHigh", "onlyCowork", "onlySourced", "onlyTop"].forEach(function(id) {
-        state[id] = false;
-        el(id).checked = false;
-      });
-      el("q").value = "";
-      render();
-    }
-
-    function selectBest(predicate) {
-      const filtered = filteredRows().filter(predicate);
-      if (!filtered.length) {
-        toast("Nao ha agente neste recorte.");
-        return;
-      }
-      state.selectedId = filtered[0].id;
-      render();
-      scrollDetailIntoView();
-    }
-
-    function loadShortlist() {
-      try { return JSON.parse(localStorage.getItem("copilotAgentShortlist") || "[]"); } catch { return []; }
-    }
-
-    function loadDetailMode() {
-      const mode = localStorage.getItem("copilotAgentDetailMode") || "side";
-      return ["side", "bottom", "focus"].indexOf(mode) >= 0 ? mode : "side";
-    }
-
-    function setDetailMode(mode) {
-      const nextMode = ["side", "bottom", "focus"].indexOf(mode) >= 0 ? mode : "side";
-      if (nextMode === "focus" && state.detailMode !== "focus") {
-        state.previousDetailMode = state.detailMode;
-      }
-      if (nextMode !== "focus") {
-        state.previousDetailMode = nextMode;
-      }
-      state.detailMode = nextMode;
-      localStorage.setItem("copilotAgentDetailMode", state.detailMode);
-      applyDetailMode();
-      renderDetail(rows.find(function(row) { return row.id === state.selectedId; }));
-      scrollDetailIntoView("auto");
-    }
-
-    function applyDetailMode() {
-      document.body.classList.toggle("detail-bottom", state.detailMode === "bottom");
-      document.body.classList.toggle("detail-focus", state.detailMode === "focus");
-      document.querySelectorAll("#detailModeButtons button").forEach(function(button) {
-        button.classList.toggle("active", button.dataset.detailMode === state.detailMode);
-      });
-      document.querySelectorAll("#focusModeSwitch button").forEach(function(button) {
-        button.classList.toggle("active", button.dataset.focusMode === state.detailMode);
-      });
-      const hints = {
-        side: "Lateral: ideal para triagem rapida enquanto compara a lista.",
-        bottom: "Inferior: leitura confortavel, com a lista compacta acima e detalhes em duas colunas.",
-        focus: "Foco: melhor para apresentar, copiar prompt e explicar a demo."
-      };
-      if (el("readingHint")) el("readingHint").textContent = hints[state.detailMode] || hints.side;
-    }
-
-    function scrollDetailIntoView(behavior) {
-      if (state.detailMode !== "bottom") return;
-      requestAnimationFrame(function() {
-        requestAnimationFrame(function() {
-          const move = function() {
-            const panel = document.querySelector(".detail");
-            if (!panel) return;
-            const top = Math.max(0, panel.getBoundingClientRect().top + window.scrollY - 118);
-            if (behavior === "auto") window.scrollTo(0, top);
-            else window.scrollTo({ top: top, behavior: "smooth" });
-          };
-          move();
-          setTimeout(move, 80);
-        });
-      });
-    }
-
-    function saveShortlist() {
-      localStorage.setItem("copilotAgentShortlist", JSON.stringify(state.shortlist));
-    }
-
-    function toggleShortlist(id) {
-      const index = state.shortlist.indexOf(id);
-      if (index >= 0) state.shortlist.splice(index, 1);
-      else state.shortlist.push(id);
-      saveShortlist();
-      render();
-      toast(index >= 0 ? "Removido da shortlist." : "Adicionado a shortlist.");
-    }
-
-    function renderShortlist() {
-      const container = el("shortlist");
-      if (!container) return;
-      if (!state.shortlist.length) {
-        container.innerHTML = '<div class="empty">Shortlist vazia.</div>';
-        return;
-      }
-      container.innerHTML = state.shortlist.map(function(id) {
-        const row = rows.find(function(r) { return r.id === id; });
-        if (!row) return "";
-        return '<div class="short-item"><span>' + escapeHtml(row.agent) + '</span><button type="button" data-remove="' + escapeHtml(id) + '">Remover</button></div>';
-      }).join("");
-      container.querySelectorAll("[data-remove]").forEach(function(button) {
-        button.addEventListener("click", function() { toggleShortlist(button.dataset.remove); });
-      });
-    }
-
-    function downloadCsv(items, filename) {
-      const cols = ["id", "area", "agent", "copilotType", "license", "priority", "trainingScore", "objective", "demo", "kpi", "source", "url"];
-      const csv = [cols.join(",")].concat(items.map(function(row) {
-        return cols.map(function(col) {
-          return '"' + String(row[col] || "").replace(/"/g, '""') + '"';
-        }).join(",");
-      })).join("\n");
-      const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = filename;
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      URL.revokeObjectURL(url);
-      toast("CSV gerado.");
-    }
-
-    function copyText(text) {
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(function() { toast("Copiado."); }).catch(fallbackCopy);
-      } else {
-        fallbackCopy();
-      }
-      function fallbackCopy() {
-        const textarea = document.createElement("textarea");
-        textarea.value = text;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand("copy");
-        textarea.remove();
-        toast("Copiado.");
-      }
-    }
-
-    function toast(message) {
-      const node = el("toast");
-      node.textContent = message;
-      node.classList.add("show");
-      clearTimeout(toast.timer);
-      toast.timer = setTimeout(function() { node.classList.remove("show"); }, 1700);
-    }
-
-    init();
-    }
-
-    bootstrap().catch(function(error) {
-      document.body.innerHTML = '<main style="padding:24px;font-family:system-ui;color:#f4f7f9;background:#0c0f12;min-height:100vh"><h1>Erro ao carregar dados</h1><p>' + String(error.message).replace(/</g, "&lt;") + '</p><p>Se voce abriu este arquivo via file://, use um servidor local ou publique no GitHub Pages para permitir fetch do JSON.</p></main>';
-    });
-  </script>
 </body>
 </html>

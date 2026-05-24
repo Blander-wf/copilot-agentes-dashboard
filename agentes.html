@@ -932,7 +932,7 @@
   <header class="topbar">
     <div>
       <h1>Catálogo de Agentes Copilot</h1>
-      <div class="subtitle">Casos de uso para workshops, desenho de pilotos e decisões de implementação - 2026-05-23 - build 24/05/2026, 16:47:19</div>
+      <div class="subtitle">Casos de uso para workshops, desenho de pilotos e decisões de implementação - 2026-05-23 - build 24/05/2026, 16:53:31</div>
       <nav class="catalog-switch" aria-label="Catálogos">
         <a href="catalogos.html">Guia de Adoção</a>
         <a href="agentes.html" class="active">Catálogo de agentes</a>
@@ -1255,7 +1255,7 @@
     function makeHint(filtered) {
       if (!filtered.length) return "Nenhum caso encontrado para os critérios selecionados.";
       const areas = Array.from(new Set(filtered.map(function(r) { return r.area; }))).slice(0, 3).join(", ");
-      return areas + (filtered.length > 1 ? " - " + filtered.length + " opcoes" : " - 1 opcao");
+      return areas + (filtered.length > 1 ? " - " + filtered.length + " opções" : " - 1 opção");
     }
 
     function renderList(filtered) {

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Cache-Control" content="no-store, max-age=0">
   <meta http-equiv="Pragma" content="no-cache">
-  <title>Dashboard de Agentes Copilot</title>
+  <title>Catálogo de Agentes Copilot</title>
   <style>
     :root {
       color-scheme: light;
@@ -931,37 +931,37 @@
   <script id="agent-data-url" type="application/json">data/catalogo-agentes-data.json</script>
   <header class="topbar">
     <div>
-      <h1>Dashboard de Agentes Copilot</h1>
-      <div class="subtitle">Catalogo operacional para demos, treinamentos e selecao de pilotos - 2026-05-23 - build 24/05/2026, 16:08:24</div>
-      <nav class="catalog-switch" aria-label="Catalogos">
-        <a href="catalogos.html">Guia de adocao</a>
-        <a href="agentes.html" class="active">Agentes operacionais</a>
-        <a href="prompts-agendados.html">Prompts recorrentes</a>
+      <h1>Catálogo de Agentes Copilot</h1>
+      <div class="subtitle">Casos de uso para workshops, desenho de pilotos e decisões de implementação - 2026-05-23 - build 24/05/2026, 16:47:19</div>
+      <nav class="catalog-switch" aria-label="Catálogos">
+        <a href="catalogos.html">Guia de Adoção</a>
+        <a href="agentes.html" class="active">Catálogo de agentes</a>
+        <a href="prompts-agendados.html">Biblioteca de prompts</a>
       </nav>
     </div>
     <div class="metrics" aria-label="Indicadores">
       <div class="metric"><strong id="mTotal">0</strong><span>agentes</span></div>
-      <div class="metric"><strong id="mShown">0</strong><span>filtrados</span></div>
-      <div class="metric"><strong id="mHigh">0</strong><span>alta prioridade</span></div>
+      <div class="metric"><strong id="mShown">0</strong><span>em exibição</span></div>
+      <div class="metric"><strong id="mHigh">0</strong><span>prioritários</span></div>
       <div class="metric"><strong id="mCowork">0</strong><span>Cowork</span></div>
-      <div class="metric"><strong id="mShort">0</strong><span>shortlist</span></div>
+      <div class="metric"><strong id="mShort">0</strong><span>selecionados</span></div>
     </div>
   </header>
 
   <main class="layout">
     <aside class="panel controls">
       <div class="panel-head">
-        <h2>Filtros</h2>
+        <h2>Refinar catálogo</h2>
         <span class="count-pill" id="filterCount">0</span>
       </div>
       <div class="panel-body">
         <div class="field">
           <label for="q">Busca</label>
-          <input id="q" type="search" placeholder="agente, area, sistema, KPI">
+          <input id="q" type="search" placeholder="agente, área, sistema ou indicador">
         </div>
         <div class="grid-2">
           <div class="field">
-            <label for="area">Area</label>
+            <label for="area">Área</label>
             <select id="area"></select>
           </div>
           <div class="field">
@@ -971,7 +971,7 @@
         </div>
         <div class="grid-2">
           <div class="field">
-            <label for="license">Licenca</label>
+            <label for="license">Licença</label>
             <select id="license"></select>
           </div>
           <div class="field">
@@ -994,45 +994,45 @@
           <select id="source"></select>
         </div>
         <div class="toggle-list">
-          <label class="check"><input id="onlyHigh" type="checkbox"> Alta prioridade</label>
+          <label class="check"><input id="onlyHigh" type="checkbox"> Somente prioritários</label>
           <label class="check"><input id="onlyCowork" type="checkbox"> Somente Cowork</label>
           <label class="check"><input id="onlySourced" type="checkbox"> Com fonte direta</label>
-          <label class="check"><input id="onlyTop" type="checkbox"> Top 40 demos</label>
+          <label class="check"><input id="onlyTop" type="checkbox"> Top 40 para demonstração</label>
         </div>
         <div class="field">
-          <label>Ordenar</label>
+          <label>Ordenar por</label>
           <div class="segmented" id="sortButtons">
-            <button type="button" data-sort="score" class="active">Score</button>
-            <button type="button" data-sort="area">Area</button>
+            <button type="button" data-sort="score" class="active">Pontuação</button>
+            <button type="button" data-sort="area">Área</button>
             <button type="button" data-sort="agent">Agente</button>
-            <button type="button" data-sort="complexity">Complex.</button>
+            <button type="button" data-sort="complexity">Complexidade</button>
           </div>
         </div>
         <div class="toolbar">
-          <button type="button" id="clearFilters">Limpar</button>
-          <button type="button" id="exportCsv" class="good">CSV filtrado</button>
+          <button type="button" id="clearFilters">Redefinir</button>
+          <button type="button" id="exportCsv" class="good">Exportar CSV</button>
         </div>
       </div>
     </aside>
 
     <section class="panel">
       <div class="tabs">
-        <button type="button" data-tab="agents" class="active">Agentes</button>
-        <button type="button" data-tab="analytics">Mapa</button>
-        <button type="button" data-tab="decisions">Escolha</button>
+        <button type="button" data-tab="agents" class="active">Catálogo</button>
+        <button type="button" data-tab="analytics">Distribuição</button>
+        <button type="button" data-tab="decisions">Matriz de decisão</button>
       </div>
       <div id="tab-agents" class="tab-panel active">
         <div class="results-head">
           <div>
-            <div class="results-title">Sugestoes filtradas</div>
+            <div class="results-title">Casos recomendados</div>
             <div class="subtitle" id="resultHint"></div>
           </div>
           <div class="toolbar">
-            <button type="button" id="pickDemo" class="primary">Melhor demo</button>
-            <button type="button" id="pickCowork">Cowork</button>
+            <button type="button" id="pickDemo" class="primary">Sugerir melhor caso</button>
+            <button type="button" id="pickCowork">Filtrar Cowork</button>
           </div>
           <div class="view-tools">
-            <span class="subtitle">Leitura</span>
+            <span class="subtitle">Modo de leitura</span>
             <div class="view-toggle" id="detailModeButtons">
               <button type="button" data-detail-mode="side">Lateral</button>
               <button type="button" data-detail-mode="bottom">Inferior</button>
@@ -1046,7 +1046,7 @@
       <div id="tab-analytics" class="tab-panel">
         <div class="panel-body">
           <div class="section">
-            <h3>Areas mais fortes</h3>
+            <h3>Áreas com maior cobertura</h3>
             <div class="bars" id="areaBars"></div>
           </div>
           <div class="section">
@@ -1054,7 +1054,7 @@
             <div class="bars" id="typeBars"></div>
           </div>
           <div class="section">
-            <h3>Licencas e caminhos</h3>
+            <h3>Licenciamento e caminhos</h3>
             <div class="bars" id="licenseBars"></div>
           </div>
         </div>
@@ -1067,16 +1067,16 @@
     <aside class="panel detail">
       <div class="panel-head detail-title">
         <div>
-          <h2 id="detailName">Selecione um agente</h2>
-          <p id="detailMeta">Os detalhes aparecem aqui.</p>
+          <h2 id="detailName">Selecione um caso de uso</h2>
+          <p id="detailMeta">A visão detalhada será exibida neste painel.</p>
         </div>
         <span class="score" id="detailScore">--</span>
       </div>
       <div class="panel-body" id="detailBody"></div>
     </aside>
   </main>
-  <div class="focus-mode-switch" id="focusModeSwitch" aria-label="Trocar posicao de leitura">
-    <span>Leitura</span>
+  <div class="focus-mode-switch" id="focusModeSwitch" aria-label="Trocar layout de leitura">
+    <span>Modo de leitura</span>
     <button type="button" data-focus-mode="side">Lateral</button>
     <button type="button" data-focus-mode="bottom">Inferior</button>
     <button type="button" data-focus-mode="focus">Foco</button>
@@ -1088,7 +1088,7 @@
     async function bootstrap() {
       const dataUrl = document.getElementById("agent-data-url").textContent.trim();
       const response = await fetch(dataUrl, { cache: "no-store" });
-      if (!response.ok) throw new Error("Nao foi possivel carregar " + dataUrl);
+      if (!response.ok) throw new Error("Não foi possível carregar " + dataUrl);
       data = await response.json();
       rows = data.rows;
       topIds = new Set(data.topRows.map(function(r) { return r.id; }));
@@ -1253,7 +1253,7 @@
     }
 
     function makeHint(filtered) {
-      if (!filtered.length) return "Nenhum resultado no recorte atual.";
+      if (!filtered.length) return "Nenhum caso encontrado para os critérios selecionados.";
       const areas = Array.from(new Set(filtered.map(function(r) { return r.area; }))).slice(0, 3).join(", ");
       return areas + (filtered.length > 1 ? " - " + filtered.length + " opcoes" : " - 1 opcao");
     }
@@ -1261,7 +1261,7 @@
     function renderList(filtered) {
       const list = el("agentList");
       if (!filtered.length) {
-        list.innerHTML = '<div class="empty">Nenhum agente encontrado para este recorte.</div>';
+        list.innerHTML = '<div class="empty">Nenhum caso de uso encontrado para os critérios selecionados.</div>';
         return;
       }
       list.innerHTML = filtered.map(function(row) {
@@ -1289,7 +1289,7 @@
 
     function renderDetail(row) {
       if (!row) {
-        el("detailName").textContent = "Sem agente selecionado";
+        el("detailName").textContent = "Nenhum caso selecionado";
         el("detailMeta").textContent = "";
         el("detailScore").textContent = "--";
         el("detailBody").innerHTML = "";
@@ -1302,33 +1302,33 @@
       const demo = buildDemoPlan(row);
       const focusLabel = state.detailMode === "focus" ? "Sair do foco" : "Modo foco";
       el("detailBody").innerHTML =
-        '<div class="detail-hero"><h3>Descricao do agente</h3><p>' + escapeHtml(row.objective) + '</p><div class="hero-meta">' +
+        '<div class="detail-hero"><h3>Descrição do agente</h3><p>' + escapeHtml(row.objective) + '</p><div class="hero-meta">' +
           '<span class="tag">' + escapeHtml(row.area) + '</span>' +
           '<span class="tag ' + tagClass(row) + '">' + escapeHtml(shortType(row.copilotType)) + '</span>' +
           '<span class="tag ' + (isHigh(row) ? "high" : "") + '">' + escapeHtml(row.priority) + '</span>' +
           '<span class="tag">' + escapeHtml(row.complexity) + '</span>' +
-        '</div><div class="action-row"><button type="button" id="copyPrompt" class="primary">Copiar prompt</button><button type="button" id="copyDemo">Copiar roteiro</button><button type="button" id="focusDetail">' + focusLabel + '</button><button type="button" id="addShort" class="good">' + (state.shortlist.indexOf(row.id) >= 0 ? "Na shortlist" : "Adicionar") + '</button></div></div>' +
+        '</div><div class="action-row"><button type="button" id="copyPrompt" class="primary">Copiar prompt</button><button type="button" id="copyDemo">Copiar roteiro</button><button type="button" id="focusDetail">' + focusLabel + '</button><button type="button" id="addShort" class="good">' + (state.shortlist.indexOf(row.id) >= 0 ? "Selecionado" : "Adicionar à seleção") + '</button></div></div>' +
         '<div class="reader-grid">' +
           '<div class="reader-card"><h3>Como testar agora</h3>' + buildTestSteps(row) + '</div>' +
-          '<div class="reader-card"><h3>Prompt pronto para copiar</h3><textarea id="promptBox" class="copy-box">' + escapeHtml(prompt) + '</textarea></div>' +
-          '<div class="reader-card"><h3>Mapa visual do agente</h3>' + buildFlow(row) + '</div>' +
-          '<div class="reader-card"><h3>Leitura rapida</h3>' + buildSignalPanel(row) + '</div>' +
+          '<div class="reader-card"><h3>Prompt recomendado</h3><textarea id="promptBox" class="copy-box">' + escapeHtml(prompt) + '</textarea></div>' +
+          '<div class="reader-card"><h3>Fluxo operacional do agente</h3>' + buildFlow(row) + '</div>' +
+          '<div class="reader-card"><h3>Sinais de priorização</h3>' + buildSignalPanel(row) + '</div>' +
           '<div class="reader-card"><h3>Detalhes operacionais</h3>' +
-            kv("Trigger", row.trigger) +
+            kv("Gatilho", row.trigger) +
             kv("Entradas", row.inputs) +
             kv("Sistemas", row.systems) +
-            kv("Acoes", row.actions) +
-            kv("Saidas", row.outputs) +
+            kv("Ações", row.actions) +
+            kv("Saídas", row.outputs) +
           '</div>' +
-          '<div class="reader-card"><h3>Governanca e valor</h3>' +
-            kv("Governanca", row.governance) +
-            kv("KPI", row.kpi) +
-            kv("Implementacao", row.implementation) +
+          '<div class="reader-card"><h3>Governança e valor</h3>' +
+            kv("Governança", row.governance) +
+            kv("Indicador", row.kpi) +
+            kv("Implementação", row.implementation) +
             kv("Diferencial", row.differentiator) +
           '</div>' +
           '<div class="reader-card"><h3>Roteiro de treinamento</h3><textarea id="demoBox" class="copy-box">' + escapeHtml(demo) + '</textarea></div>' +
-          '<div class="reader-card"><h3>Fonte e shortlist</h3>' +
-            kv("Origem", row.source || "Sintese propria") +
+          '<div class="reader-card"><h3>Fonte e seleção</h3>' +
+            kv("Origem", row.source || "Síntese própria") +
             (row.url ? '<a class="source-link" href="' + escapeHtml(row.url) + '" target="_blank" rel="noreferrer">' + escapeHtml(row.url) + '</a>' : '<span class="subtitle">Sem link direto.</span>') +
             '<div class="shortlist" id="shortlist"></div>' +
           '</div>' +
@@ -1346,26 +1346,26 @@
 
     function buildPrompt(row) {
       return [
-        "Voce e um agente operacional de " + row.area + ".",
+        "Você é um agente operacional de " + row.area + ".",
         "Objetivo: " + row.objective,
         "Contexto de teste: use os arquivos, emails ou registros de exemplo anexados.",
         "Execute: " + row.actions,
         "Entregue: " + row.outputs,
-        "Inclua riscos, decisoes que precisam de aprovacao humana e o KPI de sucesso: " + row.kpi,
+        "Inclua riscos, decisões que precisam de aprovação humana e o indicador de sucesso: " + row.kpi,
         "Pergunta inicial: " + row.demo
       ].join("\n");
     }
 
     function buildDemoPlan(row) {
       return [
-        "Demo - " + row.agent,
-        "1. Cenario: " + row.objective,
+        "Demonstração - " + row.agent,
+        "1. Cenário: " + row.objective,
         "2. Entrada: " + row.inputs,
-        "3. Acao do agente: " + row.actions,
-        "4. Saida esperada: " + row.outputs,
-        "5. Momento de governanca: " + row.governance,
-        "6. Pergunta para a turma: onde este agente deve parar e pedir aprovacao humana?",
-        "7. KPI para decidir piloto: " + row.kpi
+        "3. Ação do agente: " + row.actions,
+        "4. Saída esperada: " + row.outputs,
+        "5. Momento de governança: " + row.governance,
+        "6. Pergunta para a turma: em quais pontos o agente deve pausar e solicitar aprovação humana?",
+        "7. Indicador para decidir o piloto: " + row.kpi
       ].join("\n");
     }
 
@@ -1373,9 +1373,9 @@
       return '<ul>' +
         '<li><strong>1. Abra com o objetivo:</strong> ' + escapeHtml(row.objective) + '</li>' +
         '<li><strong>2. Use dados anonimizados:</strong> ' + escapeHtml(row.inputs) + '</li>' +
-        '<li><strong>3. Peça a execucao:</strong> ' + escapeHtml(row.demo) + '</li>' +
-        '<li><strong>4. Valide a saida:</strong> ' + escapeHtml(row.outputs) + '</li>' +
-        '<li><strong>5. Meça valor:</strong> ' + escapeHtml(row.kpi) + '</li>' +
+        '<li><strong>3. Solicite a execução:</strong> ' + escapeHtml(row.demo) + '</li>' +
+        '<li><strong>4. Valide a saída:</strong> ' + escapeHtml(row.outputs) + '</li>' +
+        '<li><strong>5. Meça o valor:</strong> ' + escapeHtml(row.kpi) + '</li>' +
       '</ul>';
     }
 
@@ -1386,7 +1386,7 @@
         flowNode("Agente", row.actions) +
         flowNode("Sistemas", row.systems) +
         '<div class="flow-arrow">></div>' +
-        flowNode("Saida", row.outputs) +
+        flowNode("Saída", row.outputs) +
       '</div>';
     }
 
@@ -1409,8 +1409,8 @@
       const demo = row.trainingScore >= 5 ? 92 : row.trainingScore >= 4 ? 76 : 55;
       return [
         { label: "Autonomia", value: autonomy },
-        { label: "Integracao", value: integration },
-        { label: "Governanca", value: governance },
+        { label: "Integração", value: integration },
+        { label: "Governança", value: governance },
         { label: "Forca de demo", value: demo }
       ];
     }
@@ -1454,7 +1454,7 @@
     function selectBest(predicate) {
       const filtered = filteredRows().filter(predicate);
       if (!filtered.length) {
-        toast("Nao ha agente neste recorte.");
+        toast("Não há agente neste recorte.");
         return;
       }
       state.selectedId = filtered[0].id;
@@ -1496,9 +1496,9 @@
         button.classList.toggle("active", button.dataset.focusMode === state.detailMode);
       });
       const hints = {
-        side: "Lateral: ideal para triagem rapida enquanto compara a lista.",
-        bottom: "Inferior: leitura confortavel, com a lista compacta acima e detalhes em duas colunas.",
-        focus: "Foco: melhor para apresentar, copiar prompt e explicar a demo."
+        side: "Lateral: ideal para comparar casos sem perder a lista de resultados.",
+        bottom: "Inferior: recomendado para leitura detalhada e discussão em grupo.",
+        focus: "Foco: indicado para apresentação, cópia de prompts e explicação do caso."
       };
       if (el("readingHint")) el("readingHint").textContent = hints[state.detailMode] || hints.side;
     }
@@ -1530,7 +1530,7 @@
       else state.shortlist.push(id);
       saveShortlist();
       render();
-      toast(index >= 0 ? "Removido da shortlist." : "Adicionado a shortlist.");
+      toast(index >= 0 ? "Removido da seleção." : "Adicionado à seleção.");
     }
 
     function renderShortlist() {
@@ -1598,7 +1598,7 @@
     }
 
     bootstrap().catch(function(error) {
-      document.body.innerHTML = '<main style="padding:24px;font-family:system-ui;color:#f4f7f9;background:#0c0f12;min-height:100vh"><h1>Erro ao carregar dados</h1><p>' + String(error.message).replace(/</g, "&lt;") + '</p><p>Se voce abriu este arquivo via file://, use um servidor local ou publique no GitHub Pages para permitir fetch do JSON.</p></main>';
+      document.body.innerHTML = '<main style="padding:24px;font-family:system-ui;color:#f4f7f9;background:#0c0f12;min-height:100vh"><h1>Erro ao carregar dados</h1><p>' + String(error.message).replace(/</g, "&lt;") + '</p><p>Se você abriu este arquivo via file://, use um servidor local ou publique no GitHub Pages para permitir fetch do JSON.</p></main>';
     });
   </script>
 </body>

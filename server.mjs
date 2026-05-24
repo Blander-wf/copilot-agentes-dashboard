@@ -163,7 +163,7 @@ function loginPage(error = "") {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login - Dashboard de Agentes Copilot</title>
+  <title>Acesso local - Guia de Adoção de IA</title>
   <style>
     * { box-sizing: border-box; }
     body {
@@ -216,10 +216,10 @@ function loginPage(error = "") {
 </head>
 <body>
   <main>
-    <h1>Dashboard de Agentes Copilot</h1>
-    <p>Entre como admin ou usuario para acessar a base local protegida.</p>
+    <h1>Ambiente local de curadoria</h1>
+    <p>Acesse a área protegida para revisar, cadastrar e testar casos antes da publicação.</p>
     <form id="loginForm">
-      <label for="username">Usuario</label>
+      <label for="username">Usuário</label>
       <input id="username" name="username" autocomplete="username" required>
       <label for="password">Senha</label>
       <input id="password" name="password" type="password" autocomplete="current-password" required>
@@ -240,7 +240,7 @@ function loginPage(error = "") {
         body: JSON.stringify(body)
       });
       if (response.ok) location.href = "/agentes.html";
-      else document.getElementById("error").textContent = "Usuario ou senha invalidos.";
+      else document.getElementById("error").textContent = "Usuário ou senha inválidos.";
     });
   </script>
 </body>
@@ -324,9 +324,9 @@ function adminInjection(session) {
     @media (max-width: 760px) { .admin-grid { grid-template-columns: 1fr; } .local-authbar { align-items: flex-start; flex-direction: column; } }
   </style>
   <div class="local-authbar">
-    <div><strong>${escapeHtml(session.username)}</strong> · ${escapeHtml(session.role)} · ambiente local seguro</div>
+    <div><strong>${escapeHtml(session.username)}</strong> · ${escapeHtml(session.role)} · ambiente local protegido</div>
     <div>
-      ${isAdmin ? '<button type="button" id="openAdminAgent">Adicionar agente</button>' : ''}
+      ${isAdmin ? '<button type="button" id="openAdminAgent">Adicionar caso de uso</button>' : ''}
       <button type="button" class="secondary" id="logoutLocal">Sair</button>
     </div>
   </div>
@@ -365,10 +365,10 @@ function adminInjection(session) {
 function adminModal() {
   return `<div class="admin-modal" id="adminAgentModal" role="dialog" aria-modal="true">
     <form class="admin-box" id="agentCreateForm">
-      <h2>Adicionar novo agente</h2>
+      <h2>Adicionar caso de uso</h2>
       <div class="admin-grid">
-        <label>Area<input name="area" required placeholder="Ex.: Financas"></label>
-        <label>Nome do agente<input name="agent" required placeholder="Ex.: Agente de conciliacao bancaria"></label>
+        <label>Área<input name="area" required placeholder="Ex.: Finanças"></label>
+        <label>Nome do agente<input name="agent" required placeholder="Ex.: Agente de conciliação bancária"></label>
         <label>Tipo<select name="copilotType">
           <option>Copilot Studio + Power Automate</option>
           <option>Agent Builder</option>
@@ -377,24 +377,24 @@ function adminModal() {
           <option>Dynamics 365 built agent</option>
         </select></label>
         <label>Complexidade<select name="complexity">
-          <option>Baixa/Media</option>
-          <option>Media</option>
-          <option>Media/Alta</option>
+          <option>Baixa/Média</option>
+          <option>Média</option>
+          <option>Média/Alta</option>
           <option>Alta</option>
         </select></label>
         <label class="admin-wide">Objetivo<textarea name="objective" required></textarea></label>
-        <label>Trigger<textarea name="trigger"></textarea></label>
+        <label>Gatilho<textarea name="trigger"></textarea></label>
         <label>Entradas<textarea name="inputs"></textarea></label>
         <label>Sistemas<textarea name="systems"></textarea></label>
-        <label>Acoes<textarea name="actions" required></textarea></label>
-        <label>Saidas<textarea name="outputs" required></textarea></label>
-        <label>KPI<textarea name="kpi"></textarea></label>
+        <label>Ações<textarea name="actions" required></textarea></label>
+        <label>Saídas<textarea name="outputs" required></textarea></label>
+        <label>Indicador<textarea name="kpi"></textarea></label>
         <label>Fonte/URL<input name="url" placeholder="https://..."></label>
-        <label class="admin-wide">Observacoes<textarea name="notes"></textarea></label>
+        <label class="admin-wide">Observações<textarea name="notes"></textarea></label>
       </div>
       <div class="admin-actions">
         <button type="button" class="secondary" id="closeAdminAgent">Cancelar</button>
-        <button type="submit">Salvar agente</button>
+        <button type="submit">Salvar caso de uso</button>
       </div>
     </form>
   </div>`;
@@ -424,7 +424,7 @@ function priorityFor(score) {
 function licenseFor(type = "") {
   if (/Cowork|Researcher|Analyst|Work IQ/.test(type)) return "Exige Microsoft 365 Copilot add-on / Frontier quando aplicavel";
   if (/Agent Builder|Declarative/.test(type)) return "Pode funcionar com Copilot Chat; com add-on ganha Work grounding completo";
-  if (/Studio/.test(type)) return "Copilot Studio incluido para usuarios M365 Copilot; sem add-on pode gerar consumo/PAYG";
+  if (/Studio/.test(type)) return "Copilot Studio incluído para usuários M365 Copilot; sem add-on pode gerar consumo/PAYG";
   return "Depende do canal e dos conectores";
 }
 
@@ -465,7 +465,7 @@ async function addAgent(req, res, session) {
     systems: String(payload.systems || "SharePoint, Outlook, Teams, Excel, Dataverse, Power Automate e sistemas de negocio").trim(),
     actions: String(payload.actions).trim(),
     outputs: String(payload.outputs).trim(),
-    demo: `Demonstre pedindo ao agente: "Execute ${String(payload.agent).trim()} com dados anonimizados e gere as proximas acoes."`,
+    demo: `Demonstre pedindo ao agente: "Execute ${String(payload.agent).trim()} com dados anonimizados e gere as próximas ações."`,
     differentiator: "Adicionado pelo admin para avaliacao de piloto e treinamento.",
     implementation: "Validar fontes, conectores, owner de processo e pontos de aprovacao antes de publicar.",
     complexity: String(payload.complexity || "Media").trim(),

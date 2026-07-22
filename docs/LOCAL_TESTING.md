@@ -4,7 +4,7 @@ Use este modo para consultar o dashboard localmente e, quando necessario, entrar
 
 ## Quando usar
 
-- Testar login `admin` e `usuario`.
+- Testar a consulta publica e, quando `LOCAL_REQUIRE_LOGIN=true`, os logins `admin` e `usuario`.
 - Adicionar agentes pelo formulario.
 - Validar novos agentes antes de publicar.
 - Conferir a trilha `Prompt + arquivos / sem conector` usando exemplos anonimizados.
@@ -95,7 +95,8 @@ Isso recria `auth/users.local.json` e `auth/credentials.local.txt`.
 
 Antes de publicar:
 
-- entrar como `usuario` e confirmar que o dashboard abre em modo consulta;
+- abrir sem login e confirmar que os dois dashboards carregam em modo consulta;
+- opcionalmente iniciar com `LOCAL_REQUIRE_LOGIN=true`, entrar como `usuario` e confirmar o modo consulta;
 - entrar como `admin` e testar o formulario de novo agente;
 - confirmar que o total de agentes aparece corretamente no topo;
 - filtrar por `Tipo > M365 Copilot / Agent Builder + arquivos`;

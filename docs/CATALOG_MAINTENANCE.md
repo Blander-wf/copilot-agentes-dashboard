@@ -31,13 +31,15 @@ Bons exemplos:
 
 ## Arquivos principais
 
-- `data/agentes.csv`: fonte editavel principal.
+- `data/agentes.csv`: fonte editavel do pacote publicado para atualizacoes pontuais.
 - `data/catalogo-agentes-data.json`: JSON consumido pelo dashboard.
 - `data/fontes.csv`: lista de fontes usadas no catalogo.
 - `data/como-escolher.csv`: matriz de decisao.
 - `data/catalogo-agentes-operacionais-copilot.xlsx`: workbook completo para consulta.
 - `agentes.html`: dashboard público de agentes.
 - `index.html` e `catalogos.html`: guia e hub de adoção.
+
+Atencao: `build_copilot_agent_examples.mjs` pode regenerar o CSV, o JSON, o workbook, o dashboard e este pacote. Para uma alteracao permanente que precise sobreviver ao rebuild completo, atualize tambem o builder ou a fonte de dados usada por ele.
 
 ## Arquivos da trilha de prompts recorrentes
 

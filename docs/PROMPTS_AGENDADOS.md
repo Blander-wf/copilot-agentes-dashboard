@@ -1,6 +1,6 @@
 # Catalogo de prompts recorrentes e agendaveis para Copilot
 
-Gerado em 2026-05-23.
+Gerado em 2026-07-21.
 
 ## Visao geral
 

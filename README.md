@@ -15,7 +15,7 @@ Dashboard estatico para publicar no GitHub Pages, com modo local seguro para log
 
 - **Guia de adocao:** `catalogos.html` ajuda usuarios novos, usuarios avancados, makers e responsaveis da empresa a escolherem a trilha certa.
 - **GitHub Pages:** publico e read-only. Ideal para consulta e apresentacao.
-- **Servidor local:** protegido por login, com perfis `admin` e `usuario`. Use para cadastrar novos agentes e testar mudancas antes de publicar.
+- **Servidor local:** consulta publica por padrao; administracao e gravacoes protegidas por login. Use para cadastrar novos agentes e testar mudancas antes de publicar.
 
 ## Modos de leitura do agente
 
@@ -67,7 +67,7 @@ A regra principal: **prompts agendados nativos exigem Microsoft 365 Copilot**. P
 
 ## Atualizar a base por planilha
 
-O arquivo mais simples para editar e `data/agentes.csv`.
+O arquivo mais simples para uma atualizacao pontual e `data/agentes.csv`. Um rebuild completo de agentes pode substituir essa base; para mudancas permanentes, atualize tambem o builder ou a fonte que alimenta o lote.
 
 1. Abra `data/agentes.csv` no Excel.
 2. Edite ou adicione linhas mantendo os nomes das colunas.
@@ -116,8 +116,12 @@ node server.mjs
 Abra:
 
 ```text
-http://127.0.0.1:8787/
+http://127.0.0.1:8787/agentes.html
+http://127.0.0.1:8787/prompts-agendados.html
+http://127.0.0.1:8787/admin
 ```
+
+Os catalogos sao publicos localmente por padrao. A rota `/admin` e as gravacoes exigem login. Consulte `docs/LOCAL_TESTING.md` para ativar login tambem na leitura.
 
 Documentacao detalhada:
 

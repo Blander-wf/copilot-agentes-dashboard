@@ -118,14 +118,16 @@ Se editar o gerador principal na raiz do workspace, rode:
 
 ```powershell
 cd "C:\Users\aleja\Documents\Codex\2026-05-23\estamos-implementando-o-copilot-gpt5-5"
-& "C:\Users\aleja\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" ".\build_copilot_agent_examples.mjs"
+node ".\build_copilot_agent_examples.mjs"
+node ".\build_catalog_hub.mjs"
 ```
 
 Se editar a biblioteca de prompts recorrentes, rode:
 
 ```powershell
 cd "C:\Users\aleja\Documents\Codex\2026-05-23\estamos-implementando-o-copilot-gpt5-5"
-& "C:\Users\aleja\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" ".\build_scheduled_prompt_catalog.mjs"
+node ".\build_scheduled_prompt_catalog.mjs"
+node ".\build_catalog_hub.mjs"
 ```
 
 ## Validacao rapida
@@ -143,7 +145,7 @@ Antes de publicar, confirme:
 Na raiz do workspace:
 
 ```powershell
-& "C:\Users\aleja\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" ".\publish_github_api.mjs"
+node ".\publish_github_api.mjs"
 ```
 
 Depois valide:

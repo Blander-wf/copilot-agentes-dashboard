@@ -1,6 +1,6 @@
 # Ambiente local de testes
 
-Use este modo quando precisar de login, perfis de usuario e cadastro de novos agentes. O GitHub Pages continua sendo uma publicacao estatica e read-only.
+Use este modo para consultar o dashboard localmente e, quando necessario, entrar na area protegida para cadastrar novos agentes. O GitHub Pages continua sendo uma publicacao estatica e read-only.
 
 ## Quando usar
 
@@ -10,25 +10,45 @@ Use este modo quando precisar de login, perfis de usuario e cadastro de novos ag
 - Conferir a trilha `Prompt + arquivos / sem conector` usando exemplos anonimizados.
 - Verificar se `data/agentes.csv` e `data/catalogo-agentes-data.json` foram atualizados.
 
-## 1. Gerar credenciais
+## 1. Consultar o dashboard localmente
+
+Nao abra `agentes.html` com duplo clique: o navegador bloqueia a leitura do JSON quando a pagina usa `file://`.
+
+Rode:
 
 ```powershell
 cd "C:\Users\aleja\Documents\Codex\2026-05-23\estamos-implementando-o-copilot-gpt5-5\github-pages-dashboard"
-& "C:\Users\aleja\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" ".\scripts\setup-local-auth.mjs"
-```
-
-As senhas serao gravadas em `auth/credentials.local.txt`.
-
-## 2. Rodar o servidor
-
-```powershell
-& "C:\Users\aleja\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" ".\server.mjs"
+node ".\server.mjs"
 ```
 
 Abra:
 
 ```text
-http://127.0.0.1:8787/
+http://127.0.0.1:8787/agentes.html
+```
+
+A consulta aos catalogos e publica por padrao. A administracao e qualquer gravacao continuam protegidas.
+
+## 2. Gerar credenciais para administrar
+
+```powershell
+cd "C:\Users\aleja\Documents\Codex\2026-05-23\estamos-implementando-o-copilot-gpt5-5\github-pages-dashboard"
+node ".\scripts\setup-local-auth.mjs"
+```
+
+As senhas serao gravadas em `auth/credentials.local.txt`.
+
+Para entrar como administrador, abra:
+
+```text
+http://127.0.0.1:8787/admin
+```
+
+Se for necessario exigir login tambem para consultar os catalogos:
+
+```powershell
+$env:LOCAL_REQUIRE_LOGIN="true"
+node ".\server.mjs"
 ```
 
 ## 3. Perfis
@@ -60,13 +80,13 @@ Depois, publique novamente usando o script da raiz do workspace:
 
 ```powershell
 cd "C:\Users\aleja\Documents\Codex\2026-05-23\estamos-implementando-o-copilot-gpt5-5"
-& "C:\Users\aleja\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" ".\publish_github_api.mjs"
+node ".\publish_github_api.mjs"
 ```
 
 ## 5. Rotacionar senhas
 
 ```powershell
-& "C:\Users\aleja\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" ".\scripts\setup-local-auth.mjs" --force
+node ".\scripts\setup-local-auth.mjs" --force
 ```
 
 Isso recria `auth/users.local.json` e `auth/credentials.local.txt`.
@@ -88,4 +108,5 @@ Antes de publicar:
 - Se o navegador mostrar dados antigos, use `Ctrl+F5`.
 - Se o GitHub Pages demorar a atualizar, aguarde alguns segundos e use `?v=teste` na URL.
 - Se o dashboard mostrar `0 agentes`, confira se `data/catalogo-agentes-data.json` existe e se o HTML usa `agent-data-url`.
+- Se abriu o arquivo por duplo clique e apareceu erro de carregamento, feche a aba e use `http://127.0.0.1:8787/agentes.html`.
 - Se o usuario comum conseguir cadastrar agente, revise `server.mjs` e a role usada no login.

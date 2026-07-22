@@ -8,6 +8,7 @@ const root = path.dirname(fileURLToPath(import.meta.url));
 const dataDir = path.join(root, "data");
 const authPath = path.join(root, "auth", "users.local.json");
 const port = Number(process.env.PORT || 8787);
+const requireLoginForCatalogs = /^true$/i.test(process.env.LOCAL_REQUIRE_LOGIN || "false");
 const sessions = new Map();
 const sessionTtlMs = 8 * 60 * 60 * 1000;
 const cookieName = "copilot_dash_session";
@@ -127,11 +128,11 @@ async function serveStatic(req, res, session) {
   const url = new URL(req.url, "http://localhost");
   const adminPath = url.pathname === "/admin" || url.pathname === "/admin.html";
   const protectedPage = url.pathname === "/agentes.html" || url.pathname === "/prompts-agendados.html";
-  if (!session && (adminPath || protectedPage)) {
+  if (!session && (adminPath || (requireLoginForCatalogs && protectedPage))) {
     send(res, 200, loginPage(), { "Content-Type": "text/html; charset=utf-8" });
     return;
   }
-  if (!session && url.pathname.startsWith("/data/")) {
+  if (!session && requireLoginForCatalogs && url.pathname.startsWith("/data/")) {
     json(res, 401, { error: "login_required" });
     return;
   }
@@ -538,5 +539,6 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(port, "127.0.0.1", () => {
-  console.log(`Dashboard local seguro: http://127.0.0.1:${port}/`);
+  console.log(`Dashboard local: http://127.0.0.1:${port}/agentes.html`);
+  console.log(`Administracao protegida: http://127.0.0.1:${port}/admin`);
 });

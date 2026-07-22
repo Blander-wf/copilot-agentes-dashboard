@@ -4,8 +4,9 @@ Este documento explica como manter a base de agentes, especialmente a trilha de 
 
 ## Estado atual
 
-- Total atual: 370 agentes.
-- Fontes catalogadas: 45.
+- Total atual: 401 agentes.
+- Fontes catalogadas: 54.
+- Casos Cowork: 27, incluindo 9 casos com vídeo direto validado.
 - Trilha sem conector complexo: 130 agentes.
 - Tipo recomendado para demos simples: `M365 Copilot / Agent Builder + arquivos`.
 - Categoria recomendada para demos simples: `Prompt + arquivos / sem conector`.
@@ -35,7 +36,8 @@ Bons exemplos:
 - `data/fontes.csv`: lista de fontes usadas no catalogo.
 - `data/como-escolher.csv`: matriz de decisao.
 - `data/catalogo-agentes-operacionais-copilot.xlsx`: workbook completo para consulta.
-- `index.html`: dashboard publico.
+- `agentes.html`: dashboard público de agentes.
+- `index.html` e `catalogos.html`: guia e hub de adoção.
 
 ## Arquivos da trilha de prompts recorrentes
 
@@ -76,6 +78,20 @@ Regra pratica:
 - `demo`: prompt pronto para copiar.
 - `governance`: cuidados, permissoes e revisao humana.
 - `source` e `url`: referencia usada.
+
+## Critérios para casos com vídeo
+
+Inclua um vídeo como caso operacional apenas quando:
+
+- a URL direta estiver ativa e os metadados forem confirmados no YouTube;
+- o conteúdo descrever um caso concreto, com entradas, ações e entregáveis replicáveis;
+- o caso acrescentar um padrão novo, sem duplicar um playbook existente;
+- o resumo deixar claro se a fonte é oficial ou comunitária;
+- licenças, conectores, permissões, custos e checkpoints forem registrados quando relevantes.
+
+Não promova a caso operacional notícias repetidas, roundups, comparativos opinativos, títulos de marketing sem fluxo concreto ou vídeos sem URL confirmada. Esses materiais podem permanecer apenas como fonte de contexto.
+
+Para vídeos aprovados, use `category: Cowork - caso em video`, informe a URL do YouTube em `url` e registre a data de validação em `notes`. O dashboard identifica a URL, mostra o filtro `Com vídeo` e cria o link `Assistir no YouTube`.
 
 ## Padrao para novos agentes simples
 

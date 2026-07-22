@@ -4,8 +4,9 @@ Dashboard estatico para publicar no GitHub Pages, com modo local seguro para log
 
 ## Visao geral
 
-- **Total atual:** 370 agentes operacionais.
-- **Fontes catalogadas:** 45.
+- **Total atual:** 401 agentes operacionais.
+- **Fontes catalogadas:** 54.
+- **Casos Cowork:** 27, incluindo 9 casos com video direto.
 - **Trilha rapida:** 130 agentes de prompt + arquivos, sem conector complexo.
 - **Publicacao:** GitHub Pages read-only para consulta e treinamento.
 - **Administracao:** servidor local Node com login para cadastrar novos agentes antes de publicar.
@@ -35,6 +36,12 @@ Casos tipicos:
 - transformar transcricoes, atas ou chats exportados em acoes, FAQs e handoffs;
 - criar scorecards, checklists, matrizes de decisao, briefings e roteiros de treinamento;
 - montar agentes simples em OneDrive, SharePoint ou Agent Builder com fontes limitadas.
+
+## Casos Cowork com video
+
+Use o filtro **Com video** para encontrar casos com demonstracao direta no YouTube. O detalhe do caso oferece o botao **Assistir no YouTube**.
+
+Os videos entram no catalogo operacional somente quando o link esta ativo, o caso e concreto e replicavel, e nao duplica um playbook existente. Noticias repetidas, roundups e comparativos opinativos ficam fora desta trilha.
 
 ## Trilha de prompts recorrentes
 

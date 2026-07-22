@@ -416,6 +416,20 @@
       word-break: break-word;
     }
     .source-link:hover { text-decoration: underline; }
+    .video-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 0 12px;
+      border: 1px solid #b42318;
+      border-radius: 8px;
+      background: #b42318;
+      color: #fff;
+      font-weight: 760;
+      text-decoration: none;
+    }
+    .video-cta:hover { background: #8f1c13; }
     .shortlist {
       display: grid;
       gap: 7px;
@@ -932,7 +946,7 @@
   <header class="topbar">
     <div>
       <h1>Catálogo de Agentes Copilot</h1>
-      <div class="subtitle">Casos de uso para workshops, desenho de pilotos e decisões de implementação - 2026-05-23 - build 24/05/2026, 16:53:31</div>
+      <div class="subtitle">Casos de uso para workshops, desenho de pilotos e decisões de implementação - 2026-07-21 - build 21/07/2026, 21:05:05</div>
       <nav class="catalog-switch" aria-label="Catálogos">
         <a href="catalogos.html">Guia de Adoção</a>
         <a href="agentes.html" class="active">Catálogo de agentes</a>
@@ -997,6 +1011,7 @@
           <label class="check"><input id="onlyHigh" type="checkbox"> Somente prioritários</label>
           <label class="check"><input id="onlyCowork" type="checkbox"> Somente Cowork</label>
           <label class="check"><input id="onlySourced" type="checkbox"> Com fonte direta</label>
+          <label class="check"><input id="onlyVideo" type="checkbox"> Com vídeo</label>
           <label class="check"><input id="onlyTop" type="checkbox"> Top 40 para demonstração</label>
         </div>
         <div class="field">
@@ -1105,6 +1120,7 @@
       onlyHigh: false,
       onlyCowork: false,
       onlySourced: false,
+      onlyVideo: false,
       onlyTop: false,
       sort: "score",
       detailMode: initialDetailMode,
@@ -1126,6 +1142,10 @@
     const isHigh = function(row) { return String(row.priority || "").indexOf("Alta") === 0; };
     const isCowork = function(row) { return /cowork/i.test(row.copilotType + " " + row.category + " " + row.agent); };
     const isSource = function(row) { return Boolean(row.url); };
+    const isVideo = function(row) {
+      const url = String(row.url || "").toLowerCase();
+      return url.indexOf("youtube.com/watch") !== -1 || url.indexOf("youtu.be/") !== -1;
+    };
     const opt = function(value) { return "<option>" + escapeHtml(value) + "</option>"; };
     const tagClass = function(row) {
       if (isCowork(row)) return "cowork";
@@ -1166,7 +1186,7 @@
         state.q = event.target.value;
         render();
       });
-      ["onlyHigh", "onlyCowork", "onlySourced", "onlyTop"].forEach(function(id) {
+      ["onlyHigh", "onlyCowork", "onlySourced", "onlyVideo", "onlyTop"].forEach(function(id) {
         el(id).addEventListener("change", function(event) {
           state[id] = event.target.checked;
           render();
@@ -1220,6 +1240,7 @@
         if (state.onlyHigh && !isHigh(row)) return false;
         if (state.onlyCowork && !isCowork(row)) return false;
         if (state.onlySourced && !isSource(row)) return false;
+        if (state.onlyVideo && !isVideo(row)) return false;
         if (state.onlyTop && !topIds.has(row.id)) return false;
         return true;
       });
@@ -1271,6 +1292,7 @@
             '<span class="tag">' + escapeHtml(row.area) + '</span>' +
             '<span class="tag ' + tagClass(row) + '">' + escapeHtml(shortType(row.copilotType)) + '</span>' +
             '<span class="tag ' + (isHigh(row) ? "high" : "") + '">' + escapeHtml(row.priority) + '</span>' +
+            (isVideo(row) ? '<span class="tag high">Vídeo</span>' : '') +
           '</div>' +
         '</button>';
       }).join("");
@@ -1307,7 +1329,9 @@
           '<span class="tag ' + tagClass(row) + '">' + escapeHtml(shortType(row.copilotType)) + '</span>' +
           '<span class="tag ' + (isHigh(row) ? "high" : "") + '">' + escapeHtml(row.priority) + '</span>' +
           '<span class="tag">' + escapeHtml(row.complexity) + '</span>' +
-        '</div><div class="action-row"><button type="button" id="copyPrompt" class="primary">Copiar prompt</button><button type="button" id="copyDemo">Copiar roteiro</button><button type="button" id="focusDetail">' + focusLabel + '</button><button type="button" id="addShort" class="good">' + (state.shortlist.indexOf(row.id) >= 0 ? "Selecionado" : "Adicionar à seleção") + '</button></div></div>' +
+        '</div><div class="action-row"><button type="button" id="copyPrompt" class="primary">Copiar prompt</button><button type="button" id="copyDemo">Copiar roteiro</button><button type="button" id="focusDetail">' + focusLabel + '</button><button type="button" id="addShort" class="good">' + (state.shortlist.indexOf(row.id) >= 0 ? "Selecionado" : "Adicionar à seleção") + '</button>' +
+          (isVideo(row) ? '<a class="video-cta" href="' + escapeHtml(row.url) + '" target="_blank" rel="noreferrer">Assistir no YouTube</a>' : '') +
+        '</div></div>' +
         '<div class="reader-grid">' +
           '<div class="reader-card"><h3>Como testar agora</h3>' + buildTestSteps(row) + '</div>' +
           '<div class="reader-card"><h3>Prompt recomendado</h3><textarea id="promptBox" class="copy-box">' + escapeHtml(prompt) + '</textarea></div>' +
@@ -1329,7 +1353,7 @@
           '<div class="reader-card"><h3>Roteiro de treinamento</h3><textarea id="demoBox" class="copy-box">' + escapeHtml(demo) + '</textarea></div>' +
           '<div class="reader-card"><h3>Fonte e seleção</h3>' +
             kv("Origem", row.source || "Síntese própria") +
-            (row.url ? '<a class="source-link" href="' + escapeHtml(row.url) + '" target="_blank" rel="noreferrer">' + escapeHtml(row.url) + '</a>' : '<span class="subtitle">Sem link direto.</span>') +
+            (row.url ? '<a class="source-link" href="' + escapeHtml(row.url) + '" target="_blank" rel="noreferrer">' + (isVideo(row) ? 'Assistir ao vídeo no YouTube' : 'Abrir fonte original') + '</a>' : '<span class="subtitle">Sem link direto.</span>') +
             '<div class="shortlist" id="shortlist"></div>' +
           '</div>' +
         '</div>';
@@ -1443,7 +1467,7 @@
         state[id] = "Todos";
         el(id).value = "Todos";
       });
-      ["onlyHigh", "onlyCowork", "onlySourced", "onlyTop"].forEach(function(id) {
+      ["onlyHigh", "onlyCowork", "onlySourced", "onlyVideo", "onlyTop"].forEach(function(id) {
         state[id] = false;
         el(id).checked = false;
       });
